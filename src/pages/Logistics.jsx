@@ -8,9 +8,9 @@ const Logistics = () => {
   const [activeSlide, setActiveSlide] = useState(0);
 
   const slideImages = [
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuCHXbZ00p44m0h4v2fB4Nf-cK-i8D8635s3lU2dI7u15C0TXYQxGvP_1yts2302N_xYkGvWzLhT-r15469nZJk6xP5t84P3QvLzLp8LmsNlExH0M9A6JvIqQ16Bf6h1XW71gZtVn_C2K6Hh7vKjVn5w92z_V8WnO-CIt2sWqWbT86DItR1WfUqSjWqZ2uT1A71K",
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuC0vNoiqsCCERttN2W44FMoDMENJ7mj06EWtIBnSY_ccGsy6F05zLovZU-_gua35GqScaajS56R8iKV8AuMHPB5G-g0oDAw2ygw9t4Q3emxfHEMAbcr7G1pn0pXmW8ce80TkBHGleinZYtol2UergFE9T77jn3fLk-_JCbkQm1s-Cn-0__E3FPD6TxwqfMB4KguxJmljpGLddOwEiyZcC1ci2wtnPxVg5Ulcmbv2GJ2HXwJLvED7atkSjaguHhkGgqH9ZeQHIT6yEE",
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuD8Q0z0a6s7k1K5z5c3O4R8i1C0k0e8d0w2V1T9j0a6f4F0h0Y5x2X6o4q2C1t6k2T1f7m8m6l6X1s7C8O7I6i1T6D2h1B8G6X6S6p4B0a6A5G5O6w2L5V7p4Q5"
+    "https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/event-covers%2Fe5956621-8911-49c9-a1fa-fa0b32a7a591?alt=media&token=4e3ed39b-fdbf-4f7b-9d44-af2135956fd1",
+    "https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/event-covers%2Fe3affd14-5f7c-40f8-892d-bc3243cb9a6a?alt=media&token=088310d6-9da0-4beb-b85f-4d149177e5c9",
+    "https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/event-covers%2FBABI2.jpg?alt=media&token=8559baef-eb73-4fff-a3f6-c6516d71dbe7"
   ];
 
   const handleSlideChange = () => {
@@ -122,7 +122,7 @@ const Logistics = () => {
             <div className="lg:w-1/2">
               <span className="text-secondary font-bold uppercase tracking-widest text-xs mb-4 block">{t('log.mgt')}</span>
               <h2 className="font-headline font-bold text-2xl md:text-3xl md:text-4xl lg:text-5xl text-primary mb-8 leading-tight">{t('log.mgt_title')}</h2>
-              
+
               <div className="space-y-8 mt-10">
                 <div className="flex gap-6">
                   <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-sm flex-shrink-0 text-secondary border border-outline-variant/10">
@@ -153,10 +153,10 @@ const Logistics = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="lg:w-1/2 w-full relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary-container to-primary transform rotate-3 rounded-[3rem] opacity-20"></div>
-              <div 
+              <div
                 className="w-full h-64 md:h-96 lg:h-[600px] relative z-10 cursor-pointer overflow-hidden rounded-[3rem] shadow-2xl group"
                 onClick={handleSlideChange}
                 title="Cliquez pour changer l'image"
@@ -169,7 +169,7 @@ const Logistics = () => {
                     alt={`Logistics facility view ${index + 1}`}
                   />
                 ))}
-                
+
                 {/* Visual Indicator of Clickability */}
                 <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity z-20 flex items-center justify-center">
                   <div className="w-16 h-16 rounded-full bg-white/30 backdrop-blur-md flex items-center justify-center text-white">
@@ -195,14 +195,14 @@ const Logistics = () => {
           <div className="bg-primary text-white rounded-[3rem] p-6 md:p-12 lg:p-20 flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-12 overflow-hidden relative">
             <div className="absolute -top-64 -right-64 w-[800px] h-[800px] border border-white/10 rounded-full"></div>
             <div className="absolute -top-64 -right-64 w-[600px] h-[600px] border border-white/10 rounded-full"></div>
-            
+
             <div className="max-w-2xl relative z-10">
               <h2 className="font-headline font-bold text-2xl md:text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight">{t('log.elevate')}</h2>
               <p className="text-white/80 text-lg">
                 {t('log.elevate_desc')}
               </p>
             </div>
-            
+
             <div className="w-full lg:w-auto flex flex-col sm:flex-row gap-4 relative z-10">
               <div className="bg-white text-primary p-5 md:p-8 rounded-2xl flex-1 md:min-w-[280px]">
                 <h4 className="font-bold text-xl mb-2">{t('log.ent')}</h4>
