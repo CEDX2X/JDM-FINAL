@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useLanguage } from '../context/LanguageContext';
 
 const TopNavBar = () => {
   const location = useLocation();
+  const { language, toggleLanguage, t } = useLanguage();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'Travel', path: '/travel' },
-    { name: 'Logistics', path: '/logistics' },
-    { name: 'Sport', path: '/sport' },
-    { name: 'Contact', path: '/contact' },
+    { name: t('nav.home'), path: '/' },
+    { name: t('nav.travel'), path: '/travel' },
+    { name: t('nav.logistics'), path: '/logistics' },
+    { name: t('nav.sport'), path: '/sport' },
+    { name: t('nav.contact'), path: '/contact' },
   ];
 
   return (
@@ -23,10 +26,12 @@ const TopNavBar = () => {
           />
           <span>JDM SARL</span>
         </Link>
-        <div className="hidden md:flex space-x-10 items-center">
+
+        {/* Desktop Nav */}
+        <div className="hidden lg:flex space-x-10 items-center">
           {navLinks.map((link) => (
             <Link
-              key={link.name}
+              key={link.path}
               to={link.path}
               className={`${
                 location.pathname === link.path
@@ -38,13 +43,62 @@ const TopNavBar = () => {
             </Link>
           ))}
         </div>
-        <div className="flex items-center gap-6">
-          <button className="material-symbols-outlined text-[#0B1D3A]/70 dark:text-white">search</button>
+
+        {/* Desktop Actions */}
+        <div className="hidden lg:flex items-center gap-6">
+          <button 
+            onClick={toggleLanguage}
+            className="font-bold text-[#0B1D3A]/70 dark:text-white hover:text-[#9b3f5a] transition-colors"
+          >
+            {language === 'en' ? 'FR' : 'EN'}
+          </button>
+          <button translate="no" className="material-symbols-outlined text-[#0B1D3A]/70 dark:text-white">search</button>
           <button className="bg-primary-container text-on-primary px-6 py-2.5 rounded-xl font-bold transition-transform duration-300 hover:scale-102">
-            Get Started
+            {t('nav.getStarted')}
+          </button>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <div className="lg:hidden flex items-center gap-4">
+          <button 
+            onClick={toggleLanguage}
+            className="font-bold text-[#0B1D3A]/70 dark:text-white hover:text-[#9b3f5a] transition-colors"
+          >
+            {language === 'en' ? 'FR' : 'EN'}
+          </button>
+          <button 
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            translate="no" 
+            className="material-symbols-outlined text-[#0B1D3A] dark:text-white text-3xl"
+          >
+            {isMenuOpen ? 'close' : 'menu'}
           </button>
         </div>
       </div>
+
+      {/* Mobile Menu Dropdown */}
+      {isMenuOpen && (
+        <div className="lg:hidden absolute top-20 left-0 w-full bg-white dark:bg-[#00030f] border-t border-gray-100 dark:border-gray-800 shadow-xl py-6 px-8 flex flex-col gap-6">
+          {navLinks.map((link) => (
+            <Link
+              key={link.path}
+              to={link.path}
+              onClick={() => setIsMenuOpen(false)}
+              className={`${
+                location.pathname === link.path
+                  ? 'text-[#9b3f5a] font-extrabold'
+                  : 'text-[#0B1D3A]/70 dark:text-[#f7f9fc]/70 font-bold'
+              } text-xl tracking-tight block`}
+            >
+              {link.name}
+            </Link>
+          ))}
+          <div className="h-px w-full bg-gray-100 dark:bg-gray-800 my-2"></div>
+          <button className="w-full bg-primary-container text-on-primary px-6 py-4 rounded-xl font-bold text-lg">
+            {t('nav.getStarted')}
+          </button>
+        </div>
+      )}
     </nav>
   );
 };

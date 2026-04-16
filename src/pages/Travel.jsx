@@ -54,54 +54,54 @@ const Travel = () => {
             <div className="bg-surface-container-lowest p-10 rounded-[2rem] shadow-[0_12px_32px_rgba(11,29,58,0.04)] group hover:shadow-xl transition-all duration-500">
               <div className="flex justify-between items-start mb-8">
                 <div className="bg-primary-container/5 p-4 rounded-2xl">
-                  <span className="material-symbols-outlined text-4xl text-primary-container">flight_takeoff</span>
+                  <span translate="no" className="material-symbols-outlined text-4xl text-primary-container">flight_takeoff</span>
                 </div>
                 <span className="text-sm font-bold text-secondary tracking-widest uppercase">Global Routes</span>
               </div>
               <h3 className="font-headline text-2xl font-bold text-primary-container mb-4">Elite Flight Booking</h3>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center gap-3 text-on-surface-variant">
-                  <span className="material-symbols-outlined text-secondary text-xl">check_circle</span>
+                  <span translate="no" className="material-symbols-outlined text-secondary text-xl">check_circle</span>
                   <span>First &amp; Business Class exclusivity</span>
                 </li>
                 <li className="flex items-center gap-3 text-on-surface-variant">
-                  <span className="material-symbols-outlined text-secondary text-xl">check_circle</span>
+                  <span translate="no" className="material-symbols-outlined text-secondary text-xl">check_circle</span>
                   <span>Private charter arrangements</span>
                 </li>
                 <li className="flex items-center gap-3 text-on-surface-variant">
-                  <span className="material-symbols-outlined text-secondary text-xl">check_circle</span>
+                  <span translate="no" className="material-symbols-outlined text-secondary text-xl">check_circle</span>
                   <span>24/7 dynamic rescheduling</span>
                 </li>
               </ul>
               <button className="inline-flex items-center gap-2 font-bold text-primary-container hover:text-secondary transition-colors duration-300">
-                Inquire Now <span className="material-symbols-outlined">arrow_forward</span>
+                Inquire Now <span translate="no" className="material-symbols-outlined">arrow_forward</span>
               </button>
             </div>
             {/* Visa Assistance Module */}
             <div className="bg-surface-container-lowest p-10 rounded-[2rem] shadow-[0_12px_32px_rgba(11,29,58,0.04)] group hover:shadow-xl transition-all duration-500">
               <div className="flex justify-between items-start mb-8">
                 <div className="bg-primary-container/5 p-4 rounded-2xl">
-                  <span className="material-symbols-outlined text-4xl text-primary-container">description</span>
+                  <span translate="no" className="material-symbols-outlined text-4xl text-primary-container">description</span>
                 </div>
                 <span className="text-sm font-bold text-secondary tracking-widest uppercase">Fast Track</span>
               </div>
               <h3 className="font-headline text-2xl font-bold text-primary-container mb-4">Visa &amp; Documentation</h3>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center gap-3 text-on-surface-variant">
-                  <span className="material-symbols-outlined text-secondary text-xl">check_circle</span>
+                  <span translate="no" className="material-symbols-outlined text-secondary text-xl">check_circle</span>
                   <span>Expedited embassy processing</span>
                 </li>
                 <li className="flex items-center gap-3 text-on-surface-variant">
-                  <span className="material-symbols-outlined text-secondary text-xl">check_circle</span>
+                  <span translate="no" className="material-symbols-outlined text-secondary text-xl">check_circle</span>
                   <span>Luxury document courier services</span>
                 </li>
                 <li className="flex items-center gap-3 text-on-surface-variant">
-                  <span className="material-symbols-outlined text-secondary text-xl">check_circle</span>
+                  <span translate="no" className="material-symbols-outlined text-secondary text-xl">check_circle</span>
                   <span>Global diplomatic network access</span>
                 </li>
               </ul>
               <button className="inline-flex items-center gap-2 font-bold text-primary-container hover:text-secondary transition-colors duration-300">
-                Check Requirements <span className="material-symbols-outlined">arrow_forward</span>
+                Check Requirements <span translate="no" className="material-symbols-outlined">arrow_forward</span>
               </button>
             </div>
           </div>

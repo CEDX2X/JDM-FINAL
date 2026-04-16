@@ -17,7 +17,7 @@ const Logistics = () => {
             <div className="flex flex-wrap gap-4">
               <button className="bg-primary-container text-on-primary px-8 py-4 rounded-xl font-headline font-bold text-lg hover:scale-105 transition-transform duration-300 shadow-xl shadow-primary-container/20">Request a Quote</button>
               <button className="flex items-center gap-3 px-8 py-4 text-primary font-headline font-bold border-2 border-primary/5 rounded-xl hover:bg-surface-container-low transition-colors">
-                <span className="material-symbols-outlined">play_circle</span>
+                <span translate="no" className="material-symbols-outlined">play_circle</span>
                 View Capabilities
               </button>
             </div>
@@ -33,7 +33,7 @@ const Logistics = () => {
             <div className="absolute -bottom-12 -left-12 bg-white p-8 rounded-2xl shadow-2xl max-w-xs hidden md:block">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-12 bg-secondary-fixed flex items-center justify-center rounded-full">
-                  <span className="material-symbols-outlined text-secondary">public</span>
+                  <span translate="no" className="material-symbols-outlined text-secondary">public</span>
                 </div>
                 <div>
                   <div className="text-sm font-bold font-headline">Live Tracking</div>
@@ -63,26 +63,26 @@ const Logistics = () => {
               <p className="text-on-surface-variant font-body">Our bespoke shipping routes and multimodal solutions ensure your cargo reaches any destination with maximum efficiency and minimal risk.</p>
             </div>
             <div className="flex gap-4">
-              <span className="material-symbols-outlined p-3 rounded-full border border-outline-variant/30 text-on-surface-variant cursor-pointer hover:bg-white transition-colors">arrow_back</span>
-              <span className="material-symbols-outlined p-3 rounded-full border border-outline-variant/30 text-on-surface-variant cursor-pointer hover:bg-white transition-colors">arrow_forward</span>
+              <span translate="no" className="material-symbols-outlined p-3 rounded-full border border-outline-variant/30 text-on-surface-variant cursor-pointer hover:bg-white transition-colors">arrow_back</span>
+              <span translate="no" className="material-symbols-outlined p-3 rounded-full border border-outline-variant/30 text-on-surface-variant cursor-pointer hover:bg-white transition-colors">arrow_forward</span>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Ocean Freight */}
             <div className="bg-surface-container-lowest p-8 rounded-[2rem] hover:shadow-2xl transition-all duration-500 group">
               <div className="w-16 h-16 bg-primary-fixed flex items-center justify-center rounded-2xl mb-8 group-hover:scale-110 transition-transform">
-                <span className="material-symbols-outlined text-primary text-3xl">directions_boat</span>
+                <span translate="no" className="material-symbols-outlined text-primary text-3xl">directions_boat</span>
               </div>
               <h3 className="font-headline text-2xl font-bold mb-4">Ocean Freight</h3>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center gap-3 text-on-surface-variant text-sm">
-                  <span className="material-symbols-outlined text-secondary text-sm">check_circle</span> Full Container Load (FCL)
+                  <span translate="no" className="material-symbols-outlined text-secondary text-sm">check_circle</span> Full Container Load (FCL)
                 </li>
                 <li className="flex items-center gap-3 text-on-surface-variant text-sm">
-                  <span className="material-symbols-outlined text-secondary text-sm">check_circle</span> Less than Container Load (LCL)
+                  <span translate="no" className="material-symbols-outlined text-secondary text-sm">check_circle</span> Less than Container Load (LCL)
                 </li>
                 <li className="flex items-center gap-3 text-on-surface-variant text-sm">
-                  <span className="material-symbols-outlined text-secondary text-sm">check_circle</span> Specialized Equipment Handling
+                  <span translate="no" className="material-symbols-outlined text-secondary text-sm">check_circle</span> Specialized Equipment Handling
                 </li>
               </ul>
               <img
@@ -95,16 +95,16 @@ const Logistics = () => {
             <div className="bg-primary-container p-8 rounded-[2rem] text-on-primary relative overflow-hidden shadow-xl">
               <div className="relative z-10 h-full flex flex-col">
                 <div className="w-16 h-16 bg-white/10 backdrop-blur-md flex items-center justify-center rounded-2xl mb-8">
-                  <span className="material-symbols-outlined text-white text-3xl">flight_takeoff</span>
+                  <span translate="no" className="material-symbols-outlined text-white text-3xl">flight_takeoff</span>
                 </div>
                 <h3 className="font-headline text-2xl font-bold mb-4">Air Cargo</h3>
                 <p className="text-on-primary-container mb-8 text-sm leading-relaxed">Time-critical delivery solutions for high-value goods, ensuring your supply chain never stops moving.</p>
                 <ul className="space-y-4 mb-8 flex-grow">
                   <li className="flex items-center gap-3 text-sm">
-                    <span className="material-symbols-outlined text-secondary-container text-sm">bolt</span> Next Flight Out (NFO)
+                    <span translate="no" className="material-symbols-outlined text-secondary-container text-sm">bolt</span> Next Flight Out (NFO)
                   </li>
                   <li className="flex items-center gap-3 text-sm">
-                    <span className="material-symbols-outlined text-secondary-container text-sm">bolt</span> Global Air Charters
+                    <span translate="no" className="material-symbols-outlined text-secondary-container text-sm">bolt</span> Global Air Charters
                   </li>
                 </ul>
                 <button className="w-full py-4 bg-white text-primary font-bold rounded-xl hover:bg-secondary-fixed transition-colors">Book Priority</button>
@@ -113,18 +113,18 @@ const Logistics = () => {
             {/* Ground Logistics */}
             <div className="bg-surface-container-lowest p-8 rounded-[2rem] hover:shadow-2xl transition-all duration-500 group">
               <div className="w-16 h-16 bg-secondary-fixed flex items-center justify-center rounded-2xl mb-8 group-hover:scale-110 transition-transform">
-                <span className="material-symbols-outlined text-secondary text-3xl">local_shipping</span>
+                <span translate="no" className="material-symbols-outlined text-secondary text-3xl">local_shipping</span>
               </div>
               <h3 className="font-headline text-2xl font-bold mb-4">Ground Network</h3>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center gap-3 text-on-surface-variant text-sm">
-                  <span className="material-symbols-outlined text-secondary text-sm">check_circle</span> Cross-border Trucking
+                  <span translate="no" className="material-symbols-outlined text-secondary text-sm">check_circle</span> Cross-border Trucking
                 </li>
                 <li className="flex items-center gap-3 text-on-surface-variant text-sm">
-                  <span className="material-symbols-outlined text-secondary text-sm">check_circle</span> Last-mile Distribution
+                  <span translate="no" className="material-symbols-outlined text-secondary text-sm">check_circle</span> Last-mile Distribution
                 </li>
                 <li className="flex items-center gap-3 text-on-surface-variant text-sm">
-                  <span className="material-symbols-outlined text-secondary text-sm">check_circle</span> Temperature Controlled
+                  <span translate="no" className="material-symbols-outlined text-secondary text-sm">check_circle</span> Temperature Controlled
                 </li>
               </ul>
               <div className="mt-4 p-4 bg-surface-container-low rounded-xl border border-outline-variant/10">
@@ -213,13 +213,13 @@ const Logistics = () => {
                 <div className="text-sm font-bold text-secondary-container mb-2">For Enterprises</div>
                 <h3 className="text-xl font-bold mb-4">Dedicated Management</h3>
                 <p className="text-sm text-on-primary-container mb-6">A personal logistics architect for your account, 24/7 priority support, and bespoke pricing models.</p>
-                <button className="inline-flex items-center gap-2 text-white font-bold hover:underline">Inquire <span className="material-symbols-outlined text-sm">arrow_forward</span></button>
+                <button className="inline-flex items-center gap-2 text-white font-bold hover:underline">Inquire <span translate="no" className="material-symbols-outlined text-sm">arrow_forward</span></button>
               </div>
               <div className="flex-1 bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl">
                 <div className="text-sm font-bold text-secondary-container mb-2">For SME's</div>
                 <h3 className="text-xl font-bold mb-4">Scaleable Solutions</h3>
                 <p className="text-sm text-on-primary-container mb-6">Pay-as-you-grow logistics, simplified customs dashboard, and access to our global carrier network.</p>
-                <button className="inline-flex items-center gap-2 text-white font-bold hover:underline">Get Started <span className="material-symbols-outlined text-sm">arrow_forward</span></button>
+                <button className="inline-flex items-center gap-2 text-white font-bold hover:underline">Get Started <span translate="no" className="material-symbols-outlined text-sm">arrow_forward</span></button>
               </div>
             </div>
           </div>

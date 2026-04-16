@@ -42,7 +42,7 @@ const Contact = () => {
             </div>
             <button className="group relative bg-primary-container text-on-primary w-full md:w-auto px-10 py-4 rounded-xl font-bold flex items-center justify-center gap-3 hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-primary-container/10" type="submit">
               Deliver Message
-              <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">send</span>
+              <span translate="no" className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">send</span>
             </button>
           </form>
         </section>
@@ -53,7 +53,7 @@ const Contact = () => {
           <div className="bg-surface-container-lowest rounded-[2rem] p-8 shadow-[0_12px_32px_rgba(11,29,58,0.04)] group">
             <div className="flex items-start gap-6">
               <div className="w-14 h-14 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary">
-                <span className="material-symbols-outlined text-2xl">location_on</span>
+                <span translate="no" className="material-symbols-outlined text-2xl">location_on</span>
               </div>
               <div>
                 <h3 className="text-sm font-bold uppercase tracking-widest text-on-surface-variant/60 mb-2">Global Headquarters</h3>
@@ -65,7 +65,7 @@ const Contact = () => {
           <div className="bg-surface-container-low rounded-[2rem] p-8 space-y-6">
             <div className="flex items-center gap-6">
               <div className="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-white">
-                <span className="material-symbols-outlined text-xl">call</span>
+                <span translate="no" className="material-symbols-outlined text-xl">call</span>
               </div>
               <div>
                 <h3 className="text-xs font-bold uppercase tracking-widest text-on-surface-variant/60">Direct Concierge</h3>
@@ -74,7 +74,7 @@ const Contact = () => {
             </div>
             <div className="flex items-center gap-6">
               <div className="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-white">
-                <span className="material-symbols-outlined text-xl">mail</span>
+                <span translate="no" className="material-symbols-outlined text-xl">mail</span>
               </div>
               <div>
                 <h3 className="text-xs font-bold uppercase tracking-widest text-on-surface-variant/60">Inquiries</h3>
@@ -86,7 +86,7 @@ const Contact = () => {
           <div className="relative rounded-[2rem] overflow-hidden aspect-video shadow-lg group">
             <div className="absolute inset-0 bg-primary-container/10 backdrop-blur-sm z-10 flex items-center justify-center pointer-events-none group-hover:opacity-0 transition-opacity duration-500">
               <div className="bg-white/90 px-6 py-3 rounded-full flex items-center gap-2 shadow-xl">
-                <span className="material-symbols-outlined text-secondary">explore</span>
+                <span translate="no" className="material-symbols-outlined text-secondary">explore</span>
                 <span className="font-bold text-sm text-primary-container">Interactive View</span>
               </div>
             </div>

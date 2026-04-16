@@ -7,24 +7,27 @@ import Travel from './pages/Travel';
 import Logistics from './pages/Logistics';
 import Sport from './pages/Sport';
 import Contact from './pages/Contact';
+import { LanguageProvider } from './context/LanguageContext';
 
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen flex flex-col">
-        <TopNavBar />
-        <div className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/travel" element={<Travel />} />
-            <Route path="/logistics" element={<Logistics />} />
-            <Route path="/sport" element={<Sport />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
+    <LanguageProvider>
+      <Router>
+        <div className="min-h-screen flex flex-col">
+          <TopNavBar />
+          <div className="flex-grow">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/travel" element={<Travel />} />
+              <Route path="/logistics" element={<Logistics />} />
+              <Route path="/sport" element={<Sport />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
-    </Router>
+      </Router>
+    </LanguageProvider>
   );
 }
 

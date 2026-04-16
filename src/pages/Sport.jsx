@@ -74,7 +74,7 @@ const Sport = () => {
             />
             <div className="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-2xl shadow-xl border border-outline-variant/10 max-w-[240px]">
               <div className="flex items-center space-x-3 mb-2">
-                <span className="material-symbols-outlined text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>workspace_premium</span>
+                <span translate="no" className="material-symbols-outlined text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>workspace_premium</span>
                 <span className="font-bold text-sm tracking-tight">Authentic Gear</span>
               </div>
               <p className="text-xs text-on-surface-variant font-medium">Certified merchandise direct from club manufacturers.</p>
@@ -88,7 +88,7 @@ const Sport = () => {
           <div className="sticky top-28 space-y-10">
             <div>
               <h3 className="font-headline font-bold text-xl mb-6 flex items-center gap-2">
-                <span className="material-symbols-outlined text-primary">filter_list</span> Categories
+                <span translate="no" className="material-symbols-outlined text-primary">filter_list</span> Categories
               </h3>
               <div className="space-y-6">
                 <div className="space-y-3">
@@ -159,10 +159,10 @@ const Sport = () => {
                   </div>
                   <div className="flex gap-2">
                     <button className="flex-1 bg-primary-container text-on-primary py-3.5 rounded-xl font-bold text-sm scale-102 transition-all flex items-center justify-center gap-2">
-                      <span className="material-symbols-outlined text-[18px]">add_shopping_cart</span> Add to Cart
+                      <span translate="no" className="material-symbols-outlined text-[18px]">add_shopping_cart</span> Add to Cart
                     </button>
                     <button className="w-12 h-12 flex items-center justify-center border border-outline-variant/30 rounded-xl hover:bg-surface-container-low transition-colors">
-                      <span className="material-symbols-outlined">favorite</span>
+                      <span translate="no" className="material-symbols-outlined">favorite</span>
                     </button>
                   </div>
                 </div>
@@ -175,7 +175,7 @@ const Sport = () => {
             <button className="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors font-bold">2</button>
             <button className="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors font-bold">3</button>
             <button className="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors font-bold">
-              <span className="material-symbols-outlined">chevron_right</span>
+              <span translate="no" className="material-symbols-outlined">chevron_right</span>
             </button>
           </div>
         </div>

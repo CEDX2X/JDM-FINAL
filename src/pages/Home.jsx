@@ -57,7 +57,7 @@ const Home = () => {
                 <h3 className="font-headline font-bold text-3xl mb-4">Travel Services</h3>
                 <p className="text-on-surface-variant mb-8 max-w-xl">From private jet charters to luxury ground concierge, we redefine the journey as much as the destination.</p>
                 <button className="flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all">
-                  Learn More <span className="material-symbols-outlined">arrow_forward</span>
+                  Learn More <span translate="no" className="material-symbols-outlined">arrow_forward</span>
                 </button>
               </div>
             </div>
@@ -74,7 +74,7 @@ const Home = () => {
                 <h3 className="font-headline font-bold text-2xl mb-4">Import/Export</h3>
                 <p className="text-on-surface-variant mb-8">Global trade logistics managed with surgical precision and real-time intelligence.</p>
                 <button className="flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all">
-                  Learn More <span className="material-symbols-outlined">arrow_forward</span>
+                  Learn More <span translate="no" className="material-symbols-outlined">arrow_forward</span>
                 </button>
               </div>
             </div>
@@ -110,21 +110,21 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="text-center p-8">
               <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-sm">
-                <span className="material-symbols-outlined text-4xl text-secondary">verified_user</span>
+                <span translate="no" className="material-symbols-outlined text-4xl text-secondary">verified_user</span>
               </div>
               <h4 className="font-headline font-bold text-2xl mb-4">Unwavering Trust</h4>
               <p className="text-on-surface-variant leading-relaxed">A reputation built on transparency and a commitment to excellence that knows no compromise.</p>
             </div>
             <div className="text-center p-8">
               <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-sm">
-                <span className="material-symbols-outlined text-4xl text-secondary">rocket_launch</span>
+                <span translate="no" className="material-symbols-outlined text-4xl text-secondary">rocket_launch</span>
               </div>
               <h4 className="font-headline font-bold text-2xl mb-4">Global Agility</h4>
               <p className="text-on-surface-variant leading-relaxed">Our expansive network allows us to move faster, smarter, and more efficiently across six continents.</p>
             </div>
             <div className="text-center p-8">
               <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-sm">
-                <span className="material-symbols-outlined text-4xl text-secondary">support_agent</span>
+                <span translate="no" className="material-symbols-outlined text-4xl text-secondary">support_agent</span>
               </div>
               <h4 className="font-headline font-bold text-2xl mb-4">Dedicated Support</h4>
               <p className="text-on-surface-variant leading-relaxed">Bespoke service with a personal touch. Every client is assigned a dedicated concierge manager.</p>
@@ -141,16 +141,16 @@ const Home = () => {
             <div className="w-full md:w-1/3">
               <h2 className="font-headline font-bold text-5xl mb-8">What Our Partners Say</h2>
               <div className="flex gap-2 mb-8">
-                <span className="material-symbols-outlined text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                <span className="material-symbols-outlined text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                <span className="material-symbols-outlined text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                <span className="material-symbols-outlined text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                <span className="material-symbols-outlined text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                <span translate="no" className="material-symbols-outlined text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                <span translate="no" className="material-symbols-outlined text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                <span translate="no" className="material-symbols-outlined text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                <span translate="no" className="material-symbols-outlined text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                <span translate="no" className="material-symbols-outlined text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
               </div>
             </div>
             <div className="w-full md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-surface-container-low p-10 rounded-xl relative">
-                <span className="material-symbols-outlined text-secondary opacity-30 text-5xl absolute top-6 right-6">format_quote</span>
+                <span translate="no" className="material-symbols-outlined text-secondary opacity-30 text-5xl absolute top-6 right-6">format_quote</span>
                 <p className="text-lg italic text-on-surface mb-8">"The level of attention to detail provided by JDM SARL for our executive logistics was unparalleled. They didn't just meet our expectations; they redefined them."</p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full overflow-hidden">
@@ -167,7 +167,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="bg-surface-container-low p-10 rounded-xl relative">
-                <span className="material-symbols-outlined text-secondary opacity-30 text-5xl absolute top-6 right-6">format_quote</span>
+                <span translate="no" className="material-symbols-outlined text-secondary opacity-30 text-5xl absolute top-6 right-6">format_quote</span>
                 <p className="text-lg italic text-on-surface mb-8">"As a professional athlete, I need gear that performs. The JDM SARL Football Sport delivers the highest quality kits I've ever worn. Reliability is key."</p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full overflow-hidden">

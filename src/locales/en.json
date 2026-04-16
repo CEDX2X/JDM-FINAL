@@ -1,0 +1,27 @@
+{
+  "nav": {
+    "home": "Home",
+    "travel": "Travel",
+    "logistics": "Logistics",
+    "sport": "Sport",
+    "contact": "Contact",
+    "getStarted": "Get Started"
+  },
+  "footer": {
+    "desc": "Redefining excellence in global services through innovation, trust, and absolute precision.",
+    "services": "Services",
+    "company": "Company",
+    "office": "Office",
+    "rights": "© 2024 JDM SARL Global Services. All rights reserved.",
+    "links": {
+      "privateAviation": "Private Aviation",
+      "globalLogistics": "Global Logistics",
+      "sportsApparel": "Sports Apparel",
+      "tradeFinance": "Trade Finance",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "careers": "Careers",
+      "support": "Support"
+    }
+  }
+}
