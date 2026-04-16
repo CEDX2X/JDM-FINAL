@@ -1,225 +1,219 @@
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
 const Travel = () => {
+  const { t } = useLanguage();
   return (
-    <main className="pt-20">
+    <div className="bg-surface">
       {/* Hero Section */}
-      <section className="relative min-h-[870px] flex items-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img
-            className="w-full h-full object-cover"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5UIPXw65dZxOjuAewn8tkJ_Yvc2h4i1AyQrjglbfrxeaNKtG-kTjQxpLG_tWSLbZJmcAj48ibYbUNbF7lCkF49LeyLeJqXQYbtP5d2NiWA3uRUETUSyDka9MVybPmI-2yht61so6XQQiE1YFL6XHIfWEpx8-MFHVSV3HiZfN_ZUmRJgW7ETfOWoo3g40c9VCg0waM5hhPZ7_lMlaNQuSmN--v4KdfdEIe55ZElxHPQ2MulakXWWMkWMKhsuHsrBnCwmd8JpWYTp0"
-            alt="Airplane at sunrise"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/40 to-transparent"></div>
-        </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-8 w-full">
-          <div className="max-w-2xl">
-            <span className="inline-block px-4 py-1.5 bg-secondary text-on-secondary text-xs font-bold tracking-widest mb-6 rounded-full uppercase">World-Class Concierge</span>
-            <h1 className="text-white font-headline font-extrabold text-6xl md:text-7xl leading-[1.1] tracking-tighter mb-8">
-              Premium Travel <br />Experiences
+      <section className="relative h-screen flex border-b border-outline-variant/20">
+        <div className="w-full lg:w-1/2 flex items-center px-8 lg:px-20 relative z-10 bg-surface/90 backdrop-blur-sm lg:bg-transparent lg:backdrop-blur-none">
+          <div className="max-w-xl">
+            <span className="inline-block px-4 py-1.5 mb-8 text-xs font-bold tracking-widest uppercase bg-secondary/10 text-secondary border border-secondary/20 rounded-full">{t('travel.badge')}</span>
+            <h1 className="text-6xl md:text-7xl font-extrabold tracking-tighter text-primary leading-[1.1] mb-8 font-headline">
+              {t('travel.title')} <br /><span className="text-secondary opacity-90">{t('travel.title_sub')}</span>
             </h1>
-            <p className="text-white/80 text-lg leading-relaxed mb-10 font-body max-w-lg">
-              Architecting seamless journeys across the globe. From bespoke itineraries to elite logistics, we redefine the art of the voyage.
+            <p className="text-xl text-on-surface-variant mb-12 leading-relaxed font-body">
+              {t('travel.desc')}
             </p>
-            <div className="flex flex-wrap gap-4">
-              <button className="bg-secondary text-on-secondary px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform duration-300 shadow-xl shadow-secondary/20">
-                Book Now
+            <div className="flex flex-col sm:flex-row gap-4">
+              <button className="bg-primary text-on-primary px-8 py-5 rounded-xl font-bold text-lg hover:scale-102 transition-transform shadow-xl flex items-center justify-center gap-3">
+                {t('travel.book')} <span translate="no" className="material-symbols-outlined">flight_takeoff</span>
               </button>
-              <button className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition-all duration-300">
-                View Destinations
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Section */}
-      <section className="bg-surface-container-low py-24">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-end mb-20">
-            <div className="md:col-span-7">
-              <h2 className="font-headline text-4xl md:text-5xl font-extrabold text-primary-container tracking-tight leading-tight">
-                Precision Flight &amp; <br />Visa Logistics
-              </h2>
-            </div>
-            <div className="md:col-span-5">
-              <p className="text-on-surface-variant font-body leading-relaxed text-lg">
-                We manage the complexities of international travel so you can focus on the destination. Our elite team handles every nuance of your transit.
-              </p>
-            </div>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Flight Booking Module */}
-            <div className="bg-surface-container-lowest p-10 rounded-[2rem] shadow-[0_12px_32px_rgba(11,29,58,0.04)] group hover:shadow-xl transition-all duration-500">
-              <div className="flex justify-between items-start mb-8">
-                <div className="bg-primary-container/5 p-4 rounded-2xl">
-                  <span translate="no" className="material-symbols-outlined text-4xl text-primary-container">flight_takeoff</span>
-                </div>
-                <span className="text-sm font-bold text-secondary tracking-widest uppercase">Global Routes</span>
-              </div>
-              <h3 className="font-headline text-2xl font-bold text-primary-container mb-4">Elite Flight Booking</h3>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-center gap-3 text-on-surface-variant">
-                  <span translate="no" className="material-symbols-outlined text-secondary text-xl">check_circle</span>
-                  <span>First &amp; Business Class exclusivity</span>
-                </li>
-                <li className="flex items-center gap-3 text-on-surface-variant">
-                  <span translate="no" className="material-symbols-outlined text-secondary text-xl">check_circle</span>
-                  <span>Private charter arrangements</span>
-                </li>
-                <li className="flex items-center gap-3 text-on-surface-variant">
-                  <span translate="no" className="material-symbols-outlined text-secondary text-xl">check_circle</span>
-                  <span>24/7 dynamic rescheduling</span>
-                </li>
-              </ul>
-              <button className="inline-flex items-center gap-2 font-bold text-primary-container hover:text-secondary transition-colors duration-300">
-                Inquire Now <span translate="no" className="material-symbols-outlined">arrow_forward</span>
-              </button>
-            </div>
-            {/* Visa Assistance Module */}
-            <div className="bg-surface-container-lowest p-10 rounded-[2rem] shadow-[0_12px_32px_rgba(11,29,58,0.04)] group hover:shadow-xl transition-all duration-500">
-              <div className="flex justify-between items-start mb-8">
-                <div className="bg-primary-container/5 p-4 rounded-2xl">
-                  <span translate="no" className="material-symbols-outlined text-4xl text-primary-container">description</span>
-                </div>
-                <span className="text-sm font-bold text-secondary tracking-widest uppercase">Fast Track</span>
-              </div>
-              <h3 className="font-headline text-2xl font-bold text-primary-container mb-4">Visa &amp; Documentation</h3>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-center gap-3 text-on-surface-variant">
-                  <span translate="no" className="material-symbols-outlined text-secondary text-xl">check_circle</span>
-                  <span>Expedited embassy processing</span>
-                </li>
-                <li className="flex items-center gap-3 text-on-surface-variant">
-                  <span translate="no" className="material-symbols-outlined text-secondary text-xl">check_circle</span>
-                  <span>Luxury document courier services</span>
-                </li>
-                <li className="flex items-center gap-3 text-on-surface-variant">
-                  <span translate="no" className="material-symbols-outlined text-secondary text-xl">check_circle</span>
-                  <span>Global diplomatic network access</span>
-                </li>
-              </ul>
-              <button className="inline-flex items-center gap-2 font-bold text-primary-container hover:text-secondary transition-colors duration-300">
-                Check Requirements <span translate="no" className="material-symbols-outlined">arrow_forward</span>
+              <button className="border-2 border-primary/20 text-primary px-8 py-5 rounded-xl font-bold text-lg hover:bg-surface-container-low transition-colors">
+                {t('travel.view')}
               </button>
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Tourism Packages */}
-      <section className="py-24 bg-surface">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="mb-16 text-center">
-            <h2 className="font-headline text-4xl md:text-5xl font-extrabold text-primary-container tracking-tight">Curated Tourism Packages</h2>
-            <p className="mt-4 text-on-surface-variant max-w-xl mx-auto">Explore our signature collections, designed for the most discerning travelers.</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[800px]">
-            {/* Amalfi Coast Large Card */}
-            <div className="md:col-span-8 relative rounded-3xl overflow-hidden group shadow-2xl">
-              <img
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj4uYbG83RI-1d0wbupztd9UVZO2LCM0H8-1e5B5GJmK7OQoZqWRtR_dNjaVwIEtF5VanhFbN5MM1fyFf7k-y_l79FWzLewazhuO97qChH0by4LmN3oLK38R9rbv7mDmsIfYVIGf5gKIUGrtk8yQOxZQb2qUO74fiOd89nuICTAbPy1KabIhOpNMazAt3NP4TTCdWqDcPdZE18dM6vC2SejAfSgrLRCsaNpk5gA8M2tQ-mqFBjisS2xs7hv5Tg5fEeDxesyOMD17c"
-                alt="Amalfi Coast"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent"></div>
-              <div className="absolute bottom-0 left-0 p-12 w-full">
-                <div className="flex justify-between items-end">
-                  <div>
-                    <span className="text-secondary-fixed font-bold tracking-widest text-sm uppercase mb-2 block">Iconic Italy</span>
-                    <h3 className="text-white font-headline text-4xl font-bold mb-4">Amalfi Coast Private Escape</h3>
-                    <p className="text-white/70 max-w-md mb-6">7 nights in a clifftop estate with private yacht access and Michelin-starred dining.</p>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-white/50 text-xs uppercase font-bold tracking-widest mb-1">Starting from</p>
-                    <p className="text-white font-headline text-3xl font-bold">$12,500</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Tokyo Card */}
-            <div className="md:col-span-4 relative rounded-3xl overflow-hidden group shadow-lg">
-              <img
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyZLQ-Y03f_gHft1BTd1qZqBwQcfK2j1RmmEvq5OrEIaIzaUXhGFYtGIyhbpq4n8P4V0c-RBLxMvlHqb4yWhozhDd9NR8JcTfXlw_fEv6yfdnL-FGv-HZ68qEZFSzQ-337ndEHkadHhTmiVO40rl7gf2jxlN8Lr5IKM2LVcFPUBv53phKa_KSQ8E_wdNdYiB81o0xu_Dclx6oIy21HXavqthWDWR45ZBGDPZPVN6K75vYD9t2mg0hhmVYpL2I_IalbU0QqycWhUjU"
-                alt="Tokyo"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent"></div>
-              <div className="absolute bottom-0 left-0 p-8">
-                <span className="text-secondary-fixed font-bold tracking-widest text-xs uppercase mb-2 block">Modern Orient</span>
-                <h3 className="text-white font-headline text-2xl font-bold mb-2">Neon Spirits: Tokyo</h3>
-                <p className="text-white text-lg font-bold">$8,200</p>
-              </div>
-            </div>
-
-            {/* Safari Card */}
-            <div className="md:col-span-4 relative rounded-3xl overflow-hidden group shadow-lg">
-              <img
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAo6S1G6uLhm1qVc6SNHL-913wrcVpPn8G9yde_qBvH6cFL1RyZwwNIQfQgei6-KrPLiKQOBvTbuvXhXuW1PHgxnHoCkymAjtr9Exbm9-T7ESyJT1_t-zlqTeVdEKOvO8YiptIxiIdTZpE6eHNg4CGwRB6KaZVRK8G3HxenT0ZJ7soFPxAjqT5ImTXU_Bgl-2ZkeU7Pu3mlGbZiS0jHYjX6sHI-3X8Q-uaTWBpGzS1S52hnkn-zMweFclDVeCDHIc2aj6K7qjigys"
-                alt="Safari"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent"></div>
-              <div className="absolute bottom-0 left-0 p-8">
-                <span className="text-secondary-fixed font-bold tracking-widest text-xs uppercase mb-2 block">Wild Luxury</span>
-                <h3 className="text-white font-headline text-2xl font-bold mb-2">Serengeti Sky-Safari</h3>
-                <p className="text-white text-lg font-bold">$15,900</p>
-              </div>
-            </div>
-
-            {/* Swiss Alps Card */}
-            <div className="md:col-span-8 relative rounded-3xl overflow-hidden group shadow-lg">
-              <img
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsXbQJzegJdiTrVU24CtslfSqUK1ulf1d5KhbrA8E1Y0zbFFz7ijZlGfyfuzU_3Gu48vluhOMIwvMH93ORNVo3bbhqWcxJ4clGLIfZKavveEBHXRWzcrn79yjDBMcyhWGxnQtgRARV69CS66kGRbmv0qug6tzz4RpLWEkM_jQW5Hlwcp8j_ZyRwHzwwD0iUcM5b-P3Op54G04a7HitqSYPYu-4Et0nFon152CwOenGoIjSBnANKOhbu39TmeVta8FFZVLdT1jGqHk"
-                alt="Swiss Alps"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent"></div>
-              <div className="absolute bottom-0 left-0 p-12 w-full flex justify-between items-end">
-                <div>
-                  <span className="text-secondary-fixed font-bold tracking-widest text-sm uppercase mb-2 block">Alpine Elite</span>
-                  <h3 className="text-white font-headline text-3xl font-bold mb-2">The Grand Alpine Express</h3>
-                  <p className="text-white text-xl font-bold">$9,800</p>
-                </div>
-                <button className="bg-secondary text-on-secondary px-6 py-3 rounded-xl font-bold hover:scale-105 transition-transform">
-                  Book Now
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-24 bg-primary-container overflow-hidden relative">
-        <div className="max-w-7xl mx-auto px-8 relative z-10">
-          <div className="bg-surface-container-lowest/10 backdrop-blur-2xl rounded-[3rem] p-16 text-center border border-white/10">
-            <h2 className="font-headline text-4xl md:text-6xl font-extrabold text-white mb-8">Ready for your next journey?</h2>
-            <p className="text-white/60 text-xl max-w-2xl mx-auto mb-12 font-body">
-              Contact our senior consultants to begin architecting your bespoke travel experience.
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <button className="bg-secondary text-on-secondary px-12 py-5 rounded-xl font-bold text-xl hover:shadow-[0_0_40px_rgba(155,63,90,0.5)] transition-all">
-                Book Now
-              </button>
-              <button className="bg-white text-primary-container px-12 py-5 rounded-xl font-bold text-xl hover:bg-surface-variant transition-colors">
-                Talk to an Agent
-              </button>
-            </div>
-          </div>
-        </div>
-        {/* Decorative texture */}
-        <div className="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
+        <div className="absolute lg:relative inset-0 lg:w-1/2 h-full z-0">
           <img
-            className="w-full h-full object-cover"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpzpnyMGkknJPgZ8viog5oR0PYnmdf_kEdZ6F2BnB1ZTvWcMJDnLoiaFrCrGXyKcqhiA_qwf3L_Lxiq75xJWSJNl-bpYipfs_F1dM6VYZu_O94Pp4Zu3alQeUfzNoZ2MD3L53YoVylLEh5a7uI_HUWla_Ae8YXU4MzyO2vWyC5vBQio6v7kaA-q1QFiNhV0TRqa9H7WW3IR5Kj9CgRz41hnbMHh1uJZU7V9wUeNT_NeCPGfy16zbQRSk0iaNG3WhA4izw5rX2I-vs"
-            alt="Topographical texture"
+            className="w-full h-full object-cover rounded-bl-[4rem]"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHXbZ00p44m0h4v2fB4Nf-cK-i8D8635s3lU2dI7u15C0TXYQxGvP_1yts2302N_xYkGvWzLhT-r15469nZJk6xP5t84P3QvLzLp8LmsNlExH0M9A6JvIqQ16Bf6h1XW71gZtVn_C2K6Hh7vKjVn5w92z_V8WnO-CIt2sWqWbT86DItR1WfUqSjWqZ2uT1A71K"
+            alt="Private jet window view"
           />
         </div>
       </section>
-    </main>
+
+      {/* Flight & Visa Services */}
+      <section className="py-32 bg-surface">
+        <div className="max-w-7xl mx-auto px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div className="order-2 lg:order-1 relative">
+              <div className="grid grid-cols-2 gap-4">
+                <img
+                  className="rounded-3xl w-full h-80 object-cover mt-12 shadow-xl"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2v_jVqV_d8T97l0I5L5XzOq0B7c56J1iZ0P7vKXgO_R1WJ5aWn6kQ4qI9Z3mXv4_cE3hJ0v88wQh6A1Q-B5_Kk5hWz_K5r1TjS2_i7sR9X8wH67A9X9Z2n8w9p2qK1tL1S5A4R9J6K1M9v9w9Z2Y5X2Z7b8P2v1qR5G9B9M8J5k0jX9B5T8h1N4qQ1r6N4X"
+                  alt="Business class seating"
+                />
+                <img
+                  className="rounded-3xl w-full h-80 object-cover shadow-xl"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9W7hW2v4A9k6A9qI5Z1D0J9X8R5A5M7M9Z9J4Z1R9Z5Y3T9J5b5P9Q9L7J3R9c2K4X4j9R5T2T8T2p4T0I9c2I3T3r0j0p5c0d6J3V9Q4G"
+                  alt="Passport and tickets"
+                />
+              </div>
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white/90 backdrop-blur p-6 rounded-2xl shadow-2xl flex items-center gap-4 border border-outline-variant/20">
+                <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-on-secondary">
+                  <span translate="no" className="material-symbols-outlined">schedule</span>
+                </div>
+                <div>
+                  <p className="text-xs text-on-surface-variant uppercase tracking-widest font-bold">24/7 {t('travel.routes')}</p>
+                </div>
+              </div>
+            </div>
+            <div className="order-1 lg:order-2">
+              <h2 className="font-headline font-bold text-4xl text-primary mb-6 leading-tight">
+                {t('travel.prec')} <br className="hidden lg:block" /> {t('travel.prec_sub')}
+              </h2>
+              <p className="text-on-surface-variant text-lg mb-10 leading-relaxed">
+                {t('travel.prec_desc')}
+              </p>
+              
+              <ul className="space-y-8">
+                <li className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-surface-container-low rounded-xl flex items-center justify-center flex-shrink-0 text-secondary mt-1">
+                    <span translate="no" className="material-symbols-outlined">airlines</span>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-primary text-xl mb-2">{t('travel.elite')}</h3>
+                    <ul className="text-on-surface-variant space-y-2 list-none">
+                      <li className="flex items-center gap-2"><span translate="no" className="material-symbols-outlined text-[16px] text-secondary">check_circle</span> {t('travel.f1')}</li>
+                      <li className="flex items-center gap-2"><span translate="no" className="material-symbols-outlined text-[16px] text-secondary">check_circle</span> {t('travel.f2')}</li>
+                      <li className="flex items-center gap-2"><span translate="no" className="material-symbols-outlined text-[16px] text-secondary">check_circle</span> {t('travel.f3')}</li>
+                    </ul>
+                    <a href="#" className="inline-flex items-center gap-2 mt-4 text-secondary font-bold hover:gap-3 transition-all text-sm uppercase tracking-widest">
+                      {t('travel.inquire')} <span translate="no" className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                    </a>
+                  </div>
+                </li>
+                <div className="h-px w-full bg-outline-variant/20"></div>
+                <li className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-surface-container-low rounded-xl flex items-center justify-center flex-shrink-0 text-secondary mt-1">
+                    <span translate="no" className="material-symbols-outlined">fact_check</span>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-primary text-xl mb-2">{t('travel.fast')} {t('travel.visa')}</h3>
+                    <ul className="text-on-surface-variant space-y-2 list-none">
+                      <li className="flex items-center gap-2"><span translate="no" className="material-symbols-outlined text-[16px] text-secondary">check_circle</span> {t('travel.v1')}</li>
+                      <li className="flex items-center gap-2"><span translate="no" className="material-symbols-outlined text-[16px] text-secondary">check_circle</span> {t('travel.v2')}</li>
+                      <li className="flex items-center gap-2"><span translate="no" className="material-symbols-outlined text-[16px] text-secondary">check_circle</span> {t('travel.v3')}</li>
+                    </ul>
+                    <a href="#" className="inline-flex items-center gap-2 mt-4 text-secondary font-bold hover:gap-3 transition-all text-sm uppercase tracking-widest">
+                      {t('travel.check')} <span translate="no" className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Tourism Packages Grid */}
+      <section className="py-32 bg-surface-container-lowest">
+        <div className="max-w-7xl mx-auto px-8">
+          <div className="text-center md:text-left flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+            <div className="max-w-2xl">
+              <h2 className="font-headline font-bold text-5xl text-primary mb-6">{t('travel.curated')}</h2>
+              <p className="text-on-surface-variant text-lg">{t('travel.curated_desc')}</p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Package 1 */}
+            <div className="group rounded-3xl overflow-hidden bg-surface relative h-[450px]">
+              <img className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9pWl9bM9H24b4cO8S_2tVjI4Z6wE7B9dG3z1R5F5J8T2T9W7p6j6L9s5w1V2Q8N4c9r7o0y2H2c2H0N9v3U5P90bJ4j4M8Z0N4o9Z6w5J8w8E6C" alt="Amalfi Coast" />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 p-8 w-full">
+                <span className="text-xs font-bold uppercase tracking-widest text-secondary mb-2 block">{t('travel.iconic')}</span>
+                <h3 className="font-headline font-bold text-2xl text-white mb-2">{t('travel.amalfi')}</h3>
+                <p className="text-white/80 text-sm mb-4 line-clamp-2">{t('travel.amalfi_desc')}</p>
+                <div className="flex justify-between items-center text-white">
+                  <div>
+                    <span className="text-xs opacity-70 block">{t('travel.start')}</span>
+                    <span className="font-bold text-xl">$12,500</span>
+                  </div>
+                  <button className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-primary transition-colors">
+                    <span translate="no" className="material-symbols-outlined">arrow_forward</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Package 2 */}
+            <div className="group rounded-3xl overflow-hidden bg-surface relative h-[450px]">
+              <img className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9R2s6V6l8Z3W1v9A7L3S4y0U6b1I8N2T5c3F4R8Q3E2O0v1E2A3y8F2k6P1C0H7B6j2H2m4Y7T3z2X4D2r0L8D9c0r3I4Z7P2W3L8E9M8U3J5J2Y8N4A" alt="Tokyo City" />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 p-8 w-full">
+                <span className="text-xs font-bold uppercase tracking-widest text-secondary mb-2 block">{t('travel.mod')}</span>
+                <h3 className="font-headline font-bold text-2xl text-white mb-2">{t('travel.neon')}</h3>
+                <div className="flex justify-between items-center text-white mt-8">
+                  <div>
+                    <span className="text-xs opacity-70 block">{t('travel.start')}</span>
+                    <span className="font-bold text-xl">$8,900</span>
+                  </div>
+                  <button className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-primary transition-colors">
+                    <span translate="no" className="material-symbols-outlined">arrow_forward</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Package 3 */}
+            <div className="group rounded-3xl overflow-hidden bg-surface relative h-[450px]">
+              <img className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2Q8n5Y7Z0H4V3x8J2R5l8c7U3o9Y1P7K2o1A3R4A2Y8M0q9f6c7E1V4N4F5O4A1L5S1e8q8I4a8z1F4F9g3E5q8v5V9P0L7p3p2z9T8y9p6P2H8S" alt="African Safari" />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 p-8 w-full">
+                <span className="text-xs font-bold uppercase tracking-widest text-secondary mb-2 block">{t('travel.wild')}</span>
+                <h3 className="font-headline font-bold text-2xl text-white mb-2">{t('travel.safari')}</h3>
+                <div className="flex justify-between items-center text-white mt-8">
+                  <div>
+                    <span className="text-xs opacity-70 block">{t('travel.start')}</span>
+                    <span className="font-bold text-xl">$15,200</span>
+                  </div>
+                  <button className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-primary transition-colors">
+                    <span translate="no" className="material-symbols-outlined">arrow_forward</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Package 4 - Wide */}
+            <div className="md:col-span-2 lg:col-span-3 group rounded-3xl overflow-hidden bg-surface relative h-[450px]">
+              <img className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3M8g1I9Y4O8N9i2V4l4m6d2y1W0I0Q7Q5L5d2Y5z3D8W1F3C4Q5Q2x0V9m8X1s9C5K3I7U6g0B8q3E7s2Q9o1Q8p1Y6s5R1M3P9D8J7e3L2h3T2K2X3" alt="Swiss Alps Train" />
+              <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-primary/95 via-primary/60 to-transparent"></div>
+              <div className="absolute bottom-0 md:top-1/2 left-0 md:-translate-y-1/2 p-8 md:p-16 w-full md:w-2/3">
+                <span className="text-xs font-bold uppercase tracking-widest text-secondary mb-4 block">{t('travel.alpine')}</span>
+                <h3 className="font-headline font-bold text-4xl lg:text-5xl text-white mb-6 leading-tight">{t('travel.grand')}</h3>
+                <div className="flex items-center gap-6 mt-8">
+                  <div>
+                    <span className="text-xs text-secondary font-bold block mb-1">{t('travel.start')}</span>
+                    <span className="font-bold text-3xl text-white">$18,500</span>
+                  </div>
+                  <div className="h-10 w-px bg-white/20"></div>
+                  <button className="bg-white text-primary px-8 py-4 rounded-xl font-bold hover:bg-secondary hover:text-white transition-colors">
+                    {t('travel.view')}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Concierge CTA */}
+      <section className="py-24 bg-primary text-white border-b border-primary-container">
+        <div className="max-w-4xl mx-auto px-8 text-center">
+          <h2 className="font-headline font-bold text-4xl mb-6">{t('travel.cta_title')}</h2>
+          <p className="text-white/70 text-lg mb-10 max-w-2xl mx-auto">
+            {t('travel.cta_desc')}
+          </p>
+          <button className="bg-secondary text-on-secondary px-10 py-5 rounded-xl font-bold text-lg hover:bg-white hover:text-primary transition-all inline-flex items-center gap-3">
+            <span translate="no" className="material-symbols-outlined">support_agent</span> {t('travel.talk')}
+          </button>
+        </div>
+      </section>
+    </div>
   );
 };
 

@@ -1,12 +1,14 @@
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
 const Contact = () => {
+  const { t } = useLanguage();
   return (
     <main className="pt-32 pb-20 px-8 max-w-7xl mx-auto">
       <header className="mb-16 md:mb-24">
-        <h1 className="text-6xl md:text-7xl font-extrabold tracking-tighter text-primary-container mb-4">Get in Touch</h1>
+        <h1 className="text-6xl md:text-7xl font-extrabold tracking-tighter text-primary-container mb-4">{t('contact.title')}</h1>
         <p className="text-on-surface-variant max-w-2xl text-lg leading-relaxed font-body">
-          Experience the architectural precision of our global concierge services. Whether you require bespoke travel arrangements or complex logistics, our team is ready to architect your next journey.
+          {t('contact.desc')}
         </p>
       </header>
 
@@ -14,34 +16,34 @@ const Contact = () => {
         {/* Contact Form Section */}
         <section className="lg:col-span-7 bg-surface-container-low rounded-[2rem] p-8 md:p-12 shadow-sm relative overflow-hidden">
           <div className="absolute top-0 right-0 w-32 h-32 bg-secondary-fixed/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-          <h2 className="text-3xl font-bold text-primary-container mb-8">Send a Message</h2>
+          <h2 className="text-3xl font-bold text-primary-container mb-8">{t('contact.msg')}</h2>
           <form className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
-                <label className="text-xs font-bold uppercase tracking-widest text-on-surface-variant/60 ml-1">Full Name</label>
-                <input className="w-full bg-surface-container-lowest border-none rounded-xl py-4 px-5 focus:ring-2 focus:ring-secondary/20 transition-all outline-none text-on-surface font-body border-b-2 border-transparent focus:border-primary-container" placeholder="John Doe" type="text" />
+                <label className="text-xs font-bold uppercase tracking-widest text-on-surface-variant/60 ml-1">{t('contact.name')}</label>
+                <input className="w-full bg-surface-container-lowest border-none rounded-xl py-4 px-5 focus:ring-2 focus:ring-secondary/20 transition-all outline-none text-on-surface font-body border-b-2 border-transparent focus:border-primary-container" placeholder={t('contact.ph_name')} type="text" />
               </div>
               <div className="space-y-2">
-                <label className="text-xs font-bold uppercase tracking-widest text-on-surface-variant/60 ml-1">Email Address</label>
+                <label className="text-xs font-bold uppercase tracking-widest text-on-surface-variant/60 ml-1">{t('contact.email')}</label>
                 <input className="w-full bg-surface-container-lowest border-none rounded-xl py-4 px-5 focus:ring-2 focus:ring-secondary/20 transition-all outline-none text-on-surface font-body border-b-2 border-transparent focus:border-primary-container" placeholder="john@jdmsarl.com" type="email" />
               </div>
             </div>
             <div className="space-y-2">
-              <label className="text-xs font-bold uppercase tracking-widest text-on-surface-variant/60 ml-1">Subject</label>
+              <label className="text-xs font-bold uppercase tracking-widest text-on-surface-variant/60 ml-1">{t('contact.subject')}</label>
               <select className="w-full bg-surface-container-lowest border-none rounded-xl py-4 px-5 focus:ring-2 focus:ring-secondary/20 transition-all outline-none text-on-surface font-body border-b-2 border-transparent focus:border-primary-container appearance-none">
-                <option>Bespoke Travel Inquiry</option>
-                <option>Global Logistics Support</option>
-                <option>JDM SARL Sport Assistance</option>
-                <option>Partnership Opportunities</option>
-                <option>Other</option>
+                <option>{t('contact.sub_travel')}</option>
+                <option>{t('contact.sub_logistics')}</option>
+                <option>{t('contact.sub_sport')}</option>
+                <option>{t('contact.sub_partner')}</option>
+                <option>{t('contact.sub_other')}</option>
               </select>
             </div>
             <div className="space-y-2">
-              <label className="text-xs font-bold uppercase tracking-widest text-on-surface-variant/60 ml-1">Your Message</label>
-              <textarea className="w-full bg-surface-container-lowest border-none rounded-xl py-4 px-5 focus:ring-2 focus:ring-secondary/20 transition-all outline-none text-on-surface font-body border-b-2 border-transparent focus:border-primary-container" placeholder="How can we assist you today?" rows="5"></textarea>
+              <label className="text-xs font-bold uppercase tracking-widest text-on-surface-variant/60 ml-1">{t('contact.your_msg')}</label>
+              <textarea className="w-full bg-surface-container-lowest border-none rounded-xl py-4 px-5 focus:ring-2 focus:ring-secondary/20 transition-all outline-none text-on-surface font-body border-b-2 border-transparent focus:border-primary-container" placeholder={t('contact.ph_msg')} rows="5"></textarea>
             </div>
             <button className="group relative bg-primary-container text-on-primary w-full md:w-auto px-10 py-4 rounded-xl font-bold flex items-center justify-center gap-3 hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-primary-container/10" type="submit">
-              Deliver Message
+              {t('contact.deliver')}
               <span translate="no" className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">send</span>
             </button>
           </form>
@@ -56,8 +58,8 @@ const Contact = () => {
                 <span translate="no" className="material-symbols-outlined text-2xl">location_on</span>
               </div>
               <div>
-                <h3 className="text-sm font-bold uppercase tracking-widest text-on-surface-variant/60 mb-2">Global Headquarters</h3>
-                <p className="text-xl font-bold text-primary-container leading-tight">1200 Avenue of the Americas,<br />New York, NY 10036</p>
+                <h3 className="text-sm font-bold uppercase tracking-widest text-on-surface-variant/60 mb-2">{t('contact.hq')}</h3>
+                <p className="text-xl font-bold text-primary-container leading-tight" dangerouslySetInnerHTML={{__html: t('contact.hq_addr')}}></p>
               </div>
             </div>
           </div>
@@ -68,7 +70,7 @@ const Contact = () => {
                 <span translate="no" className="material-symbols-outlined text-xl">call</span>
               </div>
               <div>
-                <h3 className="text-xs font-bold uppercase tracking-widest text-on-surface-variant/60">Direct Concierge</h3>
+                <h3 className="text-xs font-bold uppercase tracking-widest text-on-surface-variant/60">{t('contact.concierge')}</h3>
                 <p className="font-bold text-primary-container">+1 (212) 555-0198</p>
               </div>
             </div>
@@ -77,7 +79,7 @@ const Contact = () => {
                 <span translate="no" className="material-symbols-outlined text-xl">mail</span>
               </div>
               <div>
-                <h3 className="text-xs font-bold uppercase tracking-widest text-on-surface-variant/60">Inquiries</h3>
+                <h3 className="text-xs font-bold uppercase tracking-widest text-on-surface-variant/60">{t('contact.inquiries')}</h3>
                 <p className="font-bold text-primary-container">concierge@jdmsarl.com</p>
               </div>
             </div>
@@ -87,7 +89,7 @@ const Contact = () => {
             <div className="absolute inset-0 bg-primary-container/10 backdrop-blur-sm z-10 flex items-center justify-center pointer-events-none group-hover:opacity-0 transition-opacity duration-500">
               <div className="bg-white/90 px-6 py-3 rounded-full flex items-center gap-2 shadow-xl">
                 <span translate="no" className="material-symbols-outlined text-secondary">explore</span>
-                <span className="font-bold text-sm text-primary-container">Interactive View</span>
+                <span className="font-bold text-sm text-primary-container">{t('contact.interactive')}</span>
               </div>
             </div>
             <img
@@ -102,16 +104,16 @@ const Contact = () => {
       {/* Secondary CTA Section */}
       <section className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="p-8 bg-white border-l-4 border-secondary rounded-xl">
-          <h4 className="font-bold text-primary-container mb-2">Corporate Logistics</h4>
-          <p className="text-sm text-on-surface-variant">Streamlined global distribution networks for high-value assets.</p>
+          <h4 className="font-bold text-primary-container mb-2">{t('contact.corp')}</h4>
+          <p className="text-sm text-on-surface-variant">{t('contact.corp_desc')}</p>
         </div>
         <div className="p-8 bg-white border-l-4 border-primary-container rounded-xl">
-          <h4 className="font-bold text-primary-container mb-2">Private Travel</h4>
-          <p className="text-sm text-on-surface-variant">Bespoke itineraries crafted by our award-winning travel architects.</p>
+          <h4 className="font-bold text-primary-container mb-2">{t('contact.priv')}</h4>
+          <p className="text-sm text-on-surface-variant">{t('contact.priv_desc')}</p>
         </div>
         <div className="p-8 bg-white border-l-4 border-secondary-container rounded-xl">
-          <h4 className="font-bold text-primary-container mb-2">24/7 Support</h4>
-          <p className="text-sm text-on-surface-variant">Round-the-clock availability for our JDM SARL members worldwide.</p>
+          <h4 className="font-bold text-primary-container mb-2">{t('contact.sup')}</h4>
+          <p className="text-sm text-on-surface-variant">{t('contact.sup_desc')}</p>
         </div>
       </section>
     </main>

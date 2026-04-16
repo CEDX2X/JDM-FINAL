@@ -1,6 +1,8 @@
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
 const Home = () => {
+  const { t } = useLanguage();
   return (
     <div className="bg-surface">
       {/* Hero Section */}
@@ -16,17 +18,17 @@ const Home = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-8 w-full">
           <div className="max-w-3xl">
             <h1 className="font-headline font-extrabold text-white text-6xl md:text-7xl leading-tight tracking-tight mb-8">
-              Your Gateway to <span className="text-secondary-container">Travel</span>, <span className="text-secondary-fixed-dim">Trade</span> &amp; <span className="text-secondary-container">Sports</span>
+              {t('home.hero.gateway')} <span className="text-secondary-container">{t('home.hero.travel')}</span>, <span className="text-secondary-fixed-dim">{t('home.hero.trade')}</span> &amp; <span className="text-secondary-container">{t('home.hero.sports')}</span>
             </h1>
             <p className="text-on-primary-container text-xl md:text-2xl mb-12 leading-relaxed">
-              Excellence in motion. We architect world-class experiences across global logistics, bespoke travel, and elite sporting goods.
+              {t('home.hero.desc')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="bg-secondary text-white px-10 py-5 rounded-xl font-bold text-lg transition-all hover:scale-102 hover:shadow-xl">
-                Explore Services
+                {t('home.hero.explore')}
               </button>
               <button className="border-2 border-white/30 text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-white/10 backdrop-blur-md transition-all">
-                Get Started
+                {t('home.hero.started')}
               </button>
             </div>
           </div>
@@ -38,8 +40,8 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-8">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
             <div className="max-w-2xl">
-              <h2 className="font-headline font-bold text-5xl text-primary mb-6">World-Class Portfolios</h2>
-          <p class="text-on-surface-variant text-lg leading-relaxed font-body">Our diverse operations are united by a single standard: absolute excellence. Discover our specialized divisions designed for the global elite.</p>
+              <h2 className="font-headline font-bold text-5xl text-primary mb-6">{t('home.services.title')}</h2>
+          <p className="text-on-surface-variant text-lg leading-relaxed font-body">{t('home.services.desc')}</p>
             </div>
             <div className="hidden md:block h-[2px] flex-grow bg-surface-variant mx-12 mb-4"></div>
           </div>
@@ -54,10 +56,10 @@ const Home = () => {
                 />
               </div>
               <div className="p-8">
-                <h3 className="font-headline font-bold text-3xl mb-4">Travel Services</h3>
-                <p className="text-on-surface-variant mb-8 max-w-xl">From private jet charters to luxury ground concierge, we redefine the journey as much as the destination.</p>
+                <h3 className="font-headline font-bold text-3xl mb-4">{t('home.services.travel')}</h3>
+                <p className="text-on-surface-variant mb-8 max-w-xl">{t('home.services.travelDesc')}</p>
                 <button className="flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all">
-                  Learn More <span translate="no" className="material-symbols-outlined">arrow_forward</span>
+                  {t('home.services.learnMore')} <span translate="no" className="material-symbols-outlined">arrow_forward</span>
                 </button>
               </div>
             </div>
@@ -71,21 +73,21 @@ const Home = () => {
                 />
               </div>
               <div className="p-8">
-                <h3 className="font-headline font-bold text-2xl mb-4">Import/Export</h3>
-                <p className="text-on-surface-variant mb-8">Global trade logistics managed with surgical precision and real-time intelligence.</p>
+                <h3 className="font-headline font-bold text-2xl mb-4">{t('home.services.import')}</h3>
+                <p className="text-on-surface-variant mb-8">{t('home.services.importDesc')}</p>
                 <button className="flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all">
-                  Learn More <span translate="no" className="material-symbols-outlined">arrow_forward</span>
+                  {t('home.services.learnMore')} <span translate="no" className="material-symbols-outlined">arrow_forward</span>
                 </button>
               </div>
             </div>
             {/* Football Sport */}
             <div className="md:col-span-12 group relative overflow-hidden rounded-xl bg-primary-container text-white flex flex-col md:flex-row items-center">
               <div className="w-full md:w-1/2 p-12 lg:p-16">
-                <span className="inline-block px-4 py-1 bg-secondary rounded-full text-xs font-bold mb-6 tracking-widest">PREMIUM APPAREL</span>
-                <h3 className="font-headline font-bold text-4xl mb-6">Football Jerseys Sport</h3>
-                <p className="text-on-primary-container text-lg mb-10 leading-relaxed">Authentic kits and bespoke performance wear for the beautiful game's connoisseurs. Global shipping, elite quality.</p>
+                <span className="inline-block px-4 py-1 bg-secondary rounded-full text-xs font-bold mb-6 tracking-widest">{t('home.services.premium')}</span>
+                <h3 className="font-headline font-bold text-4xl mb-6">{t('home.services.sport')}</h3>
+                <p className="text-on-primary-container text-lg mb-10 leading-relaxed">{t('home.services.sportDesc')}</p>
                 <button className="bg-white text-primary px-8 py-4 rounded-xl font-bold hover:bg-secondary hover:text-white transition-all">
-                  Sport Collection
+                  {t('home.services.shopCol')}
                 </button>
               </div>
               <div className="w-full md:w-1/2 h-[400px] md:h-full relative overflow-hidden">
@@ -104,30 +106,30 @@ const Home = () => {
       <section className="py-32 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-20">
-            <h2 className="font-headline font-bold text-5xl mb-6">The JDM SARL Advantage</h2>
-            <p className="text-on-surface-variant text-xl max-w-2xl mx-auto">Why the world's most demanding enterprises choose us as their strategic partner.</p>
+            <h2 className="font-headline font-bold text-5xl mb-6">{t('home.why.title')}</h2>
+            <p className="text-on-surface-variant text-xl max-w-2xl mx-auto">{t('home.why.desc')}</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="text-center p-8">
               <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-sm">
                 <span translate="no" className="material-symbols-outlined text-4xl text-secondary">verified_user</span>
               </div>
-              <h4 className="font-headline font-bold text-2xl mb-4">Unwavering Trust</h4>
-              <p className="text-on-surface-variant leading-relaxed">A reputation built on transparency and a commitment to excellence that knows no compromise.</p>
+              <h4 className="font-headline font-bold text-2xl mb-4">{t('home.why.trust')}</h4>
+              <p className="text-on-surface-variant leading-relaxed">{t('home.why.trustDesc')}</p>
             </div>
             <div className="text-center p-8">
               <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-sm">
                 <span translate="no" className="material-symbols-outlined text-4xl text-secondary">rocket_launch</span>
               </div>
-              <h4 className="font-headline font-bold text-2xl mb-4">Global Agility</h4>
-              <p className="text-on-surface-variant leading-relaxed">Our expansive network allows us to move faster, smarter, and more efficiently across six continents.</p>
+              <h4 className="font-headline font-bold text-2xl mb-4">{t('home.why.agility')}</h4>
+              <p className="text-on-surface-variant leading-relaxed">{t('home.why.agilityDesc')}</p>
             </div>
             <div className="text-center p-8">
               <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-sm">
                 <span translate="no" className="material-symbols-outlined text-4xl text-secondary">support_agent</span>
               </div>
-              <h4 className="font-headline font-bold text-2xl mb-4">Dedicated Support</h4>
-              <p className="text-on-surface-variant leading-relaxed">Bespoke service with a personal touch. Every client is assigned a dedicated concierge manager.</p>
+              <h4 className="font-headline font-bold text-2xl mb-4">{t('home.why.support')}</h4>
+              <p className="text-on-surface-variant leading-relaxed">{t('home.why.supportDesc')}</p>
             </div>
           </div>
         </div>
@@ -136,10 +138,10 @@ const Home = () => {
       {/* Testimonials */}
       <section className="py-32 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-8 relative">
-          <span className="absolute top-0 right-8 text-[12rem] font-headline font-black text-surface-container leading-none -z-10 opacity-50 select-none">TRUST</span>
+          <span className="absolute top-0 right-8 text-[12rem] font-headline font-black text-surface-container leading-none -z-10 opacity-50 select-none">{t('home.testimonials.bgtext')}</span>
           <div className="flex flex-col md:flex-row gap-16 items-center">
             <div className="w-full md:w-1/3">
-              <h2 className="font-headline font-bold text-5xl mb-8">What Our Partners Say</h2>
+              <h2 className="font-headline font-bold text-5xl mb-8">{t('home.testimonials.title')}</h2>
               <div className="flex gap-2 mb-8">
                 <span translate="no" className="material-symbols-outlined text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                 <span translate="no" className="material-symbols-outlined text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
@@ -151,7 +153,7 @@ const Home = () => {
             <div className="w-full md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-surface-container-low p-10 rounded-xl relative">
                 <span translate="no" className="material-symbols-outlined text-secondary opacity-30 text-5xl absolute top-6 right-6">format_quote</span>
-                <p className="text-lg italic text-on-surface mb-8">"The level of attention to detail provided by JDM SARL for our executive logistics was unparalleled. They didn't just meet our expectations; they redefined them."</p>
+                <p className="text-lg italic text-on-surface mb-8">{t('home.testimonials.t1')}</p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full overflow-hidden">
                     <img
@@ -162,13 +164,13 @@ const Home = () => {
                   </div>
                   <div>
                     <p className="font-bold">Julian Vancore</p>
-                    <p className="text-xs text-on-surface-variant">CEO, Vancore Global</p>
+                    <p className="text-xs text-on-surface-variant">{t('home.testimonials.p1')}</p>
                   </div>
                 </div>
               </div>
               <div className="bg-surface-container-low p-10 rounded-xl relative">
                 <span translate="no" className="material-symbols-outlined text-secondary opacity-30 text-5xl absolute top-6 right-6">format_quote</span>
-                <p className="text-lg italic text-on-surface mb-8">"As a professional athlete, I need gear that performs. The JDM SARL Football Sport delivers the highest quality kits I've ever worn. Reliability is key."</p>
+                <p className="text-lg italic text-on-surface mb-8">{t('home.testimonials.t2')}</p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full overflow-hidden">
                     <img
@@ -179,7 +181,7 @@ const Home = () => {
                   </div>
                   <div>
                     <p className="font-bold">Marcus Sterling</p>
-                    <p className="text-xs text-on-surface-variant">Professional Athlete</p>
+                    <p className="text-xs text-on-surface-variant">{t('home.testimonials.p2')}</p>
                   </div>
                 </div>
               </div>
@@ -193,12 +195,12 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-8">
           <div className="bg-white/5 backdrop-blur-md rounded-2xl p-12 md:p-16 border border-white/10 flex flex-col md:flex-row justify-between items-center gap-12">
             <div className="max-w-xl">
-              <h2 className="font-headline font-bold text-4xl text-white mb-6">Ready to Experience JDM SARL?</h2>
-              <p className="text-on-primary-container text-lg">Contact our team today for a confidential consultation regarding your travel or logistics needs.</p>
+              <h2 className="font-headline font-bold text-4xl text-white mb-6">{t('home.cta.title')}</h2>
+              <p className="text-on-primary-container text-lg">{t('home.cta.desc')}</p>
             </div>
             <div className="flex flex-col sm:flex-row gap-6 w-full md:w-auto">
-              <a className="bg-secondary text-white px-8 py-4 rounded-xl font-bold text-center hover:scale-102 transition-transform" href="mailto:concierge@jdmsarl.com">Get in Touch</a>
-              <a className="border border-white/30 text-white px-8 py-4 rounded-xl font-bold text-center hover:bg-white/10 transition-all" href="#">Download Brochure</a>
+              <a className="bg-secondary text-white px-8 py-4 rounded-xl font-bold text-center hover:scale-102 transition-transform" href="mailto:concierge@jdmsarl.com">{t('home.cta.touch')}</a>
+              <a className="border border-white/30 text-white px-8 py-4 rounded-xl font-bold text-center hover:bg-white/10 transition-all" href="#">{t('home.cta.brochure')}</a>
             </div>
           </div>
         </div>
