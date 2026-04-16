@@ -7,14 +7,16 @@ import Travel from './pages/Travel';
 import Logistics from './pages/Logistics';
 import Sport from './pages/Sport';
 import Contact from './pages/Contact';
+import FloatingActions from './components/FloatingActions';
 import { LanguageProvider } from './context/LanguageContext';
 
 function App() {
   return (
     <LanguageProvider>
       <Router>
-        <div className="min-h-screen flex flex-col">
+        <div className="min-h-screen flex flex-col relative">
           <TopNavBar />
+          <FloatingActions />
           <div className="flex-grow">
             <Routes>
               <Route path="/" element={<Home />} />
