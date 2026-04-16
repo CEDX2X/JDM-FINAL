@@ -30,7 +30,7 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link to="/shop" className="text-[#0B1D3A]/60 dark:text-[#f7f9fc]/60 text-sm hover:text-[#0B1D3A] dark:hover:text-white underline decoration-[#9b3f5a] decoration-2 underline-offset-4 transition-opacity">
+              <Link to="/sport" className="text-[#0B1D3A]/60 dark:text-[#f7f9fc]/60 text-sm hover:text-[#0B1D3A] dark:hover:text-white underline decoration-[#9b3f5a] decoration-2 underline-offset-4 transition-opacity">
                 Sports Apparel
               </Link>
             </li>

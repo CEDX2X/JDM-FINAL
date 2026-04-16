@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Travel from './pages/Travel';
 import Logistics from './pages/Logistics';
-import Shop from './pages/Shop';
+import Sport from './pages/shop';
 import Contact from './pages/Contact';
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/travel" element={<Travel />} />
             <Route path="/logistics" element={<Logistics />} />
-            <Route path="/shop" element={<Shop />} />
+            <Route path="/sport" element={<Sport />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>

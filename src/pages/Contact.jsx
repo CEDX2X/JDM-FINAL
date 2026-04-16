@@ -31,7 +31,7 @@ const Contact = () => {
               <select className="w-full bg-surface-container-lowest border-none rounded-xl py-4 px-5 focus:ring-2 focus:ring-secondary/20 transition-all outline-none text-on-surface font-body border-b-2 border-transparent focus:border-primary-container appearance-none">
                 <option>Bespoke Travel Inquiry</option>
                 <option>Global Logistics Support</option>
-                <option>JDM SARL Shop Assistance</option>
+                <option>JDM SARL Sport Assistance</option>
                 <option>Partnership Opportunities</option>
                 <option>Other</option>
               </select>

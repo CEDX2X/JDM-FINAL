@@ -10,7 +10,7 @@ const fs = require('fs');
     { name: 'home', path: '/' },
     { name: 'travel', path: '/travel' },
     { name: 'logistics', path: '/logistics' },
-    { name: 'shop', path: '/shop' },
+    { name: 'sport', path: '/sport' },
     { name: 'contact', path: '/contact' }
   ];
 

@@ -8,7 +8,7 @@ const TopNavBar = () => {
     { name: 'Home', path: '/' },
     { name: 'Travel', path: '/travel' },
     { name: 'Logistics', path: '/logistics' },
-    { name: 'Shop', path: '/shop' },
+    { name: 'Sport', path: '/sport' },
     { name: 'Contact', path: '/contact' },
   ];
 

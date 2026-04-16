@@ -11,7 +11,7 @@ async def capture_screenshots():
             'home': 'http://localhost:5173/',
             'travel': 'http://localhost:5173/travel',
             'logistics': 'http://localhost:5173/logistics',
-            'shop': 'http://localhost:5173/shop',
+            'sport': 'http://localhost:5173/sport',
             'contact': 'http://localhost:5173/contact'
         }
 

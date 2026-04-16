@@ -78,14 +78,14 @@ const Home = () => {
                 </button>
               </div>
             </div>
-            {/* Football Shop */}
+            {/* Football Sport */}
             <div className="md:col-span-12 group relative overflow-hidden rounded-xl bg-primary-container text-white flex flex-col md:flex-row items-center">
               <div className="w-full md:w-1/2 p-12 lg:p-16">
                 <span className="inline-block px-4 py-1 bg-secondary rounded-full text-xs font-bold mb-6 tracking-widest">PREMIUM APPAREL</span>
-                <h3 className="font-headline font-bold text-4xl mb-6">Football Jerseys Shop</h3>
+                <h3 className="font-headline font-bold text-4xl mb-6">Football Jerseys Sport</h3>
                 <p className="text-on-primary-container text-lg mb-10 leading-relaxed">Authentic kits and bespoke performance wear for the beautiful game's connoisseurs. Global shipping, elite quality.</p>
                 <button className="bg-white text-primary px-8 py-4 rounded-xl font-bold hover:bg-secondary hover:text-white transition-all">
-                  Shop Collection
+                  Sport Collection
                 </button>
               </div>
               <div className="w-full md:w-1/2 h-[400px] md:h-full relative overflow-hidden">
@@ -168,7 +168,7 @@ const Home = () => {
               </div>
               <div className="bg-surface-container-low p-10 rounded-xl relative">
                 <span className="material-symbols-outlined text-secondary opacity-30 text-5xl absolute top-6 right-6">format_quote</span>
-                <p className="text-lg italic text-on-surface mb-8">"As a professional athlete, I need gear that performs. The JDM SARL Football Shop delivers the highest quality kits I've ever worn. Reliability is key."</p>
+                <p className="text-lg italic text-on-surface mb-8">"As a professional athlete, I need gear that performs. The JDM SARL Football Sport delivers the highest quality kits I've ever worn. Reliability is key."</p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full overflow-hidden">
                     <img

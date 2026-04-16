@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Shop = () => {
+const Sport = () => {
   const products = [
     {
       id: 1,
@@ -56,7 +56,7 @@ const Shop = () => {
           <div className="z-10">
             <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-secondary text-on-secondary rounded-full">New Season Arrival</span>
             <h1 className="text-6xl md:text-7xl font-extrabold tracking-tighter text-primary leading-[1.1] mb-8">
-              The Official <br /><span className="text-secondary">Fan Shop</span>
+              The Official <br /><span className="text-secondary">Fan Sport</span>
             </h1>
             <p className="text-lg text-on-surface-variant max-w-lg mb-10 leading-relaxed font-body">
               Architected for the elite fan. Discover authentic kits from the world's most prestigious clubs and national teams, crafted for performance and loyalty.
@@ -184,4 +184,4 @@ const Shop = () => {
   );
 };
 
-export default Shop;
+export default Sport;
