@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Travel from './pages/Travel';
 import Logistics from './pages/Logistics';
-import Sport from './pages/shop';
+import Sport from './pages/Sport';
 import Contact from './pages/Contact';
 
 function App() {
