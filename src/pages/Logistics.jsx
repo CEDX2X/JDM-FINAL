@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 
 const Logistics = () => {
   const navigate = useNavigate();
   const { t } = useLanguage();
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  const slideImages = [
+    "https://lh3.googleusercontent.com/aida-public/AB6AXuCHXbZ00p44m0h4v2fB4Nf-cK-i8D8635s3lU2dI7u15C0TXYQxGvP_1yts2302N_xYkGvWzLhT-r15469nZJk6xP5t84P3QvLzLp8LmsNlExH0M9A6JvIqQ16Bf6h1XW71gZtVn_C2K6Hh7vKjVn5w92z_V8WnO-CIt2sWqWbT86DItR1WfUqSjWqZ2uT1A71K",
+    "https://lh3.googleusercontent.com/aida-public/AB6AXuC0vNoiqsCCERttN2W44FMoDMENJ7mj06EWtIBnSY_ccGsy6F05zLovZU-_gua35GqScaajS56R8iKV8AuMHPB5G-g0oDAw2ygw9t4Q3emxfHEMAbcr7G1pn0pXmW8ce80TkBHGleinZYtol2UergFE9T77jn3fLk-_JCbkQm1s-Cn-0__E3FPD6TxwqfMB4KguxJmljpGLddOwEiyZcC1ci2wtnPxVg5Ulcmbv2GJ2HXwJLvED7atkSjaguHhkGgqH9ZeQHIT6yEE",
+    "https://lh3.googleusercontent.com/aida-public/AB6AXuD8Q0z0a6s7k1K5z5c3O4R8i1C0k0e8d0w2V1T9j0a6f4F0h0Y5x2X6o4q2C1t6k2T1f7m8m6l6X1s7C8O7I6i1T6D2h1B8G6X6S6p4B0a6A5G5O6w2L5V7p4Q5"
+  ];
+
+  const handleSlideChange = () => {
+    setActiveSlide((prev) => (prev - 1 + slideImages.length) % slideImages.length);
+  };
   return (
     <div className="bg-surface">
       {/* Hero Section */}
@@ -145,11 +156,27 @@ const Logistics = () => {
             
             <div className="lg:w-1/2 w-full relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary-container to-primary transform rotate-3 rounded-[3rem] opacity-20"></div>
-              <img
-                className="w-full h-[600px] object-cover rounded-[3rem] shadow-2xl relative z-10"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHXbZ00p44m0h4v2fB4Nf-cK-i8D8635s3lU2dI7u15C0TXYQxGvP_1yts2302N_xYkGvWzLhT-r15469nZJk6xP5t84P3QvLzLp8LmsNlExH0M9A6JvIqQ16Bf6h1XW71gZtVn_C2K6Hh7vKjVn5w92z_V8WnO-CIt2sWqWbT86DItR1WfUqSjWqZ2uT1A71K"
-                alt="Automated logistics facility"
-              />
+              <div 
+                className="w-full h-64 md:h-96 lg:h-[600px] relative z-10 cursor-pointer overflow-hidden rounded-[3rem] shadow-2xl group"
+                onClick={handleSlideChange}
+                title="Cliquez pour changer l'image"
+              >
+                {slideImages.map((src, index) => (
+                  <img
+                    key={index}
+                    className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 ease-in-out ${index === activeSlide ? 'opacity-100 scale-100 z-10' : 'opacity-0 scale-105 z-0'}`}
+                    src={src}
+                    alt={`Logistics facility view ${index + 1}`}
+                  />
+                ))}
+                
+                {/* Visual Indicator of Clickability */}
+                <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity z-20 flex items-center justify-center">
+                  <div className="w-16 h-16 rounded-full bg-white/30 backdrop-blur-md flex items-center justify-center text-white">
+                    <span translate="no" className="material-symbols-outlined text-3xl">touch_app</span>
+                  </div>
+                </div>
+              </div>
               {/* Overlay Stat */}
               <div className="absolute top-1/2 right-0 translate-x-1/4 -translate-y-1/2 bg-white p-6 rounded-2xl shadow-2xl z-20 w-48 text-center border border-outline-variant/10">
                 <span translate="no" className="material-symbols-outlined text-secondary text-2xl md:text-3xl lg:text-4xl mb-2">dashboard_customize</span>
