@@ -1,7 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 
 const Logistics = () => {
+  const navigate = useNavigate();
   const { t } = useLanguage();
   return (
     <div className="bg-surface">
@@ -51,7 +53,7 @@ const Logistics = () => {
       </section>
 
       {/* Core Capabilities */}
-      <section className="py-16 lg:py-32 bg-surface">
+      <section id="capabilities" className="py-16 lg:py-32 bg-surface">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {/* Ocean */}
@@ -82,7 +84,7 @@ const Logistics = () => {
                   <li className="flex items-center gap-3 text-sm font-medium text-white"><span translate="no" className="material-symbols-outlined text-secondary text-[18px]">done</span> {t('log.a1')}</li>
                   <li className="flex items-center gap-3 text-sm font-medium text-white"><span translate="no" className="material-symbols-outlined text-secondary text-[18px]">done</span> {t('log.a2')}</li>
                 </ul>
-                <button className="bg-secondary text-white w-full py-3 rounded-xl font-bold uppercase tracking-widest text-xs hover:bg-white hover:text-primary transition-colors">{t('log.book_pri')}</button>
+                <button onClick={() => navigate('/contact')} className="bg-secondary text-white w-full py-3 rounded-xl font-bold uppercase tracking-widest text-xs hover:bg-white hover:text-primary transition-colors">{t('log.book_pri')}</button>
               </div>
             </div>
             {/* Ground */}
@@ -181,7 +183,7 @@ const Logistics = () => {
                 <ul className="text-xs space-y-3 mb-8 opacity-70">
                   <li>• {t('log.ent_desc')}</li>
                 </ul>
-                <button className="w-full py-3 bg-secondary text-white rounded-xl font-bold hover:scale-105 transition-transform">{t('log.inq')}</button>
+                <button onClick={() => navigate('/contact')} className="w-full py-3 bg-secondary text-white rounded-xl font-bold hover:scale-105 transition-transform">{t('log.inq')}</button>
               </div>
               <div className="bg-primary-container text-white p-5 md:p-8 rounded-2xl flex-1 md:min-w-[280px] border border-white/20">
                 <h4 className="font-bold text-xl mb-2">{t('log.sme')}</h4>
@@ -189,7 +191,7 @@ const Logistics = () => {
                 <ul className="text-xs space-y-3 mb-8 opacity-70 list-disc ml-3">
                   <li>{t('log.sme_desc')}</li>
                 </ul>
-                <button className="w-full py-3 bg-white text-primary rounded-xl font-bold hover:scale-105 transition-transform">{t('log.start')}</button>
+                <button onClick={() => navigate('/contact')} className="w-full py-3 bg-white text-primary rounded-xl font-bold hover:scale-105 transition-transform">{t('log.start')}</button>
               </div>
             </div>
           </div>

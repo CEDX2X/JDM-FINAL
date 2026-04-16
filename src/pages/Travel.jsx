@@ -1,7 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 
 const Travel = () => {
+  const navigate = useNavigate();
   const { t } = useLanguage();
   return (
     <div className="bg-surface">
@@ -81,9 +83,9 @@ const Travel = () => {
                       <li className="flex items-center gap-2"><span translate="no" className="material-symbols-outlined text-[16px] text-secondary">check_circle</span> {t('travel.f2')}</li>
                       <li className="flex items-center gap-2"><span translate="no" className="material-symbols-outlined text-[16px] text-secondary">check_circle</span> {t('travel.f3')}</li>
                     </ul>
-                    <a href="#" className="inline-flex items-center gap-2 mt-4 text-secondary font-bold hover:gap-3 transition-all text-sm uppercase tracking-widest">
+                    <button onClick={() => navigate('/contact')} className="inline-flex items-center gap-2 mt-4 text-secondary font-bold hover:gap-3 transition-all text-sm uppercase tracking-widest">
                       {t('travel.inquire')} <span translate="no" className="material-symbols-outlined text-[18px]">arrow_forward</span>
-                    </a>
+                    </button>
                   </div>
                 </li>
                 <div className="h-px w-full bg-outline-variant/20"></div>
@@ -98,9 +100,9 @@ const Travel = () => {
                       <li className="flex items-center gap-2"><span translate="no" className="material-symbols-outlined text-[16px] text-secondary">check_circle</span> {t('travel.v2')}</li>
                       <li className="flex items-center gap-2"><span translate="no" className="material-symbols-outlined text-[16px] text-secondary">check_circle</span> {t('travel.v3')}</li>
                     </ul>
-                    <a href="#" className="inline-flex items-center gap-2 mt-4 text-secondary font-bold hover:gap-3 transition-all text-sm uppercase tracking-widest">
+                    <button onClick={() => navigate('/contact')} className="inline-flex items-center gap-2 mt-4 text-secondary font-bold hover:gap-3 transition-all text-sm uppercase tracking-widest">
                       {t('travel.check')} <span translate="no" className="material-symbols-outlined text-[18px]">arrow_forward</span>
-                    </a>
+                    </button>
                   </div>
                 </li>
               </ul>
@@ -110,7 +112,7 @@ const Travel = () => {
       </section>
 
       {/* Tourism Packages Grid */}
-      <section className="py-16 lg:py-32 bg-surface-container-lowest">
+      <section id="destinations" className="py-16 lg:py-32 bg-surface-container-lowest">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="text-center md:text-left flex flex-col md:flex-row justify-between items-end mb-8 md:mb-16 gap-6 md:gap-8">
             <div className="max-w-2xl">
@@ -133,7 +135,7 @@ const Travel = () => {
                     <span className="text-xs opacity-70 block">{t('travel.start')}</span>
                     <span className="font-bold text-xl">$12,500</span>
                   </div>
-                  <button className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-primary transition-colors">
+                  <button onClick={() => navigate('/contact')} className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-primary transition-colors">
                     <span translate="no" className="material-symbols-outlined">arrow_forward</span>
                   </button>
                 </div>
@@ -152,7 +154,7 @@ const Travel = () => {
                     <span className="text-xs opacity-70 block">{t('travel.start')}</span>
                     <span className="font-bold text-xl">$8,900</span>
                   </div>
-                  <button className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-primary transition-colors">
+                  <button onClick={() => navigate('/contact')} className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-primary transition-colors">
                     <span translate="no" className="material-symbols-outlined">arrow_forward</span>
                   </button>
                 </div>
@@ -171,7 +173,7 @@ const Travel = () => {
                     <span className="text-xs opacity-70 block">{t('travel.start')}</span>
                     <span className="font-bold text-xl">$15,200</span>
                   </div>
-                  <button className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-primary transition-colors">
+                  <button onClick={() => navigate('/contact')} className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-primary transition-colors">
                     <span translate="no" className="material-symbols-outlined">arrow_forward</span>
                   </button>
                 </div>
@@ -208,7 +210,7 @@ const Travel = () => {
           <p className="text-white/70 text-lg mb-10 max-w-2xl mx-auto">
             {t('travel.cta_desc')}
           </p>
-          <button className="bg-secondary text-on-secondary px-10 py-5 rounded-xl font-bold text-lg hover:bg-white hover:text-primary transition-all inline-flex items-center gap-3">
+          <button onClick={() => navigate('/contact')} className="bg-secondary text-on-secondary px-10 py-5 rounded-xl font-bold text-lg hover:bg-white hover:text-primary transition-all inline-flex items-center gap-3">
             <span translate="no" className="material-symbols-outlined">support_agent</span> {t('travel.talk')}
           </button>
         </div>

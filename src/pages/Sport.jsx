@@ -1,7 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 
 const Sport = () => {
+  const navigate = useNavigate();
   const { t } = useLanguage();
   const products = [
     {
@@ -86,7 +88,7 @@ const Sport = () => {
       </header>
 
       <main className="max-w-7xl mx-auto px-4 md:px-8 py-10 lg:py-20 flex flex-col md:flex-row gap-6 lg:gap-12">
-        <aside className="w-full md:w-64 flex-shrink-0">
+        <aside id="filters" className="w-full md:w-64 flex-shrink-0">
           <div className="static lg:sticky lg:top-28 space-y-10">
             <div>
               <h3 className="font-headline font-bold text-xl mb-6 flex items-center gap-2">
@@ -120,13 +122,13 @@ const Sport = () => {
             <div className="p-6 bg-primary-container rounded-2xl text-on-primary">
               <p className="text-sm font-headline font-bold mb-4">{t('sport.member')}</p>
               <p className="text-xs text-on-primary/70 leading-relaxed mb-4">{t('sport.member_desc')}</p>
-              <button className="w-full py-2 bg-secondary rounded-xl text-xs font-bold hover:bg-secondary-container transition-colors">{t('sport.join')}</button>
+              <button onClick={() => navigate('/contact')} className="w-full py-2 bg-secondary rounded-xl text-xs font-bold hover:bg-secondary-container transition-colors">{t('sport.join')}</button>
             </div>
           </div>
         </aside>
 
         <div className="flex-1">
-          <div className="flex justify-between items-center mb-10">
+          <div id="kits" className="flex justify-between items-center mb-10">
             <h2 className="font-headline font-extrabold text-2xl md:text-3xl tracking-tight">{t('sport.featured')}</h2>
             <div className="flex items-center gap-4 text-sm font-medium">
               <span className="text-on-surface-variant">{t('sport.showing')}</span>
@@ -160,7 +162,7 @@ const Sport = () => {
                     <p className="font-bold text-lg text-primary">{product.price}</p>
                   </div>
                   <div className="flex gap-2">
-                    <button className="flex-1 bg-primary-container text-on-primary py-3.5 rounded-xl font-bold text-sm scale-102 transition-all flex items-center justify-center gap-2">
+                    <button onClick={() => navigate('/contact')} className="flex-1 bg-primary-container text-on-primary py-3.5 rounded-xl font-bold text-sm scale-102 transition-all flex items-center justify-center gap-2">
                       <span translate="no" className="material-symbols-outlined text-[18px]">add_shopping_cart</span> {t('sport.add')}
                     </button>
                     <button className="w-12 h-12 flex items-center justify-center border border-outline-variant/30 rounded-xl hover:bg-surface-container-low transition-colors">

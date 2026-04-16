@@ -1,7 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 
 const Home = () => {
+  const navigate = useNavigate();
   const { t } = useLanguage();
   return (
     <div className="bg-surface">
@@ -24,10 +26,10 @@ const Home = () => {
               {t('home.hero.desc')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-secondary text-white px-10 py-5 rounded-xl font-bold text-lg transition-all hover:scale-102 hover:shadow-xl">
+              <button className="bg-secondary text-white px-10 py-5 rounded-xl font-bold text-lg transition-all hover:scale-102 hover:shadow-xl" onClick={() => document.getElementById('services')?.scrollIntoView({behavior: 'smooth'})}>
                 {t('home.hero.explore')}
               </button>
-              <button className="border-2 border-white/30 text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-white/10 backdrop-blur-md transition-all">
+              <button className="border-2 border-white/30 text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-white/10 backdrop-blur-md transition-all" onClick={() => navigate('/contact')}>
                 {t('home.hero.started')}
               </button>
             </div>
@@ -36,7 +38,7 @@ const Home = () => {
       </section>
 
       {/* Services Overview */}
-      <section className="py-16 lg:py-32 bg-surface">
+      <section id="services" className="py-16 lg:py-32 bg-surface">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="flex flex-col md:flex-row justify-between items-end mb-8 md:mb-16 gap-6 md:gap-8">
             <div className="max-w-2xl">
@@ -58,7 +60,7 @@ const Home = () => {
               <div className="p-5 md:p-8">
                 <h3 className="font-headline font-bold text-2xl md:text-3xl mb-4">{t('home.services.travel')}</h3>
                 <p className="text-on-surface-variant mb-8 max-w-xl">{t('home.services.travelDesc')}</p>
-                <button className="flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all">
+                <button onClick={() => navigate('/travel')} className="flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all">
                   {t('home.services.learnMore')} <span translate="no" className="material-symbols-outlined">arrow_forward</span>
                 </button>
               </div>
@@ -75,7 +77,7 @@ const Home = () => {
               <div className="p-5 md:p-8">
                 <h3 className="font-headline font-bold text-2xl mb-4">{t('home.services.import')}</h3>
                 <p className="text-on-surface-variant mb-8">{t('home.services.importDesc')}</p>
-                <button className="flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all">
+                <button onClick={() => navigate('/logistics')} className="flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all">
                   {t('home.services.learnMore')} <span translate="no" className="material-symbols-outlined">arrow_forward</span>
                 </button>
               </div>
