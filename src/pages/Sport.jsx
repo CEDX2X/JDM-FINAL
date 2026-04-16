@@ -54,23 +54,23 @@ const Sport = () => {
   return (
     <div className="bg-background">
       <header className="relative pt-32 pb-20 overflow-hidden bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
           <div className="z-10">
             <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-secondary text-on-secondary rounded-full">{t('sport.arrival')}</span>
-            <h1 className="text-6xl md:text-7xl font-extrabold tracking-tighter text-primary leading-[1.1] mb-8">
+            <h1 className="text-2xl md:text-3xl md:text-4xl lg:text-5xl lg:text-7xl font-extrabold tracking-tighter text-primary leading-[1.1] mb-8">
               {t('sport.official')} <br /><span className="text-secondary">{t('sport.fan')}</span>
             </h1>
             <p className="text-lg text-on-surface-variant max-w-lg mb-10 leading-relaxed font-body">
               {t('sport.desc')}
             </p>
             <div className="flex space-x-4">
-              <button className="bg-primary-container text-on-primary px-8 py-4 rounded-xl font-bold text-lg scale-102 transition-transform shadow-lg">{t('sport.explore')}</button>
-              <button className="border-2 border-outline-variant/30 text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-surface transition-colors">{t('sport.clubs')}</button>
+              <button className="bg-primary-container text-on-primary px-4 md:px-8 py-4 rounded-xl font-bold text-lg scale-102 transition-transform shadow-lg">{t('sport.explore')}</button>
+              <button className="border-2 border-outline-variant/30 text-primary px-4 md:px-8 py-4 rounded-xl font-bold text-lg hover:bg-surface transition-colors">{t('sport.clubs')}</button>
             </div>
           </div>
-          <div className="relative h-[500px] hidden lg:block">
+          <div className="relative h-64 md:h-80 lg:h-[500px] hidden lg:block">
             <img
-              className="w-full h-full object-cover rounded-3xl shadow-2xl"
+              className="w-full h-full object-cover rounded-2xl md:rounded-3xl shadow-2xl"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhBIPBUShbWIVooFv6BTAc2KPqQ-THTHK7s6On1LjcoGXLDA-3IEBhk3pMxQcFpPy0M-lbBljJT6mBVWW7uOgHM67nik168IKrBcNnlqejTe3qgB8KWjGfgDzOF1w0uzcA_kG32yMIt_vx-i0x5QPubT-_dtrCO4cVwJjkG6kW94Ah6Fx0Z_vaIxpr1cUXRkf7S4nzRJFKwzG8Zz5K9LJOd9EP9DTRSI9AcYl2xLDMZf5z1LWTWzEr3jmpialkeWgAOzYjLXk8LxA"
               alt="Professional football jersey"
             />
@@ -85,9 +85,9 @@ const Sport = () => {
         </div>
       </header>
 
-      <main className="max-w-7xl mx-auto px-8 py-20 flex flex-col md:flex-row gap-12">
+      <main className="max-w-7xl mx-auto px-4 md:px-8 py-10 lg:py-20 flex flex-col md:flex-row gap-6 lg:gap-12">
         <aside className="w-full md:w-64 flex-shrink-0">
-          <div className="sticky top-28 space-y-10">
+          <div className="static lg:sticky lg:top-28 space-y-10">
             <div>
               <h3 className="font-headline font-bold text-xl mb-6 flex items-center gap-2">
                 <span translate="no" className="material-symbols-outlined text-primary">filter_list</span> {t('sport.cat')}
@@ -127,7 +127,7 @@ const Sport = () => {
 
         <div className="flex-1">
           <div className="flex justify-between items-center mb-10">
-            <h2 className="font-headline font-extrabold text-3xl tracking-tight">{t('sport.featured')}</h2>
+            <h2 className="font-headline font-extrabold text-2xl md:text-3xl tracking-tight">{t('sport.featured')}</h2>
             <div className="flex items-center gap-4 text-sm font-medium">
               <span className="text-on-surface-variant">{t('sport.showing')}</span>
               <select className="bg-surface-container-low border-none rounded-xl text-sm font-bold focus:ring-2 focus:ring-primary py-2 px-4">
@@ -137,7 +137,7 @@ const Sport = () => {
               </select>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
             {products.map(product => (
               <div key={product.id} className="group bg-surface-container-lowest rounded-[2rem] overflow-hidden transition-all duration-500 hover:shadow-[0_24px_48px_rgba(11,29,58,0.12)]">
                 <div className="aspect-[4/5] overflow-hidden relative">
@@ -151,7 +151,7 @@ const Sport = () => {
                     <div className="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest">{t('sport.pre')}</div>
                   )}
                 </div>
-                <div className="p-8">
+                <div className="p-5 md:p-8">
                   <div className="flex justify-between items-start mb-4">
                     <div>
                       <p className="text-xs font-bold text-secondary uppercase tracking-widest mb-1">{product.team}</p>
@@ -172,7 +172,7 @@ const Sport = () => {
             ))}
           </div>
           {/* Pagination */}
-          <div className="mt-20 flex justify-center gap-2">
+          <div className="mt-10 md:mt-20 flex justify-center gap-2">
             <button className="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors font-bold">1</button>
             <button className="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors font-bold">2</button>
             <button className="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors font-bold">3</button>

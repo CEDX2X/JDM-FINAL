@@ -5,8 +5,8 @@ import { useLanguage } from '../context/LanguageContext';
 const Footer = () => {
   const { t } = useLanguage();
   return (
-    <footer className="bg-[#f2f4f7] dark:bg-[#0b1d3a] w-full pt-16 pb-8">
-      <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-12">
+    <footer className="bg-[#f2f4f7] dark:bg-[#0b1d3a] w-full pt-12 pb-6 md:pt-16 md:pb-8">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-4 gap-6 lg:gap-12">
         <div className="col-span-1 md:col-span-1">
           <div className="text-xl font-bold text-[#0B1D3A] dark:text-white mb-4 font-headline">JDM SARL</div>
           <p className="text-[#0B1D3A]/60 dark:text-[#f7f9fc]/60 text-sm leading-relaxed mb-6">
@@ -77,7 +77,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-[#0B1D3A]/5">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 mt-8 md:mt-16 pt-8 border-t border-[#0B1D3A]/5">
         <p className="text-[#0B1D3A]/60 dark:text-[#f7f9fc]/60 text-sm text-center">{t('footer.rights')}</p>
       </div>
     </footer>

@@ -17,12 +17,12 @@ const TopNavBar = () => {
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-white/80 dark:bg-[#00030f]/80 backdrop-blur-xl shadow-[0_12px_32px_rgba(11,29,58,0.06)]">
-      <div className="max-w-7xl mx-auto px-8 flex justify-between items-center h-20">
-        <Link to="/" className="flex items-center gap-3 text-2xl font-black tracking-tighter text-[#0B1D3A] dark:text-white font-headline">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center h-16 md:h-20">
+        <Link to="/" className="flex items-center gap-2 text-xl md:gap-3 md:text-2xl font-black tracking-tighter text-[#0B1D3A] dark:text-white font-headline">
           <img
             src="https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/Ced%2FJDM.jpeg?alt=media&token=446b9ce2-8680-4102-9761-c2f125b43031"
             alt="JDM SARL Logo"
-            className="h-10 w-auto rounded-lg object-contain"
+            className="h-8 md:h-10 w-auto rounded-lg object-contain"
           />
           <span>JDM SARL</span>
         </Link>
@@ -69,7 +69,7 @@ const TopNavBar = () => {
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             translate="no" 
-            className="material-symbols-outlined text-[#0B1D3A] dark:text-white text-3xl"
+            className="material-symbols-outlined text-[#0B1D3A] dark:text-white text-2xl md:text-3xl"
           >
             {isMenuOpen ? 'close' : 'menu'}
           </button>
@@ -78,7 +78,7 @@ const TopNavBar = () => {
 
       {/* Mobile Menu Dropdown */}
       {isMenuOpen && (
-        <div className="lg:hidden absolute top-20 left-0 w-full bg-white dark:bg-[#00030f] border-t border-gray-100 dark:border-gray-800 shadow-xl py-6 px-8 flex flex-col gap-6">
+        <div className="lg:hidden absolute top-16 md:top-20 left-0 w-full bg-white dark:bg-[#00030f] border-t border-gray-100 dark:border-gray-800 shadow-xl py-6 px-4 md:px-8 flex flex-col gap-6">
           {navLinks.map((link) => (
             <Link
               key={link.path}

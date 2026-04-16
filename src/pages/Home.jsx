@@ -15,12 +15,12 @@ const Home = () => {
           />
           <div className="absolute inset-0 hero-gradient"></div>
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-8 w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 w-full">
           <div className="max-w-3xl">
-            <h1 className="font-headline font-extrabold text-white text-6xl md:text-7xl leading-tight tracking-tight mb-8">
+            <h1 className="font-headline font-extrabold text-white text-2xl md:text-3xl md:text-4xl lg:text-5xl lg:text-7xl leading-tight tracking-tight mb-8">
               {t('home.hero.gateway')} <span className="text-secondary-container">{t('home.hero.travel')}</span>, <span className="text-secondary-fixed-dim">{t('home.hero.trade')}</span> &amp; <span className="text-secondary-container">{t('home.hero.sports')}</span>
             </h1>
-            <p className="text-on-primary-container text-xl md:text-2xl mb-12 leading-relaxed">
+            <p className="text-on-primary-container text-xl md:text-2xl mb-8 md:mb-12 leading-relaxed">
               {t('home.hero.desc')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -36,16 +36,16 @@ const Home = () => {
       </section>
 
       {/* Services Overview */}
-      <section className="py-32 bg-surface">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+      <section className="py-16 lg:py-32 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-8 md:mb-16 gap-6 md:gap-8">
             <div className="max-w-2xl">
-              <h2 className="font-headline font-bold text-5xl text-primary mb-6">{t('home.services.title')}</h2>
+              <h2 className="font-headline font-bold text-2xl md:text-3xl md:text-4xl lg:text-5xl text-primary mb-6">{t('home.services.title')}</h2>
           <p className="text-on-surface-variant text-lg leading-relaxed font-body">{t('home.services.desc')}</p>
             </div>
             <div className="hidden md:block h-[2px] flex-grow bg-surface-variant mx-12 mb-4"></div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
             {/* Travel Services */}
             <div className="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-lowest transition-all hover:shadow-2xl">
               <div className="aspect-[16/9] overflow-hidden">
@@ -55,8 +55,8 @@ const Home = () => {
                   alt="Luxury vehicle interior"
                 />
               </div>
-              <div className="p-8">
-                <h3 className="font-headline font-bold text-3xl mb-4">{t('home.services.travel')}</h3>
+              <div className="p-5 md:p-8">
+                <h3 className="font-headline font-bold text-2xl md:text-3xl mb-4">{t('home.services.travel')}</h3>
                 <p className="text-on-surface-variant mb-8 max-w-xl">{t('home.services.travelDesc')}</p>
                 <button className="flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all">
                   {t('home.services.learnMore')} <span translate="no" className="material-symbols-outlined">arrow_forward</span>
@@ -72,7 +72,7 @@ const Home = () => {
                   alt="Shipping terminal at sunrise"
                 />
               </div>
-              <div className="p-8">
+              <div className="p-5 md:p-8">
                 <h3 className="font-headline font-bold text-2xl mb-4">{t('home.services.import')}</h3>
                 <p className="text-on-surface-variant mb-8">{t('home.services.importDesc')}</p>
                 <button className="flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all">
@@ -84,9 +84,9 @@ const Home = () => {
             <div className="md:col-span-12 group relative overflow-hidden rounded-xl bg-primary-container text-white flex flex-col md:flex-row items-center">
               <div className="w-full md:w-1/2 p-12 lg:p-16">
                 <span className="inline-block px-4 py-1 bg-secondary rounded-full text-xs font-bold mb-6 tracking-widest">{t('home.services.premium')}</span>
-                <h3 className="font-headline font-bold text-4xl mb-6">{t('home.services.sport')}</h3>
+                <h3 className="font-headline font-bold text-2xl md:text-3xl lg:text-4xl mb-6">{t('home.services.sport')}</h3>
                 <p className="text-on-primary-container text-lg mb-10 leading-relaxed">{t('home.services.sportDesc')}</p>
-                <button className="bg-white text-primary px-8 py-4 rounded-xl font-bold hover:bg-secondary hover:text-white transition-all">
+                <button className="bg-white text-primary px-4 md:px-8 py-4 rounded-xl font-bold hover:bg-secondary hover:text-white transition-all">
                   {t('home.services.shopCol')}
                 </button>
               </div>
@@ -103,30 +103,30 @@ const Home = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-32 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="text-center mb-20">
-            <h2 className="font-headline font-bold text-5xl mb-6">{t('home.why.title')}</h2>
+      <section className="py-16 lg:py-32 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <div className="text-center mb-10 md:mb-20">
+            <h2 className="font-headline font-bold text-2xl md:text-3xl md:text-4xl lg:text-5xl mb-6">{t('home.why.title')}</h2>
             <p className="text-on-surface-variant text-xl max-w-2xl mx-auto">{t('home.why.desc')}</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div className="text-center p-8">
-              <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-sm">
-                <span translate="no" className="material-symbols-outlined text-4xl text-secondary">verified_user</span>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-12">
+            <div className="text-center p-5 md:p-8">
+              <div className="w-20 h-16 md:h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-sm">
+                <span translate="no" className="material-symbols-outlined text-2xl md:text-3xl lg:text-4xl text-secondary">verified_user</span>
               </div>
               <h4 className="font-headline font-bold text-2xl mb-4">{t('home.why.trust')}</h4>
               <p className="text-on-surface-variant leading-relaxed">{t('home.why.trustDesc')}</p>
             </div>
-            <div className="text-center p-8">
-              <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-sm">
-                <span translate="no" className="material-symbols-outlined text-4xl text-secondary">rocket_launch</span>
+            <div className="text-center p-5 md:p-8">
+              <div className="w-20 h-16 md:h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-sm">
+                <span translate="no" className="material-symbols-outlined text-2xl md:text-3xl lg:text-4xl text-secondary">rocket_launch</span>
               </div>
               <h4 className="font-headline font-bold text-2xl mb-4">{t('home.why.agility')}</h4>
               <p className="text-on-surface-variant leading-relaxed">{t('home.why.agilityDesc')}</p>
             </div>
-            <div className="text-center p-8">
-              <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-sm">
-                <span translate="no" className="material-symbols-outlined text-4xl text-secondary">support_agent</span>
+            <div className="text-center p-5 md:p-8">
+              <div className="w-20 h-16 md:h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-sm">
+                <span translate="no" className="material-symbols-outlined text-2xl md:text-3xl lg:text-4xl text-secondary">support_agent</span>
               </div>
               <h4 className="font-headline font-bold text-2xl mb-4">{t('home.why.support')}</h4>
               <p className="text-on-surface-variant leading-relaxed">{t('home.why.supportDesc')}</p>
@@ -136,12 +136,12 @@ const Home = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="py-32 bg-white overflow-hidden">
-        <div className="max-w-7xl mx-auto px-8 relative">
+      <section className="py-16 lg:py-32 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 relative">
           <span className="absolute top-0 right-8 text-[12rem] font-headline font-black text-surface-container leading-none -z-10 opacity-50 select-none">{t('home.testimonials.bgtext')}</span>
-          <div className="flex flex-col md:flex-row gap-16 items-center">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-16 items-center">
             <div className="w-full md:w-1/3">
-              <h2 className="font-headline font-bold text-5xl mb-8">{t('home.testimonials.title')}</h2>
+              <h2 className="font-headline font-bold text-2xl md:text-3xl md:text-4xl lg:text-5xl mb-8">{t('home.testimonials.title')}</h2>
               <div className="flex gap-2 mb-8">
                 <span translate="no" className="material-symbols-outlined text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                 <span translate="no" className="material-symbols-outlined text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
@@ -150,9 +150,9 @@ const Home = () => {
                 <span translate="no" className="material-symbols-outlined text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
               </div>
             </div>
-            <div className="w-full md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-surface-container-low p-10 rounded-xl relative">
-                <span translate="no" className="material-symbols-outlined text-secondary opacity-30 text-5xl absolute top-6 right-6">format_quote</span>
+            <div className="w-full md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+              <div className="bg-surface-container-low p-6 md:p-10 rounded-xl relative">
+                <span translate="no" className="material-symbols-outlined text-secondary opacity-30 text-2xl md:text-3xl md:text-4xl lg:text-5xl absolute top-6 right-6">format_quote</span>
                 <p className="text-lg italic text-on-surface mb-8">{t('home.testimonials.t1')}</p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full overflow-hidden">
@@ -168,8 +168,8 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="bg-surface-container-low p-10 rounded-xl relative">
-                <span translate="no" className="material-symbols-outlined text-secondary opacity-30 text-5xl absolute top-6 right-6">format_quote</span>
+              <div className="bg-surface-container-low p-6 md:p-10 rounded-xl relative">
+                <span translate="no" className="material-symbols-outlined text-secondary opacity-30 text-2xl md:text-3xl md:text-4xl lg:text-5xl absolute top-6 right-6">format_quote</span>
                 <p className="text-lg italic text-on-surface mb-8">{t('home.testimonials.t2')}</p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full overflow-hidden">
@@ -191,16 +191,16 @@ const Home = () => {
       </section>
 
       {/* Contact Preview */}
-      <section className="py-24 bg-primary-container relative">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="bg-white/5 backdrop-blur-md rounded-2xl p-12 md:p-16 border border-white/10 flex flex-col md:flex-row justify-between items-center gap-12">
+      <section className="py-12 lg:py-24 bg-primary-container relative">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 md:p-12 lg:p-16 border border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 lg:gap-12">
             <div className="max-w-xl">
-              <h2 className="font-headline font-bold text-4xl text-white mb-6">{t('home.cta.title')}</h2>
+              <h2 className="font-headline font-bold text-2xl md:text-3xl lg:text-4xl text-white mb-6">{t('home.cta.title')}</h2>
               <p className="text-on-primary-container text-lg">{t('home.cta.desc')}</p>
             </div>
             <div className="flex flex-col sm:flex-row gap-6 w-full md:w-auto">
-              <a className="bg-secondary text-white px-8 py-4 rounded-xl font-bold text-center hover:scale-102 transition-transform" href="mailto:concierge@jdmsarl.com">{t('home.cta.touch')}</a>
-              <a className="border border-white/30 text-white px-8 py-4 rounded-xl font-bold text-center hover:bg-white/10 transition-all" href="#">{t('home.cta.brochure')}</a>
+              <a className="bg-secondary text-white px-4 md:px-8 py-4 rounded-xl font-bold text-center hover:scale-102 transition-transform" href="mailto:concierge@jdmsarl.com">{t('home.cta.touch')}</a>
+              <a className="border border-white/30 text-white px-4 md:px-8 py-4 rounded-xl font-bold text-center hover:bg-white/10 transition-all" href="#">{t('home.cta.brochure')}</a>
             </div>
           </div>
         </div>

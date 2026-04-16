@@ -4,19 +4,19 @@ import { useLanguage } from '../context/LanguageContext';
 const Contact = () => {
   const { t } = useLanguage();
   return (
-    <main className="pt-32 pb-20 px-8 max-w-7xl mx-auto">
-      <header className="mb-16 md:mb-24">
-        <h1 className="text-6xl md:text-7xl font-extrabold tracking-tighter text-primary-container mb-4">{t('contact.title')}</h1>
+    <main className="pt-32 pb-20 px-4 md:px-8 max-w-7xl mx-auto">
+      <header className="mb-8 md:mb-16 lg:mb-24">
+        <h1 className="text-2xl md:text-3xl md:text-4xl lg:text-5xl lg:text-7xl font-extrabold tracking-tighter text-primary-container mb-4">{t('contact.title')}</h1>
         <p className="text-on-surface-variant max-w-2xl text-lg leading-relaxed font-body">
           {t('contact.desc')}
         </p>
       </header>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start">
         {/* Contact Form Section */}
-        <section className="lg:col-span-7 bg-surface-container-low rounded-[2rem] p-8 md:p-12 shadow-sm relative overflow-hidden">
+        <section className="lg:col-span-7 bg-surface-container-low rounded-[2rem] p-6 md:p-8 lg:p-12 shadow-sm relative overflow-hidden">
           <div className="absolute top-0 right-0 w-32 h-32 bg-secondary-fixed/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-          <h2 className="text-3xl font-bold text-primary-container mb-8">{t('contact.msg')}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-primary-container mb-8">{t('contact.msg')}</h2>
           <form className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
@@ -52,7 +52,7 @@ const Contact = () => {
         {/* Sidebar Info */}
         <aside className="lg:col-span-5 space-y-8">
           {/* Address Card */}
-          <div className="bg-surface-container-lowest rounded-[2rem] p-8 shadow-[0_12px_32px_rgba(11,29,58,0.04)] group">
+          <div className="bg-surface-container-lowest rounded-[2rem] p-5 md:p-8 shadow-[0_12px_32px_rgba(11,29,58,0.04)] group">
             <div className="flex items-start gap-6">
               <div className="w-14 h-14 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary">
                 <span translate="no" className="material-symbols-outlined text-2xl">location_on</span>
@@ -64,7 +64,7 @@ const Contact = () => {
             </div>
           </div>
           {/* Contact Details Card */}
-          <div className="bg-surface-container-low rounded-[2rem] p-8 space-y-6">
+          <div className="bg-surface-container-low rounded-[2rem] p-5 md:p-8 space-y-6">
             <div className="flex items-center gap-6">
               <div className="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-white">
                 <span translate="no" className="material-symbols-outlined text-xl">call</span>
@@ -102,16 +102,16 @@ const Contact = () => {
       </div>
 
       {/* Secondary CTA Section */}
-      <section className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div className="p-8 bg-white border-l-4 border-secondary rounded-xl">
+      <section className="mt-12 md:mt-24 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="p-5 md:p-8 bg-white border-l-4 border-secondary rounded-xl">
           <h4 className="font-bold text-primary-container mb-2">{t('contact.corp')}</h4>
           <p className="text-sm text-on-surface-variant">{t('contact.corp_desc')}</p>
         </div>
-        <div className="p-8 bg-white border-l-4 border-primary-container rounded-xl">
+        <div className="p-5 md:p-8 bg-white border-l-4 border-primary-container rounded-xl">
           <h4 className="font-bold text-primary-container mb-2">{t('contact.priv')}</h4>
           <p className="text-sm text-on-surface-variant">{t('contact.priv_desc')}</p>
         </div>
-        <div className="p-8 bg-white border-l-4 border-secondary-container rounded-xl">
+        <div className="p-5 md:p-8 bg-white border-l-4 border-secondary-container rounded-xl">
           <h4 className="font-bold text-primary-container mb-2">{t('contact.sup')}</h4>
           <p className="text-sm text-on-surface-variant">{t('contact.sup_desc')}</p>
         </div>

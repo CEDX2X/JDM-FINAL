@@ -15,34 +15,34 @@ const Logistics = () => {
           />
           <div className="absolute inset-0 bg-surface/90 backdrop-blur-sm"></div>
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-8 text-center max-w-4xl">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 text-center max-w-4xl">
           <span className="inline-block px-4 py-1.5 mb-8 text-xs font-bold tracking-widest uppercase bg-secondary text-on-secondary rounded-full">{t('log.badge')}</span>
-          <h1 className="text-6xl md:text-7xl font-extrabold tracking-tighter text-primary leading-[1.1] mb-8 font-headline">
+          <h1 className="text-2xl md:text-3xl md:text-4xl lg:text-5xl lg:text-7xl font-extrabold tracking-tighter text-primary leading-[1.1] mb-8 font-headline">
             {t('log.title')} <br /><span className="text-secondary">{t('log.title_sub')}</span>
           </h1>
-          <p className="text-xl text-on-surface-variant mb-12 leading-relaxed max-w-2xl mx-auto font-body">
+          <p className="text-xl text-on-surface-variant mb-8 md:mb-12 leading-relaxed max-w-2xl mx-auto font-body">
             {t('log.desc')}
           </p>
           <div className="flex justify-center gap-4">
-            <button className="bg-primary-container text-on-primary px-8 py-4 rounded-xl font-bold text-lg hover:scale-102 transition-transform shadow-xl">{t('log.quote')}</button>
-            <button className="border-2 border-outline-variant/30 text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-surface-container-low transition-colors">{t('log.capa')}</button>
+            <button className="bg-primary-container text-on-primary px-4 md:px-8 py-4 rounded-xl font-bold text-lg hover:scale-102 transition-transform shadow-xl">{t('log.quote')}</button>
+            <button className="border-2 border-outline-variant/30 text-primary px-4 md:px-8 py-4 rounded-xl font-bold text-lg hover:bg-surface-container-low transition-colors">{t('log.capa')}</button>
           </div>
         </div>
 
         {/* Floating Quick Stats */}
-        <div className="relative z-10 max-w-5xl mx-auto px-8 mt-20">
-          <div className="bg-white rounded-3xl p-8 flex flex-col md:flex-row justify-between items-center shadow-2xl border border-outline-variant/10 divide-y md:divide-y-0 md:divide-x divide-outline-variant/20">
-            <div className="px-8 py-4 md:py-0 text-center w-full">
-              <span className="block text-4xl font-headline font-black text-primary mb-2">120+</span>
+        <div className="relative z-10 max-w-5xl mx-auto px-4 md:px-8 mt-10 md:mt-20">
+          <div className="bg-white rounded-2xl md:rounded-3xl p-5 md:p-8 flex flex-col md:flex-row justify-between items-center shadow-2xl border border-outline-variant/10 divide-y md:divide-y-0 md:divide-x divide-outline-variant/20">
+            <div className="px-4 md:px-8 py-4 md:py-0 text-center w-full">
+              <span className="block text-2xl md:text-3xl lg:text-4xl font-headline font-black text-primary mb-2">120+</span>
               <span className="text-sm font-bold uppercase tracking-widest text-on-surface-variant/70">Countries Served</span>
             </div>
-            <div className="px-8 py-4 md:py-0 text-center w-full">
-              <span className="block text-4xl font-headline font-black text-primary mb-2">24h</span>
+            <div className="px-4 md:px-8 py-4 md:py-0 text-center w-full">
+              <span className="block text-2xl md:text-3xl lg:text-4xl font-headline font-black text-primary mb-2">24h</span>
               <span className="text-sm font-bold uppercase tracking-widest text-on-surface-variant/70">Customs Clearance</span>
             </div>
-            <div className="px-8 py-4 md:py-0 text-center w-full">
-              <div className="inline-flex items-center gap-2 text-4xl font-headline font-black text-secondary mb-2">
-                <span translate="no" className="material-symbols-outlined text-3xl">radar</span> {t('log.live')}
+            <div className="px-4 md:px-8 py-4 md:py-0 text-center w-full">
+              <div className="inline-flex items-center gap-2 text-2xl md:text-3xl lg:text-4xl font-headline font-black text-secondary mb-2">
+                <span translate="no" className="material-symbols-outlined text-2xl md:text-3xl">radar</span> {t('log.live')}
               </div>
               <span className="text-sm font-bold uppercase tracking-widest text-on-surface-variant/70 block">{t('log.live_desc')}</span>
             </div>
@@ -51,13 +51,13 @@ const Logistics = () => {
       </section>
 
       {/* Core Capabilities */}
-      <section className="py-32 bg-surface">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <section className="py-16 lg:py-32 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {/* Ocean */}
             <div className="bg-surface-container-lowest p-10 rounded-[2rem] border border-outline-variant/10 hover:shadow-xl transition-shadow group">
               <div className="w-16 h-16 bg-primary-container text-on-primary rounded-2xl flex items-center justify-center mb-8 group-hover:-translate-y-2 transition-transform">
-                <span translate="no" className="material-symbols-outlined text-3xl">directions_boat</span>
+                <span translate="no" className="material-symbols-outlined text-2xl md:text-3xl">directions_boat</span>
               </div>
               <h3 className="font-headline font-bold text-2xl text-primary mb-4">{t('log.ocean')}</h3>
               <p className="text-on-surface-variant leading-relaxed mb-6 block border-b border-outline-variant/10 pb-6">{t('log.int_desc')}</p>
@@ -74,7 +74,7 @@ const Logistics = () => {
               </div>
               <div className="relative z-10">
                 <div className="w-16 h-16 bg-white/10 backdrop-blur text-white rounded-2xl flex items-center justify-center mb-8 group-hover:-translate-y-2 transition-transform">
-                  <span translate="no" className="material-symbols-outlined text-3xl">flight</span>
+                  <span translate="no" className="material-symbols-outlined text-2xl md:text-3xl">flight</span>
                 </div>
                 <h3 className="font-headline font-bold text-2xl mb-4">{t('log.air')}</h3>
                 <p className="text-white/80 leading-relaxed mb-6 block border-b border-white/20 pb-6">{t('log.air_desc')}</p>
@@ -88,7 +88,7 @@ const Logistics = () => {
             {/* Ground */}
             <div className="bg-surface-container-lowest p-10 rounded-[2rem] border border-outline-variant/10 hover:shadow-xl transition-shadow group">
               <div className="w-16 h-16 bg-primary-container text-on-primary rounded-2xl flex items-center justify-center mb-8 group-hover:-translate-y-2 transition-transform">
-                <span translate="no" className="material-symbols-outlined text-3xl">local_shipping</span>
+                <span translate="no" className="material-symbols-outlined text-2xl md:text-3xl">local_shipping</span>
               </div>
               <h3 className="font-headline font-bold text-2xl text-primary mb-4">{t('log.ground')}</h3>
               <p className="text-on-surface-variant leading-relaxed mb-6 block border-b border-outline-variant/10 pb-6">{t('log.fleet')} 99% {t('log.rate_title')}</p>
@@ -103,12 +103,12 @@ const Logistics = () => {
       </section>
 
       {/* Advanced Management Features */}
-      <section className="py-32 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="flex flex-col lg:flex-row gap-16 items-center">
+      <section className="py-16 lg:py-32 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <div className="flex flex-col lg:flex-row gap-6 md:gap-8 lg:gap-16 items-center">
             <div className="lg:w-1/2">
               <span className="text-secondary font-bold uppercase tracking-widest text-xs mb-4 block">{t('log.mgt')}</span>
-              <h2 className="font-headline font-bold text-5xl text-primary mb-8 leading-tight">{t('log.mgt_title')}</h2>
+              <h2 className="font-headline font-bold text-2xl md:text-3xl md:text-4xl lg:text-5xl text-primary mb-8 leading-tight">{t('log.mgt_title')}</h2>
               
               <div className="space-y-8 mt-10">
                 <div className="flex gap-6">
@@ -150,7 +150,7 @@ const Logistics = () => {
               />
               {/* Overlay Stat */}
               <div className="absolute top-1/2 right-0 translate-x-1/4 -translate-y-1/2 bg-white p-6 rounded-2xl shadow-2xl z-20 w-48 text-center border border-outline-variant/10">
-                <span translate="no" className="material-symbols-outlined text-secondary text-4xl mb-2">dashboard_customize</span>
+                <span translate="no" className="material-symbols-outlined text-secondary text-2xl md:text-3xl lg:text-4xl mb-2">dashboard_customize</span>
                 <span className="block font-bold text-xl text-primary mb-1 mt-2">API Ready</span>
                 <span className="text-xs font-medium text-on-surface-variant">Seamless ERP Integration</span>
               </div>
@@ -160,22 +160,22 @@ const Logistics = () => {
       </section>
 
       {/* CTA Partner Section */}
-      <section className="py-24 bg-surface relative overflow-hidden">
+      <section className="py-12 lg:py-24 bg-surface relative overflow-hidden">
         <div className="absolute top-0 left-0 w-1/2 h-full bg-surface-container-lowest -skew-x-12 -translate-x-32 hidden lg:block"></div>
-        <div className="max-w-7xl mx-auto px-8 relative z-10">
-          <div className="bg-primary text-white rounded-[3rem] p-12 md:p-20 flex flex-col lg:flex-row justify-between items-center gap-12 overflow-hidden relative">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+          <div className="bg-primary text-white rounded-[3rem] p-6 md:p-12 lg:p-20 flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-12 overflow-hidden relative">
             <div className="absolute -top-64 -right-64 w-[800px] h-[800px] border border-white/10 rounded-full"></div>
             <div className="absolute -top-64 -right-64 w-[600px] h-[600px] border border-white/10 rounded-full"></div>
             
             <div className="max-w-2xl relative z-10">
-              <h2 className="font-headline font-bold text-4xl md:text-5xl mb-6 leading-tight">{t('log.elevate')}</h2>
+              <h2 className="font-headline font-bold text-2xl md:text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight">{t('log.elevate')}</h2>
               <p className="text-white/80 text-lg">
                 {t('log.elevate_desc')}
               </p>
             </div>
             
             <div className="w-full lg:w-auto flex flex-col sm:flex-row gap-4 relative z-10">
-              <div className="bg-white text-primary p-8 rounded-2xl flex-1 md:min-w-[280px]">
+              <div className="bg-white text-primary p-5 md:p-8 rounded-2xl flex-1 md:min-w-[280px]">
                 <h4 className="font-bold text-xl mb-2">{t('log.ent')}</h4>
                 <p className="text-sm font-medium opacity-80 mb-6">{t('log.ent_title')}</p>
                 <ul className="text-xs space-y-3 mb-8 opacity-70">
@@ -183,7 +183,7 @@ const Logistics = () => {
                 </ul>
                 <button className="w-full py-3 bg-secondary text-white rounded-xl font-bold hover:scale-105 transition-transform">{t('log.inq')}</button>
               </div>
-              <div className="bg-primary-container text-white p-8 rounded-2xl flex-1 md:min-w-[280px] border border-white/20">
+              <div className="bg-primary-container text-white p-5 md:p-8 rounded-2xl flex-1 md:min-w-[280px] border border-white/20">
                 <h4 className="font-bold text-xl mb-2">{t('log.sme')}</h4>
                 <p className="text-sm font-medium opacity-80 mb-6">{t('log.sme_title')}</p>
                 <ul className="text-xs space-y-3 mb-8 opacity-70 list-disc ml-3">
