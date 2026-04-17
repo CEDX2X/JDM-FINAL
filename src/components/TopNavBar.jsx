@@ -53,7 +53,7 @@ const TopNavBar = () => {
           >
             {language === 'en' ? 'FR' : 'EN'}
           </button>
-          <button translate="no" className="material-symbols-outlined text-[#0B1D3A]/70 dark:text-white">search</button>
+          <button onClick={() => navigate('/sport')} translate="no" className="material-symbols-outlined text-[#0B1D3A]/70 dark:text-white">search</button>
           <button onClick={() => navigate('/contact')} className="bg-primary-container text-on-primary px-6 py-2.5 rounded-xl font-bold transition-transform duration-300 hover:scale-102">
             {t('nav.getStarted')}
           </button>

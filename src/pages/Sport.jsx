@@ -165,7 +165,7 @@ const Sport = () => {
                     <button onClick={() => navigate('/contact')} className="flex-1 bg-primary-container text-on-primary py-3.5 rounded-xl font-bold text-sm scale-102 transition-all flex items-center justify-center gap-2">
                       <span translate="no" className="material-symbols-outlined text-[18px]">add_shopping_cart</span> {t('sport.add')}
                     </button>
-                    <button className="w-12 h-12 flex items-center justify-center border border-outline-variant/30 rounded-xl hover:bg-surface-container-low transition-colors">
+                    <button onClick={() => navigate('/contact')} className="w-12 h-12 flex items-center justify-center border border-outline-variant/30 rounded-xl hover:bg-surface-container-low transition-colors">
                       <span translate="no" className="material-symbols-outlined">favorite</span>
                     </button>
                   </div>
@@ -175,10 +175,10 @@ const Sport = () => {
           </div>
           {/* Pagination */}
           <div className="mt-10 md:mt-20 flex justify-center gap-2">
-            <button className="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors font-bold">1</button>
-            <button className="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors font-bold">2</button>
-            <button className="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors font-bold">3</button>
-            <button className="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors font-bold">
+            <button onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} className="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors font-bold">1</button>
+            <button onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} className="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors font-bold">2</button>
+            <button onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} className="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors font-bold">3</button>
+            <button onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} className="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors font-bold">
               <span translate="no" className="material-symbols-outlined">chevron_right</span>
             </button>
           </div>

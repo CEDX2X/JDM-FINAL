@@ -47,17 +47,17 @@ const Footer = () => {
           <h5 className="font-bold text-[#0B1D3A] dark:text-white mb-6 font-headline">{t('footer.company')}</h5>
           <ul className="space-y-4">
             <li>
-              <Link to="#" className="text-[#0B1D3A]/60 dark:text-[#f7f9fc]/60 text-sm hover:text-[#0B1D3A] dark:hover:text-white underline decoration-[#9b3f5a] decoration-2 underline-offset-4 transition-opacity">
+              <Link to="/contact" className="text-[#0B1D3A]/60 dark:text-[#f7f9fc]/60 text-sm hover:text-[#0B1D3A] dark:hover:text-white underline decoration-[#9b3f5a] decoration-2 underline-offset-4 transition-opacity">
                 {t('footer.links.privacy')}
               </Link>
             </li>
             <li>
-              <Link to="#" className="text-[#0B1D3A]/60 dark:text-[#f7f9fc]/60 text-sm hover:text-[#0B1D3A] dark:hover:text-white underline decoration-[#9b3f5a] decoration-2 underline-offset-4 transition-opacity">
+              <Link to="/contact" className="text-[#0B1D3A]/60 dark:text-[#f7f9fc]/60 text-sm hover:text-[#0B1D3A] dark:hover:text-white underline decoration-[#9b3f5a] decoration-2 underline-offset-4 transition-opacity">
                 {t('footer.links.terms')}
               </Link>
             </li>
             <li>
-              <Link to="#" className="text-[#0B1D3A]/60 dark:text-[#f7f9fc]/60 text-sm hover:text-[#0B1D3A] dark:hover:text-white underline decoration-[#9b3f5a] decoration-2 underline-offset-4 transition-opacity">
+              <Link to="/contact" className="text-[#0B1D3A]/60 dark:text-[#f7f9fc]/60 text-sm hover:text-[#0B1D3A] dark:hover:text-white underline decoration-[#9b3f5a] decoration-2 underline-offset-4 transition-opacity">
                 {t('footer.links.careers')}
               </Link>
             </li>
