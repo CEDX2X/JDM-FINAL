@@ -88,7 +88,7 @@ const Home = () => {
                 <span className="inline-block px-4 py-1 bg-secondary rounded-full text-xs font-bold mb-6 tracking-widest">{t('home.services.premium')}</span>
                 <h3 className="font-headline font-bold text-2xl md:text-3xl lg:text-4xl mb-6">{t('home.services.sport')}</h3>
                 <p className="text-on-primary-container text-lg mb-10 leading-relaxed">{t('home.services.sportDesc')}</p>
-                <button className="bg-white text-primary px-4 md:px-8 py-4 rounded-xl font-bold hover:bg-secondary hover:text-white transition-all">
+                <button onClick={() => navigate('/sport')} className="bg-white text-primary px-4 md:px-8 py-4 rounded-xl font-bold hover:bg-secondary hover:text-white transition-all">
                   {t('home.services.shopCol')}
                 </button>
               </div>
@@ -202,7 +202,7 @@ const Home = () => {
             </div>
             <div className="flex flex-col sm:flex-row gap-6 w-full md:w-auto">
               <a className="bg-secondary text-white px-4 md:px-8 py-4 rounded-xl font-bold text-center hover:scale-102 transition-transform" href="mailto:concierge@jdmsarl.com">{t('home.cta.touch')}</a>
-              <a className="border border-white/30 text-white px-4 md:px-8 py-4 rounded-xl font-bold text-center hover:bg-white/10 transition-all" href="#">{t('home.cta.brochure')}</a>
+              <button onClick={() => navigate('/contact')} className="border border-white/30 text-white px-4 md:px-8 py-4 rounded-xl font-bold text-center hover:bg-white/10 transition-all">{t('home.cta.brochure')}</button>
             </div>
           </div>
         </div>

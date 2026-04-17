@@ -66,8 +66,8 @@ const Sport = () => {
               {t('sport.desc')}
             </p>
             <div className="flex space-x-4">
-              <button className="bg-primary-container text-on-primary px-4 md:px-8 py-4 rounded-xl font-bold text-lg scale-102 transition-transform shadow-lg">{t('sport.explore')}</button>
-              <button className="border-2 border-outline-variant/30 text-primary px-4 md:px-8 py-4 rounded-xl font-bold text-lg hover:bg-surface transition-colors">{t('sport.clubs')}</button>
+              <button onClick={() => document.getElementById('kits')?.scrollIntoView({behavior: 'smooth'})} className="bg-primary-container text-on-primary px-4 md:px-8 py-4 rounded-xl font-bold text-lg scale-102 transition-transform shadow-lg">{t('sport.explore')}</button>
+              <button onClick={() => document.getElementById('filters')?.scrollIntoView({behavior: 'smooth'})} className="border-2 border-outline-variant/30 text-primary px-4 md:px-8 py-4 rounded-xl font-bold text-lg hover:bg-surface transition-colors">{t('sport.clubs')}</button>
             </div>
           </div>
           <div className="relative h-64 md:h-80 lg:h-[500px] hidden lg:block">

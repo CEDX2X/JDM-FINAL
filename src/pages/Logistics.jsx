@@ -37,8 +37,8 @@ const Logistics = () => {
             {t('log.desc')}
           </p>
           <div className="flex justify-center gap-4">
-            <button className="bg-primary-container text-on-primary px-4 md:px-8 py-4 rounded-xl font-bold text-lg hover:scale-102 transition-transform shadow-xl">{t('log.quote')}</button>
-            <button className="border-2 border-outline-variant/30 text-primary px-4 md:px-8 py-4 rounded-xl font-bold text-lg hover:bg-surface-container-low transition-colors">{t('log.capa')}</button>
+            <button onClick={() => navigate('/contact')} className="bg-primary-container text-on-primary px-4 md:px-8 py-4 rounded-xl font-bold text-lg hover:scale-102 transition-transform shadow-xl">{t('log.quote')}</button>
+            <button onClick={() => document.getElementById('capabilities')?.scrollIntoView({behavior: 'smooth'})} className="border-2 border-outline-variant/30 text-primary px-4 md:px-8 py-4 rounded-xl font-bold text-lg hover:bg-surface-container-low transition-colors">{t('log.capa')}</button>
           </div>
         </div>
 

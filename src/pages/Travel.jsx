@@ -19,10 +19,10 @@ const Travel = () => {
               {t('travel.desc')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-primary text-on-primary px-4 md:px-8 py-5 rounded-xl font-bold text-lg hover:scale-102 transition-transform shadow-xl flex items-center justify-center gap-3">
+              <button onClick={() => navigate('/contact')} className="bg-primary text-on-primary px-4 md:px-8 py-5 rounded-xl font-bold text-lg hover:scale-102 transition-transform shadow-xl flex items-center justify-center gap-3">
                 {t('travel.book')} <span translate="no" className="material-symbols-outlined">flight_takeoff</span>
               </button>
-              <button className="border-2 border-primary/20 text-primary px-4 md:px-8 py-5 rounded-xl font-bold text-lg hover:bg-surface-container-low transition-colors">
+              <button onClick={() => document.getElementById('destinations')?.scrollIntoView({behavior: 'smooth'})} className="border-2 border-primary/20 text-primary px-4 md:px-8 py-5 rounded-xl font-bold text-lg hover:bg-surface-container-low transition-colors">
                 {t('travel.view')}
               </button>
             </div>
@@ -193,7 +193,7 @@ const Travel = () => {
                     <span className="font-bold text-2xl md:text-3xl text-white">$18,500</span>
                   </div>
                   <div className="h-8 md:h-10 w-px bg-white/20"></div>
-                  <button className="bg-white text-primary px-4 md:px-8 py-4 rounded-xl font-bold hover:bg-secondary hover:text-white transition-colors">
+                  <button onClick={() => navigate('/contact')} className="bg-white text-primary px-4 md:px-8 py-4 rounded-xl font-bold hover:bg-secondary hover:text-white transition-colors">
                     {t('travel.view')}
                   </button>
                 </div>

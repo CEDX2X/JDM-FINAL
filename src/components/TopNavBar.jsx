@@ -54,7 +54,7 @@ const TopNavBar = () => {
             {language === 'en' ? 'FR' : 'EN'}
           </button>
           <button translate="no" className="material-symbols-outlined text-[#0B1D3A]/70 dark:text-white">search</button>
-          <button className="bg-primary-container text-on-primary px-6 py-2.5 rounded-xl font-bold transition-transform duration-300 hover:scale-102">
+          <button onClick={() => navigate('/contact')} className="bg-primary-container text-on-primary px-6 py-2.5 rounded-xl font-bold transition-transform duration-300 hover:scale-102">
             {t('nav.getStarted')}
           </button>
         </div>
@@ -95,7 +95,7 @@ const TopNavBar = () => {
             </Link>
           ))}
           <div className="h-px w-full bg-gray-100 dark:bg-gray-800 my-2"></div>
-          <button className="w-full bg-primary-container text-on-primary px-6 py-4 rounded-xl font-bold text-lg">
+          <button onClick={() => { setIsMenuOpen(false); navigate('/contact'); }} className="w-full bg-primary-container text-on-primary px-6 py-4 rounded-xl font-bold text-lg">
             {t('nav.getStarted')}
           </button>
         </div>
