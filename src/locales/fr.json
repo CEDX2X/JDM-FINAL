@@ -26,11 +26,13 @@
   },
   "home": {
     "hero": {
-      "gateway": "Votre Portail vers le",
-      "travel": "Voyage",
-      "trade": "Commerce",
-      "sports": "Sport",
-      "desc": "L'excellence en mouvement. Nous concevons des expériences de classe mondiale dans la logistique internationale, les voyages sur mesure et les articles de sport de luxe.",
+      "gateway": "Votre passerelle vers les",
+      "travel": "études en Chine",
+      "comma": ",",
+      "trade": "le commerce international",
+      "and": "et",
+      "sports": "le sport",
+      "desc": "JDM SARL vous accompagne dans votre projet d’études en Chine, assure l’importation d’articles de qualité vers le Cameroun et met à votre disposition une boutique d’équipements sportifs à Douala.",
       "explore": "Explorer nos Services",
       "started": "Commencer"
     },
