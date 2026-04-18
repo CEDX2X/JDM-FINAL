@@ -18,8 +18,8 @@ const Home = () => {
           <div className="absolute inset-0 hero-gradient"></div>
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 w-full">
-          <div className="max-w-3xl">
-            <h1 className="font-headline font-extrabold text-white text-2xl md:text-3xl md:text-4xl lg:text-5xl lg:text-7xl leading-tight tracking-tight mb-8">
+          <div className="max-w-4xl lg:max-w-5xl">
+            <h1 className="font-headline font-extrabold text-white text-2xl md:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight tracking-tight mb-8">
               {t('home.hero.gateway')} <span className="text-secondary-container">{t('home.hero.travel')}</span>{t('home.hero.comma')} <span className="text-secondary-fixed-dim">{t('home.hero.trade')}</span> {t('home.hero.and')} <span className="text-secondary-container">{t('home.hero.sports')}</span>
             </h1>
             <p className="text-on-primary-container text-xl md:text-2xl mb-8 md:mb-12 leading-relaxed">
