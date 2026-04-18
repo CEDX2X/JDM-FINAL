@@ -27,10 +27,12 @@
   "home": {
     "hero": {
       "gateway": "Your Gateway to",
-      "travel": "Travel",
-      "trade": "Trade",
+      "travel": "Studying in China",
+      "comma": ",",
+      "trade": "International Trade",
+      "and": "&",
       "sports": "Sports",
-      "desc": "Excellence in motion. We architect world-class experiences across global logistics, bespoke travel, and elite sporting goods.",
+      "desc": "JDM SARL supports your study projects in China, ensures the import of quality goods to Cameroon, and provides you with a sports equipment store in Douala.",
       "explore": "Explore Services",
       "started": "Get Started"
     },
