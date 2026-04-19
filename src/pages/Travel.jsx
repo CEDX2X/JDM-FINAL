@@ -82,6 +82,7 @@ const Travel = () => {
                       <li className="flex items-center gap-2"><span translate="no" className="material-symbols-outlined text-[16px] text-secondary">check_circle</span> {t('travel.f1')}</li>
                       <li className="flex items-center gap-2"><span translate="no" className="material-symbols-outlined text-[16px] text-secondary">check_circle</span> {t('travel.f2')}</li>
                       <li className="flex items-center gap-2"><span translate="no" className="material-symbols-outlined text-[16px] text-secondary">check_circle</span> {t('travel.f3')}</li>
+                      <li className="flex items-center gap-2"><span translate="no" className="material-symbols-outlined text-[16px] text-secondary">check_circle</span> {t('travel.f4')}</li>
                     </ul>
                     <button onClick={() => navigate('/contact')} className="inline-flex items-center gap-2 mt-4 text-secondary font-bold hover:gap-3 transition-all text-sm uppercase tracking-widest">
                       {t('travel.inquire')} <span translate="no" className="material-symbols-outlined text-[18px]">arrow_forward</span>
@@ -99,6 +100,7 @@ const Travel = () => {
                       <li className="flex items-center gap-2"><span translate="no" className="material-symbols-outlined text-[16px] text-secondary">check_circle</span> {t('travel.v1')}</li>
                       <li className="flex items-center gap-2"><span translate="no" className="material-symbols-outlined text-[16px] text-secondary">check_circle</span> {t('travel.v2')}</li>
                       <li className="flex items-center gap-2"><span translate="no" className="material-symbols-outlined text-[16px] text-secondary">check_circle</span> {t('travel.v3')}</li>
+                      <li className="flex items-center gap-2"><span translate="no" className="material-symbols-outlined text-[16px] text-secondary">check_circle</span> {t('travel.v4')}</li>
                     </ul>
                     <button onClick={() => navigate('/contact')} className="inline-flex items-center gap-2 mt-4 text-secondary font-bold hover:gap-3 transition-all text-sm uppercase tracking-widest">
                       {t('travel.check')} <span translate="no" className="material-symbols-outlined text-[18px]">arrow_forward</span>
