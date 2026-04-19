@@ -161,12 +161,9 @@ const Sport = () => {
                     </div>
                     <p className="font-bold text-lg text-primary">{product.price}</p>
                   </div>
-                  <div className="flex gap-2">
-                    <button onClick={() => navigate('/contact')} className="flex-1 bg-primary-container text-on-primary py-3.5 rounded-xl font-bold text-sm scale-102 transition-all flex items-center justify-center gap-2">
-                      <span translate="no" className="material-symbols-outlined text-[18px]">add_shopping_cart</span> {t('sport.add')}
-                    </button>
-                    <button onClick={() => navigate('/contact')} className="w-12 h-12 flex items-center justify-center border border-outline-variant/30 rounded-xl hover:bg-surface-container-low transition-colors">
-                      <span translate="no" className="material-symbols-outlined">favorite</span>
+                  <div className="flex gap-2 mt-4">
+                    <button onClick={() => navigate('/contact')} className="w-full bg-surface-container-low text-primary border border-primary/10 py-3.5 rounded-xl font-bold text-sm hover:bg-secondary hover:text-white hover:border-secondary transition-colors flex items-center justify-center gap-2">
+                      {t('home.services.learnMore')} <span translate="no" className="material-symbols-outlined text-[18px]">arrow_forward</span>
                     </button>
                   </div>
                 </div>
