@@ -12,7 +12,12 @@ const Footer = () => {
           <p className="text-[#0B1D3A]/60 dark:text-[#f7f9fc]/60 text-sm leading-relaxed mb-6">
             {t('footer.desc')}
           </p>
-          <div className="flex gap-4">
+          <div className="flex gap-4 items-center">
+            <a href="#" target="_blank" rel="noopener noreferrer" className="text-[#0B1D3A]/60 hover:text-secondary cursor-pointer" aria-label="Facebook">
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" />
+              </svg>
+            </a>
             <span translate="no" className="material-symbols-outlined text-[#0B1D3A]/60 hover:text-secondary cursor-pointer">public</span>
             <span translate="no" className="material-symbols-outlined text-[#0B1D3A]/60 hover:text-secondary cursor-pointer">share</span>
             <span translate="no" className="material-symbols-outlined text-[#0B1D3A]/60 hover:text-secondary cursor-pointer">mail</span>
@@ -71,9 +76,11 @@ const Footer = () => {
         <div>
           <h5 className="font-bold text-[#0B1D3A] dark:text-white mb-6 font-headline">{t('footer.office')}</h5>
           <p className="text-[#0B1D3A]/60 dark:text-[#f7f9fc]/60 text-sm leading-relaxed">
-            1200 Avenue of the Americas<br />
-            Level 45, JDM Tower<br />
-            New York, NY 10036
+            Yaoundé (Texaco École de Police)<br />
+            Douala, Cameroun / Chine<br />
+            <br />
+            <a href="tel:+237696464712" className="hover:text-secondary">+237 696464712</a><br />
+            <a href="tel:+237657052145" className="hover:text-secondary">+237 657052145</a>
           </p>
         </div>
       </div>
