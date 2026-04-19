@@ -12,7 +12,7 @@ const Home = () => {
         <div className="absolute inset-0 z-0">
           <img
             className="w-full h-full object-cover"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMSEj2XiAEH_yOkNNpEZ_w7R9hsLt9-J9X4g0wQR7nsSD8cAeFU9hLkxYTNZ-PNX44Ld6iPXtc7a3BwlcQ0-ub4aS-cocJdVnQzLAwr5ULAv208M7gbvUmOe3__wLn81vrP6A-oxkSsgffos-vK5FdQmzscDugeF453OicYssdgdyE19f0xKyWvxQIoP-vYAa_7PDlHkf04fNtIeTCqYalP1qH01MuAOnxafb-ig49RUeKW2bf_DXTMBh_bHxGZWJZA_2tvUwWCIY"
+            src="https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/Ced%2Flanding%20JDM.jpeg?alt=media&token=2e5af903-2247-42f0-afd3-1ce9676450df"
             alt="Luxurious private jet and cargo ship"
           />
           <div className="absolute inset-0 hero-gradient"></div>
@@ -26,7 +26,7 @@ const Home = () => {
               {t('home.hero.desc')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-secondary text-white px-10 py-5 rounded-xl font-bold text-lg transition-all hover:scale-102 hover:shadow-xl" onClick={() => document.getElementById('services')?.scrollIntoView({behavior: 'smooth'})}>
+              <button className="bg-secondary text-white px-10 py-5 rounded-xl font-bold text-lg transition-all hover:scale-102 hover:shadow-xl" onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}>
                 {t('home.hero.explore')}
               </button>
               <button className="border-2 border-white/30 text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-white/10 backdrop-blur-md transition-all" onClick={() => navigate('/contact')}>
@@ -43,7 +43,7 @@ const Home = () => {
           <div className="flex flex-col md:flex-row justify-between items-end mb-8 md:mb-16 gap-6 md:gap-8">
             <div className="max-w-2xl">
               <h2 className="font-headline font-bold text-2xl md:text-3xl md:text-4xl lg:text-5xl text-primary mb-6">{t('home.services.title')}</h2>
-          <p className="text-on-surface-variant text-lg leading-relaxed font-body">{t('home.services.desc')}</p>
+              <p className="text-on-surface-variant text-lg leading-relaxed font-body">{t('home.services.desc')}</p>
             </div>
             <div className="hidden md:block h-[2px] flex-grow bg-surface-variant mx-12 mb-4"></div>
           </div>
