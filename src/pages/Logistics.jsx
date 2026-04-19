@@ -38,7 +38,7 @@ const Logistics = () => {
           </p>
           <div className="flex justify-center gap-4">
             <button onClick={() => navigate('/contact')} className="bg-primary-container text-on-primary px-4 md:px-8 py-4 rounded-xl font-bold text-lg hover:scale-102 transition-transform shadow-xl">{t('log.quote')}</button>
-            <button onClick={() => document.getElementById('capabilities')?.scrollIntoView({behavior: 'smooth'})} className="border-2 border-outline-variant/30 text-primary px-4 md:px-8 py-4 rounded-xl font-bold text-lg hover:bg-surface-container-low transition-colors">{t('log.capa')}</button>
+            <button onClick={() => document.getElementById('capabilities')?.scrollIntoView({ behavior: 'smooth' })} className="border-2 border-outline-variant/30 text-primary px-4 md:px-8 py-4 rounded-xl font-bold text-lg hover:bg-surface-container-low transition-colors">{t('log.capa')}</button>
           </div>
         </div>
 
@@ -70,7 +70,7 @@ const Logistics = () => {
             {/* Ocean */}
             <div className="bg-surface-container-lowest p-10 rounded-[2rem] border border-outline-variant/10 hover:shadow-xl transition-shadow group">
               <div className="w-16 h-16 bg-primary-container text-on-primary rounded-2xl flex items-center justify-center mb-8 group-hover:-translate-y-2 transition-transform">
-                <span translate="no" className="material-symbols-outlined text-2xl md:text-3xl">directions_boat</span>
+                <span translate="no" className="material-symbols-outlined text-2xl md:text-3xl">currency_yuan</span>
               </div>
               <h3 className="font-headline font-bold text-2xl text-primary mb-4">{t('log.ocean')}</h3>
               <p className="text-on-surface-variant leading-relaxed mb-6 block border-b border-outline-variant/10 pb-6">{t('log.int_desc')}</p>
@@ -101,7 +101,7 @@ const Logistics = () => {
             {/* Ground */}
             <div className="bg-surface-container-lowest p-10 rounded-[2rem] border border-outline-variant/10 hover:shadow-xl transition-shadow group">
               <div className="w-16 h-16 bg-primary-container text-on-primary rounded-2xl flex items-center justify-center mb-8 group-hover:-translate-y-2 transition-transform">
-                <span translate="no" className="material-symbols-outlined text-2xl md:text-3xl">local_shipping</span>
+                <span translate="no" className="material-symbols-outlined text-2xl md:text-3xl">directions_boat</span>
               </div>
               <h3 className="font-headline font-bold text-2xl text-primary mb-4">{t('log.ground')}</h3>
               <p className="text-on-surface-variant leading-relaxed mb-6 block border-b border-outline-variant/10 pb-6">{t('log.fleet')} 99% {t('log.rate_title')}</p>
