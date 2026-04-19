@@ -12,8 +12,8 @@ const Travel = () => {
         <div className="w-full lg:w-1/2 flex items-center px-4 md:px-8 lg:px-20 relative z-10 bg-surface/90 backdrop-blur-sm lg:bg-transparent lg:backdrop-blur-none">
           <div className="max-w-xl">
             <span className="inline-block px-4 py-1.5 mb-8 text-xs font-bold tracking-widest uppercase bg-secondary/10 text-secondary border border-secondary/20 rounded-full">{t('travel.badge')}</span>
-            <h1 className="text-2xl md:text-3xl md:text-4xl lg:text-5xl lg:text-7xl font-extrabold tracking-tighter text-primary leading-[1.1] mb-8 font-headline">
-              {t('travel.title')} <br /><span className="text-secondary opacity-90">{t('travel.title_sub')}</span>
+            <h1 className="text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-extrabold tracking-tighter text-primary leading-[1.1] mb-8 font-headline uppercase">
+              {t('travel.title')} <span className="text-secondary opacity-90">{t('travel.title_sub')}</span>
             </h1>
             <p className="text-xl text-on-surface-variant mb-8 md:mb-12 leading-relaxed font-body">
               {t('travel.desc')}
