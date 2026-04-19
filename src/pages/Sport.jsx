@@ -173,15 +173,7 @@ const Sport = () => {
               </div>
             ))}
           </div>
-          {/* Pagination */}
-          <div className="mt-10 md:mt-20 flex justify-center gap-2">
-            <button onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} className="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors font-bold">1</button>
-            <button onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} className="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors font-bold">2</button>
-            <button onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} className="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors font-bold">3</button>
-            <button onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} className="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors font-bold">
-              <span translate="no" className="material-symbols-outlined">chevron_right</span>
-            </button>
-          </div>
+
         </div>
       </main>
     </div>
