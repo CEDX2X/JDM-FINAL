@@ -167,12 +167,12 @@ const Home = () => {
                   <div className="w-12 h-12 rounded-full overflow-hidden">
                     <img
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdUKOIFL924g_ydSaP1KfmOFY_qK-ij61KTbuJ_C6T1X7dKnLso-FrbvtrcYMCy5X8zMmW6yi0D78ZNsfwh5BiMAFMhwPmr09g5m2AUGRdJFYYPo9ptbIxKf2xM_qcuDQsb724s_R2_gDXAv8hOWK1Oe2te5cqjcehwfwltfjko4l3U3v87Mn_shR8wm6rrFXxZwTQQCPkj_rv3jp2kk_XyfotbnxbUTtMPnCqIY0YcZUgfliEZpxUWSbZyL0KhakDvlJozRQ3Jbk"
-                      alt="Julian Vancore"
+                      alt="Henri Mvondo"
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div>
-                    <p className="font-bold">Julian Vancore</p>
+                    <p className="font-bold">Henri Mvondo</p>
                     <p className="text-xs text-on-surface-variant">{t('home.testimonials.p1')}</p>
                   </div>
                 </div>
@@ -184,12 +184,12 @@ const Home = () => {
                   <div className="w-12 h-12 rounded-full overflow-hidden">
                     <img
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuBndvEjLo1Ems4hWBC3fjgU1fi_1hT-Me-IYrAm6s_dlXt8o9osUz-cobgTSExQoIWQ-FQwusleUb16ikhQMNkuzPsAtwb9mBj0zLc3pP9VUOXOqHKdXSAV-Q_mqMfSKsd7DbhjVHzTvLDeuaQ0anUW6H5XH8r1iqlLKtGIDc-qtmAuJX78D7uNbHJboPtop73Yi83dRT-ipGnh2O29wN8ag5QAU8_qQxSKYYGrFM06Mk9LQ4iY5_NbKTa4RNUSn9CvJiyPk33IRKE"
-                      alt="Marcus Sterling"
+                      alt="Nyemb Ghislain Valerie"
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div>
-                    <p className="font-bold">Marcus Sterling</p>
+                    <p className="font-bold">Nyemb Ghislain Valerie</p>
                     <p className="text-xs text-on-surface-variant">{t('home.testimonials.p2')}</p>
                   </div>
                 </div>
