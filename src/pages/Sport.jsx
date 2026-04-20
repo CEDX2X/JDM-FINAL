@@ -111,7 +111,6 @@ const Sport = () => {
                 </div>
                 <div className="p-5 md:p-8">
                   <div className="mb-4">
-                    <p className="text-xs font-bold text-secondary uppercase tracking-widest mb-1">{product.team}</p>
                     <h3 className="font-headline font-bold text-xl text-primary">{product.name}</h3>
                   </div>
                   <div className="flex gap-2 mt-4">
