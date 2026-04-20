@@ -12,7 +12,7 @@ const Sport = () => {
       team: t('sport.teams.madrid'),
       price: '$120.00',
       tag: t('sport.best'),
-      img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBCDY3i4_6MWzZ89hoTrf4r4zkKqPAjUhO7iV55r9aNtF9Ncxfx6hl27zqc8IH2TQCFOKMOpbMBqXtrBTHBXdKh0S7jrJN5kqlsVpmtgtsOs5sbrfSm6d2nOzPbjfR2iPoxAKO2UXWi3YiBJoBzzLuHDckoVGfyoE6Q0cSjroeulbqQ3TF636gSzT-b0gl4QeCRQqHxNKjUlGEaFV6jq4ubKpX_oFXuXQrTmt8uEhMrkhSpI41C7K1nxHcqXeD8XUWujEWyDGP9YIQ'
+      img: 'https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/Ced%2FSPORT%20RA.jpeg?alt=media&token=6d4343e0-9e0c-4180-ba24-88b4abbcfe11'
     },
     {
       id: 2,
@@ -66,8 +66,8 @@ const Sport = () => {
               {t('sport.desc')}
             </p>
             <div className="flex space-x-4">
-              <button onClick={() => document.getElementById('kits')?.scrollIntoView({behavior: 'smooth'})} className="bg-primary-container text-on-primary px-4 md:px-8 py-4 rounded-xl font-bold text-lg scale-102 transition-transform shadow-lg">{t('sport.explore')}</button>
-              <button onClick={() => document.getElementById('filters')?.scrollIntoView({behavior: 'smooth'})} className="border-2 border-outline-variant/30 text-primary px-4 md:px-8 py-4 rounded-xl font-bold text-lg hover:bg-surface transition-colors">{t('sport.clubs')}</button>
+              <button onClick={() => document.getElementById('kits')?.scrollIntoView({ behavior: 'smooth' })} className="bg-primary-container text-on-primary px-4 md:px-8 py-4 rounded-xl font-bold text-lg scale-102 transition-transform shadow-lg">{t('sport.explore')}</button>
+              <button onClick={() => document.getElementById('filters')?.scrollIntoView({ behavior: 'smooth' })} className="border-2 border-outline-variant/30 text-primary px-4 md:px-8 py-4 rounded-xl font-bold text-lg hover:bg-surface transition-colors">{t('sport.clubs')}</button>
             </div>
           </div>
           <div className="relative h-64 md:h-80 lg:h-[500px] hidden lg:block">
