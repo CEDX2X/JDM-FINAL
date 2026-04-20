@@ -73,7 +73,7 @@ const Sport = () => {
           <div className="relative h-64 md:h-80 lg:h-[500px] hidden lg:block">
             <img
               className="w-full h-full object-cover rounded-2xl md:rounded-3xl shadow-2xl"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhBIPBUShbWIVooFv6BTAc2KPqQ-THTHK7s6On1LjcoGXLDA-3IEBhk3pMxQcFpPy0M-lbBljJT6mBVWW7uOgHM67nik168IKrBcNnlqejTe3qgB8KWjGfgDzOF1w0uzcA_kG32yMIt_vx-i0x5QPubT-_dtrCO4cVwJjkG6kW94Ah6Fx0Z_vaIxpr1cUXRkf7S4nzRJFKwzG8Zz5K9LJOd9EP9DTRSI9AcYl2xLDMZf5z1LWTWzEr3jmpialkeWgAOzYjLXk8LxA"
+              src="https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/Ced%2FSPORT%20RA.jpeg?alt=media&token=6d4343e0-9e0c-4180-ba24-88b4abbcfe11"
               alt="Professional football jersey"
             />
             <div className="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-2xl shadow-xl border border-outline-variant/10 max-w-[240px]">
