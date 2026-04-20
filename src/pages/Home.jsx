@@ -60,8 +60,8 @@ const Home = () => {
                 <div className="absolute inset-0 bg-black/10"></div>
                 <img
                   className="relative z-10 w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
-                  src="https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/Ced%2Fvoyageur%20jdm.jpeg?alt=media&token=fcd6f2f3-47d5-4787-87df-a11e8829958f"
-                  alt="young man traveling"
+                  src="https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/Ced%2Fbrain%20JDM.jpeg?alt=media&token=57d5f226-f766-42b6-997f-f6f85c1586bd"
+                  alt="BRAIN CESSION"
                 />
               </div>
               <div className="p-5 md:p-8">
