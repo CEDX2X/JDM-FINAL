@@ -53,8 +53,8 @@ const Home = () => {
               <div className="aspect-[16/9] overflow-hidden">
                 <img
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFyMNEr7ophOQPepI-x2L6ygmFL4TskbikTIrv9XwZme6PLRJXC483aJ-6S0R6WG_okpIfIR59SElljNft5D_5EXwva-HiyX14kGH5uelUg-rg3amP-tktaP4IpvLuleBIO88BBfbg_P0HmHAVdfk21mZm5cQLjY8xdHAfIgqzyBHOI2IVFlZ943fS-wpGLUFa7B1nv4e7zn5u-P95gBzl8FZaTtrMjWkH1gAnnhc-uk6LEOyx6nXsPfNvL044SKUBBwdP_Bx3rQ8"
-                  alt="Luxury vehicle interior"
+                  src="https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/Ced%2Fvoyageur%20jdm.jpeg?alt=media&token=fcd6f2f3-47d5-4787-87df-a11e8829958f"
+                  alt="young man traveling"
                 />
               </div>
               <div className="p-5 md:p-8">
