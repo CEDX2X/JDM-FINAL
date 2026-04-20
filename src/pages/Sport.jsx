@@ -88,55 +88,11 @@ const Sport = () => {
       </header>
 
       <main className="max-w-7xl mx-auto px-4 md:px-8 py-10 lg:py-20 flex flex-col md:flex-row gap-6 lg:gap-12">
-        <aside id="filters" className="w-full md:w-64 flex-shrink-0">
-          <div className="static lg:sticky lg:top-28 space-y-10">
-            <div>
-              <h3 className="font-headline font-bold text-xl mb-6 flex items-center gap-2">
-                <span translate="no" className="material-symbols-outlined text-primary">filter_list</span> {t('sport.cat')}
-              </h3>
-              <div className="space-y-6">
-                <div className="space-y-3">
-                  <label className="text-xs font-bold uppercase tracking-widest text-on-surface-variant/60 block">{t('sport.club_teams')}</label>
-                  <div className="space-y-2">
-                    {[t('sport.teams.madrid'), t('sport.teams.city'), t('sport.teams.bayern')].map(team => (
-                      <label key={team} className="flex items-center group cursor-pointer">
-                        <input className="w-5 h-5 rounded-lg border-outline-variant text-primary focus:ring-secondary mr-3" type="checkbox" />
-                        <span className="text-sm font-medium group-hover:text-secondary transition-colors">{team}</span>
-                      </label>
-                    ))}
-                  </div>
-                </div>
-                <div className="space-y-3">
-                  <label className="text-xs font-bold uppercase tracking-widest text-on-surface-variant/60 block">{t('sport.nat_teams')}</label>
-                  <div className="space-y-2">
-                    {[t('sport.teams.brazil'), t('sport.teams.france'), t('sport.teams.argentina')].map(team => (
-                      <label key={team} className="flex items-center group cursor-pointer">
-                        <input className="w-5 h-5 rounded-lg border-outline-variant text-primary focus:ring-secondary mr-3" type="checkbox" />
-                        <span className="text-sm font-medium group-hover:text-secondary transition-colors">{team}</span>
-                      </label>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="p-6 bg-primary-container rounded-2xl text-on-primary">
-              <p className="text-sm font-headline font-bold mb-4">{t('sport.member')}</p>
-              <p className="text-xs text-on-primary/70 leading-relaxed mb-4">{t('sport.member_desc')}</p>
-              <button onClick={() => navigate('/contact')} className="w-full py-2 bg-secondary rounded-xl text-xs font-bold hover:bg-secondary-container transition-colors">{t('sport.join')}</button>
-            </div>
-          </div>
-        </aside>
-
-        <div className="flex-1">
+        <div className="flex-1 w-full mx-auto">
           <div id="kits" className="flex justify-between items-center mb-10">
             <h2 className="font-headline font-extrabold text-2xl md:text-3xl tracking-tight">{t('sport.featured')}</h2>
             <div className="flex items-center gap-4 text-sm font-medium">
-              <span className="text-on-surface-variant">{t('sport.showing')}</span>
-              <select className="bg-surface-container-low border-none rounded-xl text-sm font-bold focus:ring-2 focus:ring-primary py-2 px-4">
-                <option>{t('sport.sort_pop')}</option>
-                <option>{t('sport.sort_low')}</option>
-                <option>{t('sport.sort_high')}</option>
-              </select>
+              <span className="text-on-surface-variant font-bold px-4 py-2 bg-surface-container-low rounded-xl">{t('sport.showing')}</span>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
@@ -154,12 +110,9 @@ const Sport = () => {
                   )}
                 </div>
                 <div className="p-5 md:p-8">
-                  <div className="flex justify-between items-start mb-4">
-                    <div>
-                      <p className="text-xs font-bold text-secondary uppercase tracking-widest mb-1">{product.team}</p>
-                      <h3 className="font-headline font-bold text-xl text-primary">{product.name}</h3>
-                    </div>
-                    <p className="font-bold text-lg text-primary">{product.price}</p>
+                  <div className="mb-4">
+                    <p className="text-xs font-bold text-secondary uppercase tracking-widest mb-1">{product.team}</p>
+                    <h3 className="font-headline font-bold text-xl text-primary">{product.name}</h3>
                   </div>
                   <div className="flex gap-2 mt-4">
                     <button onClick={() => navigate('/contact')} className="w-full bg-surface-container-low text-primary border border-primary/10 py-3.5 rounded-xl font-bold text-sm hover:bg-secondary hover:text-white hover:border-secondary transition-colors flex items-center justify-center gap-2">
