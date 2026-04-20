@@ -1,8 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 
 const Contact = () => {
   const { t } = useLanguage();
+  
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const subject = formData.subject || t('contact.sub_travel');
+    const text = `Nouveau message (JDM):\n\nNom: ${formData.name}\nEmail: ${formData.email}\nSujet: ${subject}\n\nMessage:\n${formData.message}`;
+    window.open(`https://wa.me/237696464712?text=${encodeURIComponent(text)}`, '_blank');
+  };
+
   return (
     <main className="pt-32 pb-20 px-4 md:px-8 max-w-7xl mx-auto">
       <header className="mb-8 md:mb-16 lg:mb-24">
@@ -17,30 +37,30 @@ const Contact = () => {
         <section className="lg:col-span-7 bg-surface-container-low rounded-[2rem] p-6 md:p-8 lg:p-12 shadow-sm relative overflow-hidden">
           <div className="absolute top-0 right-0 w-32 h-32 bg-secondary-fixed/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
           <h2 className="text-2xl md:text-3xl font-bold text-primary-container mb-8">{t('contact.msg')}</h2>
-          <form className="space-y-6">
+          <form className="space-y-6" onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <label className="text-xs font-bold uppercase tracking-widest text-on-surface-variant/60 ml-1">{t('contact.name')}</label>
-                <input className="w-full bg-surface-container-lowest border-none rounded-xl py-4 px-5 focus:ring-2 focus:ring-secondary/20 transition-all outline-none text-on-surface font-body border-b-2 border-transparent focus:border-primary-container" placeholder={t('contact.ph_name')} type="text" />
+                <input required name="name" value={formData.name} onChange={handleChange} className="w-full bg-surface-container-lowest border-none rounded-xl py-4 px-5 focus:ring-2 focus:ring-secondary/20 transition-all outline-none text-on-surface font-body border-b-2 border-transparent focus:border-primary-container" placeholder={t('contact.ph_name')} type="text" />
               </div>
               <div className="space-y-2">
                 <label className="text-xs font-bold uppercase tracking-widest text-on-surface-variant/60 ml-1">{t('contact.email')}</label>
-                <input className="w-full bg-surface-container-lowest border-none rounded-xl py-4 px-5 focus:ring-2 focus:ring-secondary/20 transition-all outline-none text-on-surface font-body border-b-2 border-transparent focus:border-primary-container" placeholder="john@jdmsarl.com" type="email" />
+                <input required name="email" value={formData.email} onChange={handleChange} className="w-full bg-surface-container-lowest border-none rounded-xl py-4 px-5 focus:ring-2 focus:ring-secondary/20 transition-all outline-none text-on-surface font-body border-b-2 border-transparent focus:border-primary-container" placeholder="john@jdmsarl.com" type="email" />
               </div>
             </div>
             <div className="space-y-2">
               <label className="text-xs font-bold uppercase tracking-widest text-on-surface-variant/60 ml-1">{t('contact.subject')}</label>
-              <select className="w-full bg-surface-container-lowest border-none rounded-xl py-4 px-5 focus:ring-2 focus:ring-secondary/20 transition-all outline-none text-on-surface font-body border-b-2 border-transparent focus:border-primary-container appearance-none">
-                <option>{t('contact.sub_travel')}</option>
-                <option>{t('contact.sub_logistics')}</option>
-                <option>{t('contact.sub_sport')}</option>
-                <option>{t('contact.sub_partner')}</option>
-                <option>{t('contact.sub_other')}</option>
+              <select name="subject" value={formData.subject} onChange={handleChange} className="w-full bg-surface-container-lowest border-none rounded-xl py-4 px-5 focus:ring-2 focus:ring-secondary/20 transition-all outline-none text-on-surface font-body border-b-2 border-transparent focus:border-primary-container appearance-none">
+                <option value={t('contact.sub_travel')}>{t('contact.sub_travel')}</option>
+                <option value={t('contact.sub_logistics')}>{t('contact.sub_logistics')}</option>
+                <option value={t('contact.sub_sport')}>{t('contact.sub_sport')}</option>
+                <option value={t('contact.sub_partner')}>{t('contact.sub_partner')}</option>
+                <option value={t('contact.sub_other')}>{t('contact.sub_other')}</option>
               </select>
             </div>
             <div className="space-y-2">
               <label className="text-xs font-bold uppercase tracking-widest text-on-surface-variant/60 ml-1">{t('contact.your_msg')}</label>
-              <textarea className="w-full bg-surface-container-lowest border-none rounded-xl py-4 px-5 focus:ring-2 focus:ring-secondary/20 transition-all outline-none text-on-surface font-body border-b-2 border-transparent focus:border-primary-container" placeholder={t('contact.ph_msg')} rows="5"></textarea>
+              <textarea required name="message" value={formData.message} onChange={handleChange} className="w-full bg-surface-container-lowest border-none rounded-xl py-4 px-5 focus:ring-2 focus:ring-secondary/20 transition-all outline-none text-on-surface font-body border-b-2 border-transparent focus:border-primary-container" placeholder={t('contact.ph_msg')} rows="5"></textarea>
             </div>
             <button className="group relative bg-primary-container text-on-primary w-full md:w-auto px-10 py-4 rounded-xl font-bold flex items-center justify-center gap-3 hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-primary-container/10" type="submit">
               {t('contact.deliver')}
