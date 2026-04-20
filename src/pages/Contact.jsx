@@ -59,7 +59,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-sm font-bold uppercase tracking-widest text-on-surface-variant/60 mb-2">{t('contact.hq')}</h3>
-                <p className="text-xl font-bold text-primary-container leading-tight" dangerouslySetInnerHTML={{__html: t('contact.hq_addr')}}></p>
+                <p className="text-xl font-bold text-primary-container leading-tight" dangerouslySetInnerHTML={{ __html: t('contact.hq_addr') }}></p>
               </div>
             </div>
           </div>
@@ -71,7 +71,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-xs font-bold uppercase tracking-widest text-on-surface-variant/60">{t('contact.concierge')}</h3>
-                <p className="font-bold text-primary-container">+1 (212) 555-0198</p>
+                <p className="font-bold text-primary-container">+237696464712 - +237657052145</p>
               </div>
             </div>
             <div className="flex items-center gap-6">
@@ -80,7 +80,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-xs font-bold uppercase tracking-widest text-on-surface-variant/60">{t('contact.inquiries')}</h3>
-                <p className="font-bold text-primary-container">concierge@jdmsarl.com</p>
+                <p className="font-bold text-primary-container">jdmtravel@outlook.com</p>
               </div>
             </div>
           </div>
