@@ -12,7 +12,7 @@ const Sport = () => {
       team: t('sport.teams.madrid'),
       price: '$120.00',
       tag: t('sport.best'),
-      img: 'https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/Ced%2FSPORT%20RA.jpeg?alt=media&token=6d4343e0-9e0c-4180-ba24-88b4abbcfe11'
+      img: 'https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/Ced%2Fsport%2FWhatsApp%20Image%202026-04-20%20at%2011.44.26.jpeg?alt=media&token=6290fc23-e1ed-4739-90e7-f2253f780466'
     },
     {
       id: 2,
@@ -20,21 +20,21 @@ const Sport = () => {
       team: t('sport.teams.brazil'),
       price: '$115.00',
       tag: t('sport.pre'),
-      img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAnNaLqhYHJFrN01zwksAHa8koBq3xYCyB1c0p4UFZZmA1V0A59rvg72y3sSIHj0j4yFEtNj0ECyE2FrBiKw4036E9qFrOlnQbe4NTbVVBz4xDFOCeFn5PeVzM3mHXfmbWMM9d4XD-txOBiOHyHKFvPa5q7LXOcTzx9iusSJvAJtupIo6sgJJz9ZtUttOfoVk4Qklajs9tJa5Zt6KFIkY2OwakfcTsJWgBihFOdpTOz8NavqtHJYFoCbHIa5J6sek5wY-4Zg68thno'
+      img: 'https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/Ced%2Fsport%2FWhatsApp%20Image%202026-04-20%20at%2014.41.45%20(2).jpeg?alt=media&token=7c46ce54-db78-42e1-bdd0-1ef6c1fa2a19'
     },
     {
       id: 3,
       name: t('sport.kits.k3'),
       team: t('sport.teams.city'),
       price: '$140.00',
-      img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAMqnenOuJq0Fqc7NzBuLzDi8Qbq4SgEy0gLnIQ_ngXXJenp70m-eZ44133Aq1KMT4rcQZ43ZH-MjDJDr7zvksONS6AwK0Y4bQvRJNE6bH5DmIKCV5hEYwUTG-V2_yUuK1GVuRinG2fsC0PJJ4xAe6XDqA4CabOie_RI01UBf9RFeHoZ7sltdAorTLK-OhfQ_fIqDl3FGW_YfMR0SThLMvaFuVVpfztqMJ_HL3jWQybzs6miKRiX_CWu0Urzl9Gcue8d2eD8Y5rCH8'
+      img: 'https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/Ced%2Fsport%2FWhatsApp%20Image%202026-04-20%20at%2014.41.45%20(1).jpeg?alt=media&token=c908a1ba-8d18-4b8b-ba3d-223e31487270'
     },
     {
       id: 4,
       name: t('sport.kits.k4'),
       team: t('sport.teams.france'),
       price: '$130.00',
-      img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAOzLPf3g0iLY8SgLxnk_Xh1j8PrhlXpOR9feDiSDInk9ie8Kn8hF15M3cB3leC5T_DUpe8OAQjdjExq6pxzjcidJS6OBqG853xVySxXN4HrEvYevpwFtouELY9wolLIS9fNxyFKOpCCXNF_WNJzamPm4HB1R0IovQnXK_bZdW9W7C6SVcvHgf1oVIpLvbHQDz5YTmLca2bAiiHHjZMtavuNCL77uD-mwDhIXkv0u0W-w59Wqu6fKIsLW4AUjGbWLAaXfvgsfA_G3U'
+      img: 'https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/Ced%2Fsport%2FWhatsApp%20Image%202026-04-20%20at%2014.41.45.jpeg?alt=media&token=77520757-3511-49f6-8f31-f99ec028c193'
     },
     {
       id: 5,
@@ -42,14 +42,14 @@ const Sport = () => {
       team: t('sport.teams.bayern'),
       price: '$155.00',
       tag: t('sport.ltd'),
-      img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC08tzQZbPA5FhtQCdJrZoFoUpgWnRYEF-L0Dy-oCYm3u5oc_BF3vErGsHrYXA9Agfoug-Pgu3bxMd8y1SyqZCERIaNdPcMqds06mkF53kOJYb6L0080xoC2AgSxXSaP5g-3K4lnmFiLRE8nN205q7BERda6A-mkMLbnLEj0DQbrA4q_Q0spwJk0y6c1s7CBrQElWUKmZyS_elMouEmmbZACOfHt9V7v4XIL4mHHIuUaApImIuJeXS_9OnrZKk9Xx7oSd_ayHX1NK8'
+      img: 'https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/Ced%2Fsport%2FWhatsApp%20Image%202026-04-20%20at%2014.41.41.jpeg?alt=media&token=9dbfbfc9-45d5-4723-84b1-2c8c45e24c18'
     },
     {
       id: 6,
       name: t('sport.kits.k6'),
       team: t('sport.teams.argentina'),
       price: '$125.00',
-      img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAmySrsWCAt2DrOMSJ-hUNLqJcqbN2PTnpXugs-fzHm8Vo1ovifFKvXVPJxzxvH6TrvuUyitsGgoLhCbVhG4O9obm_9fnkZEgPJ9SaDdVcVrvsNr58-1B9g9jbDdlozhx1UiTBvL1e2zaI4hHnnjjbapRrj7RxtlZwl6u9nDTZM-L4C6JZNLKYg5bGTAUMm_eb5-VsurDPTa7T56TcvB6ZtupUeOwYkYVR4jJ1KEQw1aU4LUdDXVzmlEyiWhuvqNjEeE2v4A257ido'
+      img: 'https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/Ced%2Fsport%2FWhatsApp%20Image%202026-04-20%20at%2014.41.42.jpeg?alt=media&token=c6f9a544-7cb8-4f23-8b4a-f374ce533ec1'
     }
   ];
 
