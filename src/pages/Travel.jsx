@@ -45,12 +45,12 @@ const Travel = () => {
               <div className="grid grid-cols-2 gap-4">
                 <img
                   className="rounded-2xl md:rounded-3xl w-full h-80 object-cover mt-12 shadow-xl"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2v_jVqV_d8T97l0I5L5XzOq0B7c56J1iZ0P7vKXgO_R1WJ5aWn6kQ4qI9Z3mXv4_cE3hJ0v88wQh6A1Q-B5_Kk5hWz_K5r1TjS2_i7sR9X8wH67A9X9Z2n8w9p2qK1tL1S5A4R9J6K1M9v9w9Z2Y5X2Z7b8P2v1qR5G9B9M8J5k0jX9B5T8h1N4qQ1r6N4X"
+                  src="https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/Ced%2FVALISE%20BLEU.jpeg?alt=media&token=0c31fc6a-cd7d-47cf-9a01-894e9fad3ecb"
                   alt="Business class seating"
                 />
                 <img
                   className="rounded-2xl md:rounded-3xl w-full h-80 object-cover shadow-xl"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9W7hW2v4A9k6A9qI5Z1D0J9X8R5A5M7M9Z9J4Z1R9Z5Y3T9J5b5P9Q9L7J3R9c2K4X4j9R5T2T8T2p4T0I9c2I3T3r0j0p5c0d6J3V9Q4G"
+                  src="https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/Ced%2FSAC%20NOIR.jpeg?alt=media&token=248b44af-0f58-4590-a45e-c0a7f38bfa11"
                   alt="Passport and tickets"
                 />
               </div>
@@ -126,7 +126,7 @@ const Travel = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {/* Package 1 */}
             <div className="group rounded-2xl md:rounded-3xl overflow-hidden bg-surface relative h-[450px]">
-              <img className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9pWl9bM9H24b4cO8S_2tVjI4Z6wE7B9dG3z1R5F5J8T2T9W7p6j6L9s5w1V2Q8N4c9r7o0y2H2c2H0N9v3U5P90bJ4j4M8Z0N4o9Z6w5J8w8E6C" alt="Amalfi Coast" />
+              <img className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/Ced%2Fingenieur.jpeg?alt=media&token=5d5c0428-d611-4ba7-8464-6add3fa323aa" />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-5 md:p-8 w-full">
                 <span className="text-xs font-bold uppercase tracking-widest text-secondary mb-2 block">{t('travel.iconic')}</span>
@@ -142,7 +142,7 @@ const Travel = () => {
 
             {/* Package 2 */}
             <div className="group rounded-2xl md:rounded-3xl overflow-hidden bg-surface relative h-[450px]">
-              <img className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9R2s6V6l8Z3W1v9A7L3S4y0U6b1I8N2T5c3F4R8Q3E2O0v1E2A3y8F2k6P1C0H7B6j2H2m4Y7T3z2X4D2r0L8D9c0r3I4Z7P2W3L8E9M8U3J5J2Y8N4A" alt="Tokyo City" />
+              <img className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/Ced%2Fchimiste.jpeg?alt=media&token=98fe59de-4761-40df-a5e1-088e6183876e" />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-5 md:p-8 w-full">
                 <span className="text-xs font-bold uppercase tracking-widest text-secondary mb-2 block">{t('travel.mod')}</span>
@@ -157,7 +157,7 @@ const Travel = () => {
 
             {/* Package 3 */}
             <div className="group rounded-2xl md:rounded-3xl overflow-hidden bg-surface relative h-[450px]">
-              <img className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2Q8n5Y7Z0H4V3x8J2R5l8c7U3o9Y1P7K2o1A3R4A2Y8M0q9f6c7E1V4N4F5O4A1L5S1e8q8I4a8z1F4F9g3E5q8v5V9P0L7p3p2z9T8y9p6P2H8S" alt="African Safari" />
+              <img className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/Ced%2Finfo.jpeg?alt=media&token=00d78cec-88e8-4abb-8443-84c3a2150259" />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-5 md:p-8 w-full">
                 <span className="text-xs font-bold uppercase tracking-widest text-secondary mb-2 block">{t('travel.wild')}</span>
