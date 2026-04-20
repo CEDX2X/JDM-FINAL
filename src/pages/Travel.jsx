@@ -22,7 +22,7 @@ const Travel = () => {
               <button onClick={() => navigate('/contact')} className="bg-primary text-on-primary px-4 md:px-8 py-5 rounded-xl font-bold text-lg hover:scale-102 transition-transform shadow-xl flex items-center justify-center gap-3">
                 {t('travel.book')} <span translate="no" className="material-symbols-outlined">flight_takeoff</span>
               </button>
-              <button onClick={() => document.getElementById('destinations')?.scrollIntoView({behavior: 'smooth'})} className="border-2 border-primary/20 text-primary px-4 md:px-8 py-5 rounded-xl font-bold text-lg hover:bg-surface-container-low transition-colors">
+              <button onClick={() => document.getElementById('destinations')?.scrollIntoView({ behavior: 'smooth' })} className="border-2 border-primary/20 text-primary px-4 md:px-8 py-5 rounded-xl font-bold text-lg hover:bg-surface-container-low transition-colors">
                 {t('travel.view')}
               </button>
             </div>
@@ -31,7 +31,7 @@ const Travel = () => {
         <div className="absolute lg:relative inset-0 lg:w-1/2 h-full z-0">
           <img
             className="w-full h-full object-cover rounded-bl-[4rem]"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHXbZ00p44m0h4v2fB4Nf-cK-i8D8635s3lU2dI7u15C0TXYQxGvP_1yts2302N_xYkGvWzLhT-r15469nZJk6xP5t84P3QvLzLp8LmsNlExH0M9A6JvIqQ16Bf6h1XW71gZtVn_C2K6Hh7vKjVn5w92z_V8WnO-CIt2sWqWbT86DItR1WfUqSjWqZ2uT1A71K"
+            src="https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/Ced%2FSTUD%20CHINA.jpeg?alt=media&token=486de072-4e32-4f92-a864-ba7df2927b69"
             alt="Private jet window view"
           />
         </div>
@@ -70,7 +70,7 @@ const Travel = () => {
               <p className="text-on-surface-variant text-lg mb-10 leading-relaxed">
                 {t('travel.prec_desc')}
               </p>
-              
+
               <ul className="space-y-8">
                 <li className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-surface-container-low rounded-xl flex items-center justify-center flex-shrink-0 text-secondary mt-1">
@@ -132,11 +132,7 @@ const Travel = () => {
                 <span className="text-xs font-bold uppercase tracking-widest text-secondary mb-2 block">{t('travel.iconic')}</span>
                 <h3 className="font-headline font-bold text-2xl text-white mb-2">{t('travel.amalfi')}</h3>
                 <p className="text-white/80 text-sm mb-4 line-clamp-2">{t('travel.amalfi_desc')}</p>
-                <div className="flex justify-between items-center text-white">
-                  <div>
-                    <span className="text-xs opacity-70 block">{t('travel.start')}</span>
-                    <span className="font-bold text-xl">$12,500</span>
-                  </div>
+                <div className="flex justify-end items-center text-white mt-auto">
                   <button onClick={() => navigate('/contact')} className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-primary transition-colors">
                     <span translate="no" className="material-symbols-outlined">arrow_forward</span>
                   </button>
@@ -151,11 +147,7 @@ const Travel = () => {
               <div className="absolute bottom-0 left-0 p-5 md:p-8 w-full">
                 <span className="text-xs font-bold uppercase tracking-widest text-secondary mb-2 block">{t('travel.mod')}</span>
                 <h3 className="font-headline font-bold text-2xl text-white mb-2">{t('travel.neon')}</h3>
-                <div className="flex justify-between items-center text-white mt-8">
-                  <div>
-                    <span className="text-xs opacity-70 block">{t('travel.start')}</span>
-                    <span className="font-bold text-xl">$8,900</span>
-                  </div>
+                <div className="flex justify-end items-center text-white mt-8">
                   <button onClick={() => navigate('/contact')} className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-primary transition-colors">
                     <span translate="no" className="material-symbols-outlined">arrow_forward</span>
                   </button>
@@ -170,11 +162,7 @@ const Travel = () => {
               <div className="absolute bottom-0 left-0 p-5 md:p-8 w-full">
                 <span className="text-xs font-bold uppercase tracking-widest text-secondary mb-2 block">{t('travel.wild')}</span>
                 <h3 className="font-headline font-bold text-2xl text-white mb-2">{t('travel.safari')}</h3>
-                <div className="flex justify-between items-center text-white mt-8">
-                  <div>
-                    <span className="text-xs opacity-70 block">{t('travel.start')}</span>
-                    <span className="font-bold text-xl">$15,200</span>
-                  </div>
+                <div className="flex justify-end items-center text-white mt-8">
                   <button onClick={() => navigate('/contact')} className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-primary transition-colors">
                     <span translate="no" className="material-symbols-outlined">arrow_forward</span>
                   </button>
@@ -190,11 +178,6 @@ const Travel = () => {
                 <span className="text-xs font-bold uppercase tracking-widest text-secondary mb-4 block">{t('travel.alpine')}</span>
                 <h3 className="font-headline font-bold text-2xl md:text-3xl lg:text-4xl lg:text-5xl text-white mb-6 leading-tight">{t('travel.grand')}</h3>
                 <div className="flex items-center gap-6 mt-8">
-                  <div>
-                    <span className="text-xs text-secondary font-bold block mb-1">{t('travel.start')}</span>
-                    <span className="font-bold text-2xl md:text-3xl text-white">$18,500</span>
-                  </div>
-                  <div className="h-8 md:h-10 w-px bg-white/20"></div>
                   <button onClick={() => navigate('/contact')} className="bg-white text-primary px-4 md:px-8 py-4 rounded-xl font-bold hover:bg-secondary hover:text-white transition-colors">
                     {t('travel.view')}
                   </button>
