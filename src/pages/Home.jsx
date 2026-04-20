@@ -60,8 +60,8 @@ const Home = () => {
                 <div className="absolute inset-0 bg-black/10"></div>
                 <img
                   className="relative z-10 w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
-                  src="https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/Ced%2Fbrain%20JDM.jpeg?alt=media&token=57d5f226-f766-42b6-997f-f6f85c1586bd"
-                  alt="BRAIN CESSION"
+                  src="https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/Ced%2FLAUREAT.jpeg?alt=media&token=d2d40788-f4ba-4107-bfc6-85bc97962005"
+                  alt="LAUREAT"
                 />
               </div>
               <div className="p-5 md:p-8">
@@ -102,8 +102,8 @@ const Home = () => {
               <div className="w-full md:w-1/2 h-[400px] md:h-full relative overflow-hidden">
                 <img
                   className="w-full h-full object-cover grayscale brightness-75 transition-all group-hover:grayscale-0 group-hover:scale-105"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3j5Getj8TK7-HrGObUQueH5Wtc04Y--sKjEiBEmpsNL2aL1lAGtjdZ48fx4_8c6G8nhU-WqwVx2ES3q4PgyLH0VB9EPRqRNCBRBKsl_qgdJovWaNlNUbY1J3sgJsxCWCD0XR3JjlrsNkYSJzQfrl8C3GdIvTbW3nUXn1QUEEcgINQzmghrbP95hBmZ97LwIEA6z4gIQau8bSXItHZW9XhuTpmEC5wLTkbd_yMkz-Rvx0QjLyY7S3xPmrG0rN25d0hxMyNAfbnDU8"
-                  alt="Football jersey in locker room"
+                  src="https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/Ced%2FSPORT%20RA.jpeg?alt=media&token=6d4343e0-9e0c-4180-ba24-88b4abbcfe11"
+                  alt="equipement"
                 />
               </div>
             </div>
