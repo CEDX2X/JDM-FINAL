@@ -50,8 +50,8 @@ const Logistics = () => {
               <span className="text-sm font-bold uppercase tracking-widest text-on-surface-variant/70">Countries Served</span>
             </div>
             <div className="px-4 md:px-8 py-4 md:py-0 text-center w-full">
-              <span className="block text-2xl md:text-3xl lg:text-4xl font-headline font-black text-primary mb-2">24h</span>
-              <span className="text-sm font-bold uppercase tracking-widest text-on-surface-variant/70">Customs Clearance</span>
+              <span className="block text-2xl md:text-3xl lg:text-4xl font-headline font-black text-primary mb-2">Vision Cargo</span>
+              <span className="text-sm font-bold uppercase tracking-widest text-on-surface-variant/70">Suivi personnalisé</span>
             </div>
             <div className="px-4 md:px-8 py-4 md:py-0 text-center w-full">
               <div className="inline-flex items-center gap-2 text-2xl md:text-3xl lg:text-4xl font-headline font-black text-secondary mb-2">
