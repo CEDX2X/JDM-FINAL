@@ -44,8 +44,8 @@
       "learnMore": "En Savoir Plus",
       "import": "JDM Import-Export",
       "importDesc": "Nous sommes également spécialisés dans l’importation de produits de qualité en provenance de Chine vers l’Afrique, en garantissant fiabilité, conformité et satisfaction client.",
-      "premium": "EQUIPEMENT PREMIUM",
-      "sport": "Equipement sportif",
+      "premium": "ÉQUIPEMENT PREMIUM",
+      "sport": "Équipement sportif",
       "sportDesc": "Des équipements authentiques et des tenues de performance sur mesure. Expédition mondiale, qualité d'élite.",
       "shopCol": "Collection Sport"
     },
@@ -55,7 +55,7 @@
       "trust": "Confiance Inébranlable",
       "trustDesc": "Une réputation bâtie sur la transparence et un engagement vers une excellence sans compromis.",
       "agility": "Agilité Mondiale",
-      "agilityDesc": "Notre vaste réseau nous permet d'agir plus rapidement et efficacement vers le contient Africain.",
+      "agilityDesc": "Notre vaste réseau nous permet d'agir plus rapidement et efficacement vers le continent africain.",
       "support": "Support Dédié",
       "supportDesc": "Service sur mesure avec une touche personnelle. Chaque client se voit attribuer un gestionnaire dédié."
     },
@@ -135,12 +135,12 @@
       "argentina": "Argentine"
     },
     "kits": {
-      "k1": "Maillot Domicile 24/25",
-      "k2": "Maillot Domicile Stade",
-      "k3": "Maillot Elite Match",
-      "k4": "Maillot Extérieur Vapor",
-      "k5": "Équipement Anniversaire",
-      "k6": "Maillot 3 Étoiles"
+      "k1": "Maillot de Football",
+      "k2": "Crampons de Football",
+      "k3": "Survêtement de Football",
+      "k4": "Ballon de Football",
+      "k5": "Training",
+      "k6": "Médaillons et Trophées"
     }
   },
   "travel": {
@@ -168,13 +168,13 @@
     "curated": "Formation en Chine",
     "curated_desc": "Nous vous accompagnons également dans la découverte de la Chine.",
     "iconic": "Formation",
-    "amalfi": "Ecole d'ingenierie",
-    "amalfi_desc": "Accompagnement Complet et personnalisé.",
+    "amalfi": "École d'ingénierie",
+    "amalfi_desc": "Accompagnement complet et personnalisé.",
     "start": "À partir de",
     "mod": "Formation",
-    "neon": "Ecole de medecine et ingenierie bio medicale",
+    "neon": "École de médecine et ingénierie biomédicale",
     "wild": "Formation",
-    "safari": "Ecole d'ingenierie informatique",
+    "safari": "École d'ingénierie informatique",
     "alpine": "Logement Étudiant",
     "grand": "Réservation de chambre sur le campus garantie",
     "cta_title": "Prêt à Débuter vos Études en Chine ?",

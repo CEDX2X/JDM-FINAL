@@ -135,12 +135,12 @@
       "argentina": "Argentina"
     },
     "kits": {
-      "k1": "24/25 Home Jersey",
-      "k2": "Stadium Home Jersey",
-      "k3": "Elite Match Jersey",
-      "k4": "Away Vapor Jersey",
-      "k5": "Anniversary Kit",
-      "k6": "3-Star World Kit"
+      "k1": "Football Jersey",
+      "k2": "Football Cleats",
+      "k3": "Football Tracksuit",
+      "k4": "Football",
+      "k5": "Training Gear",
+      "k6": "Medals and Trophies"
     }
   },
   "travel": {
