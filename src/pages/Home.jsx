@@ -50,9 +50,16 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
             {/* Travel Services */}
             <div className="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-lowest transition-all hover:shadow-2xl">
-              <div className="overflow-hidden bg-surface-container-low flex justify-center items-center h-[300px] sm:h-[400px] lg:h-[450px]">
+              <div className="relative overflow-hidden bg-surface-container-low flex justify-center items-center h-[300px] sm:h-[400px] lg:h-[450px]">
                 <img
-                  className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
+                  className="absolute inset-0 w-full h-full object-cover blur-2xl opacity-50 scale-125"
+                  src="https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/Ced%2Fvoyageur%20jdm.jpeg?alt=media&token=fcd6f2f3-47d5-4787-87df-a11e8829958f"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <div className="absolute inset-0 bg-black/10 backdrop-blur-sm"></div>
+                <img
+                  className="relative z-10 w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
                   src="https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/Ced%2Fvoyageur%20jdm.jpeg?alt=media&token=fcd6f2f3-47d5-4787-87df-a11e8829958f"
                   alt="young man traveling"
                 />
