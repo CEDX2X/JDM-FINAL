@@ -97,7 +97,7 @@ const Sport = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
             {products.map(product => (
-              <div key={product.id} className="group bg-surface-container-lowest rounded-[2rem] overflow-hidden transition-all duration-500 hover:shadow-[0_24px_48px_rgba(11,29,58,0.12)]">
+              <div key={product.id} className="group bg-surface-container-lowest rounded-[2rem] overflow-hidden transition-all duration-500 hover:shadow-[0_24px_48px_rgba(29, 45, 125,0.12)]">
                 <div className="aspect-[4/5] overflow-hidden relative">
                   <img src={product.img} alt={product.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   {product.tag && (
