@@ -12,7 +12,7 @@ const FloatingActions = () => {
         {!isHome && (
           <button
             onClick={() => navigate(-1)}
-            className="w-12 h-12 bg-surface-container-lowest border border-outline-variant/20 rounded-full shadow-[0_8px_24px_rgba(29, 45, 125,0.1)] flex items-center justify-center text-primary hover:bg-surface-container-low hover:scale-110 transition-all duration-300 group"
+            className="w-12 h-12 bg-surface-container-lowest border border-outline-variant/20 rounded-full shadow-[0_8px_24px_rgba(11,29,58,0.1)] flex items-center justify-center text-primary hover:bg-surface-container-low hover:scale-110 transition-all duration-300 group"
             aria-label="Retour"
           >
             <span translate="no" className="material-symbols-outlined text-2xl group-hover:-translate-x-1 transition-transform">arrow_back</span>

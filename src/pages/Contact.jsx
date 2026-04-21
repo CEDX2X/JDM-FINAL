@@ -72,7 +72,7 @@ const Contact = () => {
         {/* Sidebar Info */}
         <aside className="lg:col-span-5 space-y-8">
           {/* Address Card */}
-          <div className="bg-surface-container-lowest rounded-[2rem] p-5 md:p-8 shadow-[0_12px_32px_rgba(29, 45, 125,0.04)] group">
+          <div className="bg-surface-container-lowest rounded-[2rem] p-5 md:p-8 shadow-[0_12px_32px_rgba(11,29,58,0.04)] group">
             <div className="flex items-start gap-6">
               <div className="w-14 h-14 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary">
                 <span translate="no" className="material-symbols-outlined text-2xl">location_on</span>
