@@ -20,7 +20,7 @@ const Home = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 w-full">
           <div className="max-w-4xl lg:max-w-5xl">
             <h1 className="font-headline font-extrabold text-white text-2xl md:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight tracking-tight mb-8">
-              {t('home.hero.gateway')} <span className="text-secondary-container">{t('home.hero.travel')}</span>{t('home.hero.comma')} <span className="text-secondary-fixed-dim">{t('home.hero.trade')}</span> {t('home.hero.and')} <span className="text-secondary-container">{t('home.hero.sports')}</span>
+              {t('home.hero.gateway')} <span className="text-secondary dark:text-secondary-fixed-container">{t('home.hero.travel')}</span>{t('home.hero.comma')} <span className="text-secondary dark:text-secondary-fixed-fixed-dim">{t('home.hero.trade')}</span> {t('home.hero.and')} <span className="text-secondary dark:text-secondary-fixed-container">{t('home.hero.sports')}</span>
             </h1>
             <p className="text-on-primary-container text-xl md:text-2xl mb-8 md:mb-12 leading-relaxed">
               {t('home.hero.desc')}
@@ -42,8 +42,8 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="flex flex-col md:flex-row justify-between items-end mb-8 md:mb-16 gap-6 md:gap-8">
             <div className="max-w-2xl">
-              <h2 className="font-headline font-bold text-2xl md:text-3xl md:text-4xl lg:text-5xl text-primary mb-6">{t('home.services.title')}</h2>
-              <p className="text-on-surface-variant text-lg leading-relaxed font-body">{t('home.services.desc')}</p>
+              <h2 className="font-headline font-bold text-2xl md:text-3xl md:text-4xl lg:text-5xl text-primary dark:text-white mb-6">{t('home.services.title')}</h2>
+              <p className="text-on-surface-variant dark:text-surface-variant text-lg leading-relaxed font-body">{t('home.services.desc')}</p>
             </div>
             <div className="hidden md:block h-[2px] flex-grow bg-surface-variant mx-12 mb-4"></div>
           </div>
@@ -66,8 +66,8 @@ const Home = () => {
               </div>
               <div className="p-5 md:p-8">
                 <h3 className="font-headline font-bold text-2xl md:text-3xl mb-4">{t('home.services.travel')}</h3>
-                <p className="text-on-surface-variant mb-8 max-w-xl">{t('home.services.travelDesc')}</p>
-                <button onClick={() => navigate('/travel')} className="flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all">
+                <p className="text-on-surface-variant dark:text-surface-variant mb-8 max-w-xl">{t('home.services.travelDesc')}</p>
+                <button onClick={() => navigate('/travel')} className="flex items-center gap-2 text-secondary dark:text-secondary-fixed font-bold hover:gap-4 transition-all">
                   {t('home.services.learnMore')} <span translate="no" className="material-symbols-outlined">arrow_forward</span>
                 </button>
               </div>
@@ -83,8 +83,8 @@ const Home = () => {
               </div>
               <div className="p-5 md:p-8">
                 <h3 className="font-headline font-bold text-2xl mb-4">{t('home.services.import')}</h3>
-                <p className="text-on-surface-variant mb-8">{t('home.services.importDesc')}</p>
-                <button onClick={() => navigate('/logistics')} className="flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all">
+                <p className="text-on-surface-variant dark:text-surface-variant mb-8">{t('home.services.importDesc')}</p>
+                <button onClick={() => navigate('/logistics')} className="flex items-center gap-2 text-secondary dark:text-secondary-fixed font-bold hover:gap-4 transition-all">
                   {t('home.services.learnMore')} <span translate="no" className="material-symbols-outlined">arrow_forward</span>
                 </button>
               </div>
@@ -95,7 +95,7 @@ const Home = () => {
                 <span className="inline-block px-4 py-1 bg-secondary rounded-full text-xs font-bold mb-6 tracking-widest">{t('home.services.premium')}</span>
                 <h3 className="font-headline font-bold text-2xl md:text-3xl lg:text-4xl mb-6">{t('home.services.sport')}</h3>
                 <p className="text-on-primary-container text-lg mb-10 leading-relaxed">{t('home.services.sportDesc')}</p>
-                <button onClick={() => navigate('/sport')} className="bg-surface-container-lowest text-primary px-4 md:px-8 py-4 rounded-xl font-bold hover:bg-secondary hover:text-white transition-all">
+                <button onClick={() => navigate('/sport')} className="bg-surface-container-lowest text-primary dark:text-white px-4 md:px-8 py-4 rounded-xl font-bold hover:bg-secondary hover:text-white transition-all">
                   {t('home.services.shopCol')}
                 </button>
               </div>
@@ -116,29 +116,29 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="text-center mb-10 md:mb-20">
             <h2 className="font-headline font-bold text-2xl md:text-3xl md:text-4xl lg:text-5xl mb-6">{t('home.why.title')}</h2>
-            <p className="text-on-surface-variant text-xl max-w-2xl mx-auto">{t('home.why.desc')}</p>
+            <p className="text-on-surface-variant dark:text-surface-variant text-xl max-w-2xl mx-auto">{t('home.why.desc')}</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-12">
             <div className="text-center p-5 md:p-8">
               <div className="w-20 h-16 md:h-20 bg-surface-container-lowest rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-sm">
-                <span translate="no" className="material-symbols-outlined text-2xl md:text-3xl lg:text-4xl text-secondary">verified_user</span>
+                <span translate="no" className="material-symbols-outlined text-2xl md:text-3xl lg:text-4xl text-secondary dark:text-secondary-fixed">verified_user</span>
               </div>
               <h4 className="font-headline font-bold text-2xl mb-4">{t('home.why.trust')}</h4>
-              <p className="text-on-surface-variant leading-relaxed">{t('home.why.trustDesc')}</p>
+              <p className="text-on-surface-variant dark:text-surface-variant leading-relaxed">{t('home.why.trustDesc')}</p>
             </div>
             <div className="text-center p-5 md:p-8">
               <div className="w-20 h-16 md:h-20 bg-surface-container-lowest rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-sm">
-                <span translate="no" className="material-symbols-outlined text-2xl md:text-3xl lg:text-4xl text-secondary">rocket_launch</span>
+                <span translate="no" className="material-symbols-outlined text-2xl md:text-3xl lg:text-4xl text-secondary dark:text-secondary-fixed">rocket_launch</span>
               </div>
               <h4 className="font-headline font-bold text-2xl mb-4">{t('home.why.agility')}</h4>
-              <p className="text-on-surface-variant leading-relaxed">{t('home.why.agilityDesc')}</p>
+              <p className="text-on-surface-variant dark:text-surface-variant leading-relaxed">{t('home.why.agilityDesc')}</p>
             </div>
             <div className="text-center p-5 md:p-8">
               <div className="w-20 h-16 md:h-20 bg-surface-container-lowest rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-sm">
-                <span translate="no" className="material-symbols-outlined text-2xl md:text-3xl lg:text-4xl text-secondary">support_agent</span>
+                <span translate="no" className="material-symbols-outlined text-2xl md:text-3xl lg:text-4xl text-secondary dark:text-secondary-fixed">support_agent</span>
               </div>
               <h4 className="font-headline font-bold text-2xl mb-4">{t('home.why.support')}</h4>
-              <p className="text-on-surface-variant leading-relaxed">{t('home.why.supportDesc')}</p>
+              <p className="text-on-surface-variant dark:text-surface-variant leading-relaxed">{t('home.why.supportDesc')}</p>
             </div>
           </div>
         </div>
@@ -152,16 +152,16 @@ const Home = () => {
             <div className="w-full md:w-1/3">
               <h2 className="font-headline font-bold text-2xl md:text-3xl md:text-4xl lg:text-5xl mb-8">{t('home.testimonials.title')}</h2>
               <div className="flex gap-2 mb-8">
-                <span translate="no" className="material-symbols-outlined text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                <span translate="no" className="material-symbols-outlined text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                <span translate="no" className="material-symbols-outlined text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                <span translate="no" className="material-symbols-outlined text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                <span translate="no" className="material-symbols-outlined text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                <span translate="no" className="material-symbols-outlined text-secondary dark:text-secondary-fixed" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                <span translate="no" className="material-symbols-outlined text-secondary dark:text-secondary-fixed" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                <span translate="no" className="material-symbols-outlined text-secondary dark:text-secondary-fixed" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                <span translate="no" className="material-symbols-outlined text-secondary dark:text-secondary-fixed" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                <span translate="no" className="material-symbols-outlined text-secondary dark:text-secondary-fixed" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
               </div>
             </div>
             <div className="w-full md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               <div className="bg-surface-container-low p-6 md:p-10 rounded-xl relative">
-                <span translate="no" className="material-symbols-outlined text-secondary opacity-30 text-2xl md:text-3xl md:text-4xl lg:text-5xl absolute top-6 right-6">format_quote</span>
+                <span translate="no" className="material-symbols-outlined text-secondary dark:text-secondary-fixed opacity-30 text-2xl md:text-3xl md:text-4xl lg:text-5xl absolute top-6 right-6">format_quote</span>
                 <p className="text-lg italic text-on-surface mb-8">{t('home.testimonials.t1')}</p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full overflow-hidden">
@@ -173,12 +173,12 @@ const Home = () => {
                   </div>
                   <div>
                     <p className="font-bold">Henri Mvondo</p>
-                    <p className="text-xs text-on-surface-variant">{t('home.testimonials.p1')}</p>
+                    <p className="text-xs text-on-surface-variant dark:text-surface-variant">{t('home.testimonials.p1')}</p>
                   </div>
                 </div>
               </div>
               <div className="bg-surface-container-low p-6 md:p-10 rounded-xl relative">
-                <span translate="no" className="material-symbols-outlined text-secondary opacity-30 text-2xl md:text-3xl md:text-4xl lg:text-5xl absolute top-6 right-6">format_quote</span>
+                <span translate="no" className="material-symbols-outlined text-secondary dark:text-secondary-fixed opacity-30 text-2xl md:text-3xl md:text-4xl lg:text-5xl absolute top-6 right-6">format_quote</span>
                 <p className="text-lg italic text-on-surface mb-8">{t('home.testimonials.t2')}</p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full overflow-hidden">
@@ -190,7 +190,7 @@ const Home = () => {
                   </div>
                   <div>
                     <p className="font-bold">Nyemb Ghislain Valerie</p>
-                    <p className="text-xs text-on-surface-variant">{t('home.testimonials.p2')}</p>
+                    <p className="text-xs text-on-surface-variant dark:text-surface-variant">{t('home.testimonials.p2')}</p>
                   </div>
                 </div>
               </div>

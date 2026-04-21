@@ -59,15 +59,15 @@ const Sport = () => {
         <div className="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
           <div className="z-10">
             <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-secondary text-on-secondary rounded-full">{t('sport.arrival')}</span>
-            <h1 className="text-2xl md:text-3xl md:text-4xl lg:text-5xl lg:text-7xl font-extrabold tracking-tighter text-primary leading-[1.1] mb-8">
-              {t('sport.official')} <br /><span className="text-secondary">{t('sport.fan')}</span>
+            <h1 className="text-2xl md:text-3xl md:text-4xl lg:text-5xl lg:text-7xl font-extrabold tracking-tighter text-primary dark:text-white leading-[1.1] mb-8">
+              {t('sport.official')} <br /><span className="text-secondary dark:text-secondary-fixed">{t('sport.fan')}</span>
             </h1>
-            <p className="text-lg text-on-surface-variant max-w-lg mb-10 leading-relaxed font-body">
+            <p className="text-lg text-on-surface-variant dark:text-surface-variant max-w-lg mb-10 leading-relaxed font-body">
               {t('sport.desc')}
             </p>
             <div className="flex space-x-4">
               <button onClick={() => document.getElementById('kits')?.scrollIntoView({ behavior: 'smooth' })} className="bg-primary-container text-on-primary px-4 md:px-8 py-4 rounded-xl font-bold text-lg scale-102 transition-transform shadow-lg">{t('sport.explore')}</button>
-              <button onClick={() => document.getElementById('filters')?.scrollIntoView({ behavior: 'smooth' })} className="border-2 border-outline-variant/30 text-primary px-4 md:px-8 py-4 rounded-xl font-bold text-lg hover:bg-surface transition-colors">{t('sport.clubs')}</button>
+              <button onClick={() => document.getElementById('filters')?.scrollIntoView({ behavior: 'smooth' })} className="border-2 border-outline-variant/30 text-primary dark:text-white px-4 md:px-8 py-4 rounded-xl font-bold text-lg hover:bg-surface transition-colors">{t('sport.clubs')}</button>
             </div>
           </div>
           <div className="relative h-64 md:h-80 lg:h-[500px] hidden lg:block">
@@ -78,10 +78,10 @@ const Sport = () => {
             />
             <div className="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-2xl shadow-xl border border-outline-variant/10 max-w-[240px]">
               <div className="flex items-center space-x-3 mb-2">
-                <span translate="no" className="material-symbols-outlined text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>workspace_premium</span>
+                <span translate="no" className="material-symbols-outlined text-secondary dark:text-secondary-fixed" style={{ fontVariationSettings: "'FILL' 1" }}>workspace_premium</span>
                 <span className="font-bold text-sm tracking-tight">{t('sport.auth')}</span>
               </div>
-              <p className="text-xs text-on-surface-variant font-medium">{t('sport.auth_desc')}</p>
+              <p className="text-xs text-on-surface-variant dark:text-surface-variant font-medium">{t('sport.auth_desc')}</p>
             </div>
           </div>
         </div>
@@ -92,7 +92,7 @@ const Sport = () => {
           <div id="kits" className="flex justify-between items-center mb-10">
             <h2 className="font-headline font-extrabold text-2xl md:text-3xl tracking-tight">{t('sport.featured')}</h2>
             <div className="flex items-center gap-4 text-sm font-medium">
-              <span className="text-on-surface-variant font-bold px-4 py-2 bg-surface-container-low rounded-xl">{t('sport.showing')}</span>
+              <span className="text-on-surface-variant dark:text-surface-variant font-bold px-4 py-2 bg-surface-container-low rounded-xl">{t('sport.showing')}</span>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
@@ -101,7 +101,7 @@ const Sport = () => {
                 <div className="aspect-[4/5] overflow-hidden relative">
                   <img src={product.img} alt={product.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   {product.tag && (
-                    <div className={`absolute ${product.tag === t('sport.best') ? 'top-4 left-4 bg-surface-container-lowest/90' : 'bottom-4 left-4 bg-secondary text-on-secondary'} backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest ${product.tag === t('sport.best') ? 'text-primary' : ''}`}>
+                    <div className={`absolute ${product.tag === t('sport.best') ? 'top-4 left-4 bg-surface-container-lowest/90' : 'bottom-4 left-4 bg-secondary text-on-secondary'} backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest ${product.tag === t('sport.best') ? 'text-primary dark:text-white' : ''}`}>
                       {product.tag}
                     </div>
                   )}
@@ -111,10 +111,10 @@ const Sport = () => {
                 </div>
                 <div className="p-5 md:p-8">
                   <div className="mb-4">
-                    <h3 className="font-headline font-bold text-xl text-primary">{product.name}</h3>
+                    <h3 className="font-headline font-bold text-xl text-primary dark:text-white">{product.name}</h3>
                   </div>
                   <div className="flex gap-2 mt-4">
-                    <button onClick={() => navigate('/contact')} className="w-full bg-surface-container-low text-primary border border-primary/10 py-3.5 rounded-xl font-bold text-sm hover:bg-secondary hover:text-white hover:border-secondary transition-colors flex items-center justify-center gap-2">
+                    <button onClick={() => navigate('/contact')} className="w-full bg-surface-container-low text-primary dark:text-white border border-primary/10 py-3.5 rounded-xl font-bold text-sm hover:bg-secondary hover:text-white hover:border-secondary transition-colors flex items-center justify-center gap-2">
                       {t('home.services.learnMore')} <span translate="no" className="material-symbols-outlined text-[18px]">arrow_forward</span>
                     </button>
                   </div>

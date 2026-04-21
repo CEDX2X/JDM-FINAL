@@ -39,7 +39,7 @@ const TopNavBar = () => {
               className={`${
                 location.pathname === link.path
                   ? 'text-[#9b3f5a] font-extrabold'
-                  : 'text-primary/70 dark:text-[#f7f9fc]/70 font-bold hover:text-[#9b3f5a]'
+                  : 'text-primary dark:text-white/70 dark:text-[#f7f9fc]/70 font-bold hover:text-[#9b3f5a]'
               } transition-colors duration-300 font-headline tracking-tight`}
             >
               {link.name}
@@ -51,13 +51,13 @@ const TopNavBar = () => {
         <div className="hidden lg:flex items-center gap-6">
           <button 
             onClick={toggleLanguage}
-            className="font-bold text-primary/70 dark:text-white hover:text-[#9b3f5a] transition-colors"
+            className="font-bold text-primary dark:text-white/70 dark:text-white hover:text-[#9b3f5a] transition-colors"
           >
             {language === 'en' ? 'FR' : 'EN'}
           </button>
           <button 
             onClick={toggleDarkMode}
-            className="text-primary/70 dark:text-white hover:text-[#9b3f5a] transition-transform duration-300 hover:rotate-12 material-symbols-outlined text-2xl"
+            className="text-primary dark:text-white/70 dark:text-white hover:text-[#9b3f5a] transition-transform duration-300 hover:rotate-12 material-symbols-outlined text-2xl"
             translate="no"
           >
             {isDarkMode ? 'light_mode' : 'dark_mode'}
@@ -71,13 +71,13 @@ const TopNavBar = () => {
         <div className="lg:hidden flex items-center gap-4">
           <button 
             onClick={toggleLanguage}
-            className="font-bold text-primary/70 dark:text-white hover:text-[#9b3f5a] transition-colors"
+            className="font-bold text-primary dark:text-white/70 dark:text-white hover:text-[#9b3f5a] transition-colors"
           >
             {language === 'en' ? 'FR' : 'EN'}
           </button>
           <button 
             onClick={toggleDarkMode}
-            className="text-primary/70 dark:text-white hover:text-[#9b3f5a] transition-transform duration-300 hover:rotate-12 material-symbols-outlined text-2xl md:text-3xl"
+            className="text-primary dark:text-white/70 dark:text-white hover:text-[#9b3f5a] transition-transform duration-300 hover:rotate-12 material-symbols-outlined text-2xl md:text-3xl"
             translate="no"
           >
             {isDarkMode ? 'light_mode' : 'dark_mode'}
@@ -103,7 +103,7 @@ const TopNavBar = () => {
               className={`${
                 location.pathname === link.path
                   ? 'text-[#9b3f5a] font-extrabold'
-                  : 'text-primary/70 dark:text-[#f7f9fc]/70 font-bold'
+                  : 'text-primary dark:text-white/70 dark:text-[#f7f9fc]/70 font-bold'
               } text-xl tracking-tight block`}
             >
               {link.name}
