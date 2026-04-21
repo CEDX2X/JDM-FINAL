@@ -54,7 +54,7 @@ const Travel = () => {
                   alt="Passport and tickets"
                 />
               </div>
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white/90 backdrop-blur p-6 rounded-2xl shadow-2xl flex items-center gap-4 border border-outline-variant/20">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-surface-container-lowest/90 backdrop-blur p-6 rounded-2xl shadow-2xl flex items-center gap-4 border border-outline-variant/20">
                 <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-on-secondary">
                   <span translate="no" className="material-symbols-outlined">schedule</span>
                 </div>

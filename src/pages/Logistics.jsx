@@ -44,7 +44,7 @@ const Logistics = () => {
 
         {/* Floating Quick Stats */}
         <div className="relative z-10 max-w-5xl mx-auto px-4 md:px-8 mt-10 md:mt-20">
-          <div className="bg-white rounded-2xl md:rounded-3xl p-5 md:p-8 flex flex-col md:flex-row justify-between items-center shadow-2xl border border-outline-variant/10 divide-y md:divide-y-0 md:divide-x divide-outline-variant/20">
+          <div className="bg-surface-container-lowest rounded-2xl md:rounded-3xl p-5 md:p-8 flex flex-col md:flex-row justify-between items-center shadow-2xl border border-outline-variant/10 divide-y md:divide-y-0 md:divide-x divide-outline-variant/20">
             <div className="px-4 md:px-8 py-4 md:py-0 text-center w-full">
               <span className="block text-2xl md:text-3xl lg:text-4xl font-headline font-black text-primary mb-2">120+</span>
               <span className="text-sm font-bold uppercase tracking-widest text-on-surface-variant/70">Countries Served</span>
@@ -125,7 +125,7 @@ const Logistics = () => {
 
               <div className="space-y-8 mt-10">
                 <div className="flex gap-6">
-                  <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-sm flex-shrink-0 text-secondary border border-outline-variant/10">
+                  <div className="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-sm flex-shrink-0 text-secondary border border-outline-variant/10">
                     <span translate="no" className="material-symbols-outlined">network_node</span>
                   </div>
                   <div>
@@ -134,7 +134,7 @@ const Logistics = () => {
                   </div>
                 </div>
                 <div className="flex gap-6">
-                  <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-sm flex-shrink-0 text-secondary border border-outline-variant/10">
+                  <div className="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-sm flex-shrink-0 text-secondary border border-outline-variant/10">
                     <span translate="no" className="material-symbols-outlined">precision_manufacturing</span>
                   </div>
                   <div>
@@ -143,7 +143,7 @@ const Logistics = () => {
                   </div>
                 </div>
                 <div className="flex gap-6">
-                  <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-sm flex-shrink-0 text-secondary border border-outline-variant/10">
+                  <div className="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-sm flex-shrink-0 text-secondary border border-outline-variant/10">
                     <span translate="no" className="material-symbols-outlined">assured_workload</span>
                   </div>
                   <div>
@@ -178,7 +178,7 @@ const Logistics = () => {
                 </div>
               </div>
               {/* Overlay Stat */}
-              <div className="absolute top-1/2 right-0 translate-x-1/4 -translate-y-1/2 bg-white p-6 rounded-2xl shadow-2xl z-20 w-48 text-center border border-outline-variant/10">
+              <div className="absolute top-1/2 right-0 translate-x-1/4 -translate-y-1/2 bg-surface-container-lowest p-6 rounded-2xl shadow-2xl z-20 w-48 text-center border border-outline-variant/10">
                 <span translate="no" className="material-symbols-outlined text-secondary text-2xl md:text-3xl lg:text-4xl mb-2">dashboard_customize</span>
                 <span className="block font-bold text-xl text-primary mb-1 mt-2">API Ready</span>
                 <span className="text-xs font-medium text-on-surface-variant">Seamless ERP Integration</span>

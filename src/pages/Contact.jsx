@@ -107,7 +107,7 @@ const Contact = () => {
           {/* Map Placeholder */}
           <div className="relative rounded-[2rem] overflow-hidden aspect-video shadow-lg group">
             <div className="absolute inset-0 bg-primary-container/10 backdrop-blur-sm z-10 flex items-center justify-center pointer-events-none group-hover:opacity-0 transition-opacity duration-500">
-              <div className="bg-white/90 px-6 py-3 rounded-full flex items-center gap-2 shadow-xl">
+              <div className="bg-surface-container-lowest/90 px-6 py-3 rounded-full flex items-center gap-2 shadow-xl">
                 <span translate="no" className="material-symbols-outlined text-secondary">explore</span>
                 <span className="font-bold text-sm text-primary-container">{t('contact.interactive')}</span>
               </div>
@@ -123,15 +123,15 @@ const Contact = () => {
 
       {/* Secondary CTA Section */}
       <section className="mt-12 md:mt-24 grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div className="p-5 md:p-8 bg-white border-l-4 border-secondary rounded-xl">
+        <div className="p-5 md:p-8 bg-surface-container-lowest border-l-4 border-secondary rounded-xl">
           <h4 className="font-bold text-primary-container mb-2">{t('contact.corp')}</h4>
           <p className="text-sm text-on-surface-variant">{t('contact.corp_desc')}</p>
         </div>
-        <div className="p-5 md:p-8 bg-white border-l-4 border-primary-container rounded-xl">
+        <div className="p-5 md:p-8 bg-surface-container-lowest border-l-4 border-primary-container rounded-xl">
           <h4 className="font-bold text-primary-container mb-2">{t('contact.priv')}</h4>
           <p className="text-sm text-on-surface-variant">{t('contact.priv_desc')}</p>
         </div>
-        <div className="p-5 md:p-8 bg-white border-l-4 border-secondary-container rounded-xl">
+        <div className="p-5 md:p-8 bg-surface-container-lowest border-l-4 border-secondary-container rounded-xl">
           <h4 className="font-bold text-primary-container mb-2">{t('contact.sup')}</h4>
           <p className="text-sm text-on-surface-variant">{t('contact.sup_desc')}</p>
         </div>
