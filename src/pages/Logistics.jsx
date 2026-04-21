@@ -86,7 +86,7 @@ const Logistics = () => {
                 <span translate="no" className="material-symbols-outlined text-9xl">flight_takeoff</span>
               </div>
               <div className="relative z-10">
-                <div className="w-16 h-16 bg-white/10 backdrop-blur text-white rounded-2xl flex items-center justify-center mb-8 group-hover:-translate-y-2 transition-transform">
+                <div className="w-16 h-16 bg-surface-container-lowest/10 backdrop-blur text-white rounded-2xl flex items-center justify-center mb-8 group-hover:-translate-y-2 transition-transform">
                   <span translate="no" className="material-symbols-outlined text-2xl md:text-3xl">flight</span>
                 </div>
                 <h3 className="font-headline font-bold text-2xl mb-4">{t('log.air')}</h3>
@@ -95,7 +95,7 @@ const Logistics = () => {
                   <li className="flex items-center gap-3 text-sm font-medium text-white"><span translate="no" className="material-symbols-outlined text-secondary text-[18px]">done</span> {t('log.a1')}</li>
                   <li className="flex items-center gap-3 text-sm font-medium text-white"><span translate="no" className="material-symbols-outlined text-secondary text-[18px]">done</span> {t('log.a2')}</li>
                 </ul>
-                <button onClick={() => navigate('/contact')} className="bg-secondary text-white w-full py-3 rounded-xl font-bold uppercase tracking-widest text-xs hover:bg-white hover:text-primary transition-colors">{t('log.book_pri')}</button>
+                <button onClick={() => navigate('/contact')} className="bg-secondary text-white w-full py-3 rounded-xl font-bold uppercase tracking-widest text-xs hover:bg-surface-container-lowest hover:text-primary transition-colors">{t('log.book_pri')}</button>
               </div>
             </div>
             {/* Ground */}
@@ -172,7 +172,7 @@ const Logistics = () => {
 
                 {/* Visual Indicator of Clickability */}
                 <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity z-20 flex items-center justify-center">
-                  <div className="w-16 h-16 rounded-full bg-white/30 backdrop-blur-md flex items-center justify-center text-white">
+                  <div className="w-16 h-16 rounded-full bg-surface-container-lowest/30 backdrop-blur-md flex items-center justify-center text-white">
                     <span translate="no" className="material-symbols-outlined text-3xl">touch_app</span>
                   </div>
                 </div>
@@ -204,7 +204,7 @@ const Logistics = () => {
             </div>
 
             <div className="w-full lg:w-auto flex flex-col sm:flex-row gap-4 relative z-10">
-              <div className="bg-white text-primary p-5 md:p-8 rounded-2xl flex-1 md:min-w-[280px]">
+              <div className="bg-surface-container-lowest text-primary p-5 md:p-8 rounded-2xl flex-1 md:min-w-[280px]">
                 <h4 className="font-bold text-xl mb-2">{t('log.ent')}</h4>
                 <p className="text-sm font-medium opacity-80 mb-6">{t('log.ent_title')}</p>
                 <ul className="text-xs space-y-3 mb-8 opacity-70">
@@ -218,7 +218,7 @@ const Logistics = () => {
                 <ul className="text-xs space-y-3 mb-8 opacity-70 list-disc ml-3">
                   <li>{t('log.sme_desc')}</li>
                 </ul>
-                <button onClick={() => navigate('/contact')} className="w-full py-3 bg-white text-primary rounded-xl font-bold hover:scale-105 transition-transform">{t('log.start')}</button>
+                <button onClick={() => navigate('/contact')} className="w-full py-3 bg-surface-container-lowest text-primary rounded-xl font-bold hover:scale-105 transition-transform">{t('log.start')}</button>
               </div>
             </div>
           </div>

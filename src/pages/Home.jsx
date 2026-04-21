@@ -29,7 +29,7 @@ const Home = () => {
               <button className="bg-secondary text-white px-10 py-5 rounded-xl font-bold text-lg transition-all hover:scale-102 hover:shadow-xl" onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}>
                 {t('home.hero.explore')}
               </button>
-              <button className="border-2 border-white/30 text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-white/10 backdrop-blur-md transition-all" onClick={() => navigate('/contact')}>
+              <button className="border-2 border-white/30 text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-surface-container-lowest/10 backdrop-blur-md transition-all" onClick={() => navigate('/contact')}>
                 {t('home.hero.started')}
               </button>
             </div>
@@ -95,7 +95,7 @@ const Home = () => {
                 <span className="inline-block px-4 py-1 bg-secondary rounded-full text-xs font-bold mb-6 tracking-widest">{t('home.services.premium')}</span>
                 <h3 className="font-headline font-bold text-2xl md:text-3xl lg:text-4xl mb-6">{t('home.services.sport')}</h3>
                 <p className="text-on-primary-container text-lg mb-10 leading-relaxed">{t('home.services.sportDesc')}</p>
-                <button onClick={() => navigate('/sport')} className="bg-white text-primary px-4 md:px-8 py-4 rounded-xl font-bold hover:bg-secondary hover:text-white transition-all">
+                <button onClick={() => navigate('/sport')} className="bg-surface-container-lowest text-primary px-4 md:px-8 py-4 rounded-xl font-bold hover:bg-secondary hover:text-white transition-all">
                   {t('home.services.shopCol')}
                 </button>
               </div>
@@ -202,14 +202,14 @@ const Home = () => {
       {/* Contact Preview */}
       <section className="py-12 lg:py-24 bg-primary-container relative">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
-          <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 md:p-12 lg:p-16 border border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 lg:gap-12">
+          <div className="bg-surface-container-lowest/5 backdrop-blur-md rounded-2xl p-6 md:p-12 lg:p-16 border border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 lg:gap-12">
             <div className="max-w-xl">
               <h2 className="font-headline font-bold text-2xl md:text-3xl lg:text-4xl text-white mb-6">{t('home.cta.title')}</h2>
               <p className="text-on-primary-container text-lg">{t('home.cta.desc')}</p>
             </div>
             <div className="flex flex-col sm:flex-row gap-6 w-full md:w-auto">
               <a className="bg-secondary text-white px-4 md:px-8 py-4 rounded-xl font-bold text-center hover:scale-102 transition-transform" href="mailto:concierge@jdmsarl.com">{t('home.cta.touch')}</a>
-              <button onClick={() => navigate('/contact')} className="border border-white/30 text-white px-4 md:px-8 py-4 rounded-xl font-bold text-center hover:bg-white/10 transition-all">{t('home.cta.brochure')}</button>
+              <button onClick={() => navigate('/contact')} className="border border-white/30 text-white px-4 md:px-8 py-4 rounded-xl font-bold text-center hover:bg-surface-container-lowest/10 transition-all">{t('home.cta.brochure')}</button>
             </div>
           </div>
         </div>

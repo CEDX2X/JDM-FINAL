@@ -133,7 +133,7 @@ const Travel = () => {
                 <h3 className="font-headline font-bold text-2xl text-white mb-2">{t('travel.amalfi')}</h3>
                 <p className="text-white/80 text-sm mb-4 line-clamp-2">{t('travel.amalfi_desc')}</p>
                 <div className="flex justify-end items-center text-white mt-auto">
-                  <button onClick={() => navigate('/contact')} className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-primary transition-colors">
+                  <button onClick={() => navigate('/contact')} className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center hover:bg-surface-container-lowest hover:text-primary transition-colors">
                     <span translate="no" className="material-symbols-outlined">arrow_forward</span>
                   </button>
                 </div>
@@ -148,7 +148,7 @@ const Travel = () => {
                 <span className="text-xs font-bold uppercase tracking-widest text-secondary mb-2 block">{t('travel.mod')}</span>
                 <h3 className="font-headline font-bold text-2xl text-white mb-2">{t('travel.neon')}</h3>
                 <div className="flex justify-end items-center text-white mt-8">
-                  <button onClick={() => navigate('/contact')} className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-primary transition-colors">
+                  <button onClick={() => navigate('/contact')} className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center hover:bg-surface-container-lowest hover:text-primary transition-colors">
                     <span translate="no" className="material-symbols-outlined">arrow_forward</span>
                   </button>
                 </div>
@@ -163,7 +163,7 @@ const Travel = () => {
                 <span className="text-xs font-bold uppercase tracking-widest text-secondary mb-2 block">{t('travel.wild')}</span>
                 <h3 className="font-headline font-bold text-2xl text-white mb-2">{t('travel.safari')}</h3>
                 <div className="flex justify-end items-center text-white mt-8">
-                  <button onClick={() => navigate('/contact')} className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-primary transition-colors">
+                  <button onClick={() => navigate('/contact')} className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center hover:bg-surface-container-lowest hover:text-primary transition-colors">
                     <span translate="no" className="material-symbols-outlined">arrow_forward</span>
                   </button>
                 </div>
@@ -178,7 +178,7 @@ const Travel = () => {
                 <span className="text-xs font-bold uppercase tracking-widest text-secondary mb-4 block">{t('travel.alpine')}</span>
                 <h3 className="font-headline font-bold text-2xl md:text-3xl lg:text-4xl lg:text-5xl text-white mb-6 leading-tight">{t('travel.grand')}</h3>
                 <div className="flex items-center gap-6 mt-8">
-                  <button onClick={() => navigate('/contact')} className="bg-white text-primary px-4 md:px-8 py-4 rounded-xl font-bold hover:bg-secondary hover:text-white transition-colors">
+                  <button onClick={() => navigate('/contact')} className="bg-surface-container-lowest text-primary px-4 md:px-8 py-4 rounded-xl font-bold hover:bg-secondary hover:text-white transition-colors">
                     {t('travel.view')}
                   </button>
                 </div>
@@ -195,7 +195,7 @@ const Travel = () => {
           <p className="text-white/70 text-lg mb-10 max-w-2xl mx-auto">
             {t('travel.cta_desc')}
           </p>
-          <button onClick={() => navigate('/contact')} className="bg-secondary text-on-secondary px-10 py-5 rounded-xl font-bold text-lg hover:bg-white hover:text-primary transition-all inline-flex items-center gap-3">
+          <button onClick={() => navigate('/contact')} className="bg-secondary text-on-secondary px-10 py-5 rounded-xl font-bold text-lg hover:bg-surface-container-lowest hover:text-primary transition-all inline-flex items-center gap-3">
             <span translate="no" className="material-symbols-outlined">support_agent</span> {t('travel.talk')}
           </button>
         </div>

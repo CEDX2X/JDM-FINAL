@@ -101,7 +101,7 @@ const Sport = () => {
                 <div className="aspect-[4/5] overflow-hidden relative">
                   <img src={product.img} alt={product.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   {product.tag && (
-                    <div className={`absolute ${product.tag === t('sport.best') ? 'top-4 left-4 bg-white/90' : 'bottom-4 left-4 bg-secondary text-on-secondary'} backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest ${product.tag === t('sport.best') ? 'text-primary' : ''}`}>
+                    <div className={`absolute ${product.tag === t('sport.best') ? 'top-4 left-4 bg-surface-container-lowest/90' : 'bottom-4 left-4 bg-secondary text-on-secondary'} backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest ${product.tag === t('sport.best') ? 'text-primary' : ''}`}>
                       {product.tag}
                     </div>
                   )}
