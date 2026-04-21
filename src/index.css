@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-secondary-fixed: #ffd9e0;
   --color-on-tertiary-container: #a2803d;
@@ -55,8 +57,26 @@
 }
 
 @layer base {
+  .dark {
+    --color-surface-bright: #0b1d3a;
+    --color-surface: #00030f;
+    --color-on-surface-variant: #b0b5c0;
+    --color-background: #00030f;
+    --color-inverse-surface: #f7f9fc;
+    --color-on-background: #ffffff;
+    --color-surface-container-low: #061124;
+    --color-surface-container: #0b1d3a;
+    --color-surface-container-high: #112a52;
+    --color-surface-container-highest: #1a3b70;
+    --color-surface-container-lowest: #000000;
+    --color-on-surface: #ffffff;
+    --color-outline: #8b92a5;
+    --color-inverse-on-surface: #00030f;
+    --color-surface-dim: #051024;
+  }
+
   body {
-    @apply bg-surface font-body text-on-surface antialiased;
+    @apply bg-surface font-body text-on-surface antialiased transition-colors duration-500;
   }
 }
 

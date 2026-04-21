@@ -9,27 +9,30 @@ import Sport from './pages/Sport';
 import Contact from './pages/Contact';
 import FloatingActions from './components/FloatingActions';
 import { LanguageProvider } from './context/LanguageContext';
+import { ThemeProvider } from './context/ThemeContext';
 
 function App() {
   return (
-    <LanguageProvider>
-      <Router>
-        <div className="min-h-screen flex flex-col relative">
-          <TopNavBar />
-          <FloatingActions />
-          <div className="flex-grow">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/travel" element={<Travel />} />
-              <Route path="/logistics" element={<Logistics />} />
-              <Route path="/sport" element={<Sport />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
+    <ThemeProvider>
+      <LanguageProvider>
+        <Router>
+          <div className="min-h-screen flex flex-col relative">
+            <TopNavBar />
+            <FloatingActions />
+            <div className="flex-grow">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/travel" element={<Travel />} />
+                <Route path="/logistics" element={<Logistics />} />
+                <Route path="/sport" element={<Sport />} />
+                <Route path="/contact" element={<Contact />} />
+              </Routes>
+            </div>
+            <Footer />
           </div>
-          <Footer />
-        </div>
-      </Router>
-    </LanguageProvider>
+        </Router>
+      </LanguageProvider>
+    </ThemeProvider>
   );
 }
 

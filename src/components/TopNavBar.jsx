@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
+import { useTheme } from '../context/ThemeContext';
 
 const TopNavBar = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const { language, toggleLanguage, t } = useLanguage();
+  const { isDarkMode, toggleDarkMode } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
@@ -53,6 +55,13 @@ const TopNavBar = () => {
           >
             {language === 'en' ? 'FR' : 'EN'}
           </button>
+          <button 
+            onClick={toggleDarkMode}
+            className="text-[#0B1D3A]/70 dark:text-white hover:text-[#9b3f5a] transition-transform duration-300 hover:rotate-12 material-symbols-outlined text-2xl"
+            translate="no"
+          >
+            {isDarkMode ? 'light_mode' : 'dark_mode'}
+          </button>
           <button onClick={() => navigate('/contact')} className="bg-primary-container text-on-primary px-6 py-2.5 rounded-xl font-bold transition-transform duration-300 hover:scale-102">
             {t('nav.getStarted')}
           </button>
@@ -65,6 +74,13 @@ const TopNavBar = () => {
             className="font-bold text-[#0B1D3A]/70 dark:text-white hover:text-[#9b3f5a] transition-colors"
           >
             {language === 'en' ? 'FR' : 'EN'}
+          </button>
+          <button 
+            onClick={toggleDarkMode}
+            className="text-[#0B1D3A]/70 dark:text-white hover:text-[#9b3f5a] transition-transform duration-300 hover:rotate-12 material-symbols-outlined text-2xl md:text-3xl"
+            translate="no"
+          >
+            {isDarkMode ? 'light_mode' : 'dark_mode'}
           </button>
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
