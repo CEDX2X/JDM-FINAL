@@ -73,8 +73,8 @@
     --color-outline: #8b92a5;
     --color-inverse-on-surface: #00030f;
     --color-surface-dim: #051024;
-    --color-primary: #ffffff;
-    --color-on-primary: #00030f;
+    --color-primary: #00030f;
+    --color-on-primary: #ffffff;
     --color-primary-container: #0b1d3a;
     --color-on-primary-container: #ffffff;
   }
