@@ -126,7 +126,7 @@ const Sport = () => {
                     <h3 className="font-headline font-bold text-xl text-primary dark:text-white">{product.name}</h3>
                   </div>
                   <div className="flex gap-2 mt-4">
-                    <button onClick={() => navigate('/contact')} className="w-full bg-surface-container-low text-primary dark:text-white border border-primary/10 py-3.5 rounded-xl font-bold text-sm hover:bg-secondary hover:text-white hover:border-secondary transition-colors flex items-center justify-center gap-2">
+                    <button onClick={() => window.location.href='https://yedrop.com/shop/6a37be3e91a2b2512f3e6730'} className="w-full bg-surface-container-low text-primary dark:text-white border border-primary/10 py-3.5 rounded-xl font-bold text-sm hover:bg-secondary hover:text-white hover:border-secondary transition-colors flex items-center justify-center gap-2">
                       {t('home.services.learnMore')} <span translate="no" className="material-symbols-outlined text-[18px]">arrow_forward</span>
                     </button>
                   </div>
