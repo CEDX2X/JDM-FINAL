@@ -26,9 +26,9 @@ const Travel = () => {
               <button onClick={() => document.getElementById('destinations')?.scrollIntoView({ behavior: 'smooth' })} className="border-2 border-primary/20 text-primary dark:text-white px-4 md:px-8 py-5 rounded-xl font-bold text-lg hover:bg-surface-container-low transition-colors">
                 {t('travel.view')}
               </button>
-              <button onClick={() => window.open('https://airtable.com/appmY4Cf2FHn1gEd1/shrIibaZijGjCCzAB', '_blank')} className="bg-secondary text-on-secondary px-4 md:px-8 py-5 rounded-xl font-bold text-lg hover:bg-primary hover:text-white transition-colors">
-                Universités Partenaires
-              </button>
+              <button onClick={() => window.location.href='https://airtable.com/appmY4Cf2FHn1gEd1/shrIibaZijGjCCzAB'} className="bg-secondary text-on-secondary px-4 md:px-8 py-5 rounded-xl font-bold text-lg hover:bg-primary hover:text-white transition-colors">
+    Universités Partenaires
+  </button>
             </div>
           </div>
         </div>
