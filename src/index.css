@@ -57,6 +57,9 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   .dark {
     --color-surface-bright: #002d6e;
     --color-surface: #000a1a;
@@ -80,25 +83,82 @@
   }
 
   body {
-    @apply bg-surface font-body text-on-surface antialiased transition-colors duration-500;
+    @apply bg-surface font-body text-on-surface antialiased transition-colors duration-500 selection:bg-secondary selection:text-white;
   }
 }
 
 .material-symbols-outlined {
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
+
 .glass-panel {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
 }
 .dark .glass-panel {
-    background: rgba(0, 45, 110, 0.4);
+    background: rgba(0, 21, 51, 0.7);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
 }
+
 .hero-gradient {
-    background: linear-gradient(135deg, rgba(2, 67, 153, 0.95) 0%, rgba(0, 10, 26, 0.8) 100%);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.55) 100%);
 }
 .dark .hero-gradient {
-    background: linear-gradient(135deg, rgba(0, 10, 26, 0.95) 0%, rgba(0, 0, 0, 0.8) 100%);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.75) 100%);
+}
+
+.modern-card {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.modern-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -15px rgba(2, 67, 153, 0.12);
 }
 
 .scale-102:hover { transform: scale(1.02); }
+
+/* Modern Button Enhancements */
+button, .btn {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+button:active {
+  transform: scale(0.97);
+}
+
+.hover-underline {
+  position: relative;
+}
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--color-secondary, #ec1313);
+  transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hover-underline:hover::after {
+  width: 100%;
+}
+
+/* Reveal Stagger Animation */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+

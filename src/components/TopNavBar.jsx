@@ -19,28 +19,30 @@ const TopNavBar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-surface-container-lowest/80 dark:bg-surface/80 backdrop-blur-xl shadow-[0_12px_32px_rgba(11,29,58,0.06)]">
-      <div className="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center h-16 md:h-20">
-        <Link to="/" className="flex items-center gap-2 text-xl md:gap-3 md:text-2xl font-black tracking-tighter text-primary dark:text-white font-headline">
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/Ced%2FJDM.jpeg?alt=media&token=446b9ce2-8680-4102-9761-c2f125b43031"
-            alt="JDM SARL Logo"
-            className="h-8 md:h-10 w-auto rounded-lg object-contain"
-          />
-          <span>JDM SARL</span>
+    <nav className="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md transition-all duration-300">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center h-20">
+        <Link to="/" className="flex items-center gap-3 text-xl md:text-2xl font-black tracking-tight text-primary dark:text-white font-headline group">
+          <div className="w-10 h-10 rounded-xl bg-primary/10 dark:bg-white/10 flex items-center justify-center p-1 group-hover:scale-105 transition-transform">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/kylyoapp-8ec0b.firebasestorage.app/o/Ced%2FJDM.jpeg?alt=media&token=446b9ce2-8680-4102-9761-c2f125b43031"
+              alt="JDM SARL Logo"
+              className="h-full w-full object-contain rounded-lg"
+            />
+          </div>
+          <span className="bg-gradient-to-r from-primary to-primary-container dark:from-white dark:to-white/80 bg-clip-text text-transparent">JDM SARL</span>
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden lg:flex space-x-10 items-center">
+        <div className="hidden lg:flex space-x-6 items-center px-4 py-1.5 bg-transparent">
           {navLinks.map((link) => (
             <Link
               key={link.path}
               to={link.path}
-              className={`${
+              className={`text-sm font-bold transition-colors font-headline hover-underline py-1 ${
                 location.pathname === link.path
-                  ? 'text-secondary font-extrabold'
-                  : 'text-primary dark:text-white/70 dark:text-[#f7f9fc]/70 font-bold hover:text-secondary'
-              } transition-colors duration-300 font-headline tracking-tight`}
+                  ? 'text-secondary dark:text-secondary'
+                  : 'text-primary dark:text-white/90 hover:text-secondary dark:hover:text-secondary'
+              }`}
             >
               {link.name}
             </Link>
@@ -48,36 +50,36 @@ const TopNavBar = () => {
         </div>
 
         {/* Desktop Actions */}
-        <div className="hidden lg:flex items-center gap-6">
+        <div className="hidden lg:flex items-center gap-4">
           <button 
             onClick={toggleLanguage}
-            className="font-bold text-primary dark:text-white/70 dark:text-white hover:text-secondary transition-colors"
+            className="px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider bg-surface-container-low dark:bg-surface-container text-primary dark:text-white hover:bg-surface-container-high transition-colors"
           >
-            {language === 'en' ? 'FR' : 'EN'}
+            {language === 'en' ? 'FR 🇫🇷' : 'EN 🇬🇧'}
           </button>
           <button 
             onClick={toggleDarkMode}
-            className="text-primary dark:text-white/70 dark:text-white hover:text-secondary transition-transform duration-300 hover:rotate-12 material-symbols-outlined text-2xl"
+            className="w-10 h-10 rounded-xl bg-surface-container-low dark:bg-surface-container flex items-center justify-center text-primary dark:text-white hover:scale-105 transition-transform material-symbols-outlined text-xl"
             translate="no"
           >
             {isDarkMode ? 'light_mode' : 'dark_mode'}
           </button>
-          <button onClick={() => navigate('/contact')} className="bg-primary-container text-on-primary px-6 py-2.5 rounded-xl font-bold transition-transform duration-300 hover:scale-102">
+          <button onClick={() => navigate('/contact')} className="bg-secondary text-on-secondary px-6 py-2.5 rounded-xl font-bold text-sm transition-all hover:scale-105 shadow-lg shadow-secondary/20">
             {t('nav.getStarted')}
           </button>
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="lg:hidden flex items-center gap-4">
+        <div className="lg:hidden flex items-center gap-3">
           <button 
             onClick={toggleLanguage}
-            className="font-bold text-primary dark:text-white/70 dark:text-white hover:text-secondary transition-colors"
+            className="px-2.5 py-1 rounded-md text-xs font-bold bg-surface-container-low dark:bg-surface-container text-primary dark:text-white"
           >
             {language === 'en' ? 'FR' : 'EN'}
           </button>
           <button 
             onClick={toggleDarkMode}
-            className="text-primary dark:text-white/70 dark:text-white hover:text-secondary transition-transform duration-300 hover:rotate-12 material-symbols-outlined text-2xl md:text-3xl"
+            className="w-9 h-9 rounded-lg bg-surface-container-low dark:bg-surface-container flex items-center justify-center text-primary dark:text-white material-symbols-outlined text-xl"
             translate="no"
           >
             {isDarkMode ? 'light_mode' : 'dark_mode'}
@@ -85,7 +87,7 @@ const TopNavBar = () => {
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             translate="no" 
-            className="material-symbols-outlined text-primary dark:text-white text-2xl md:text-3xl"
+            className="w-10 h-10 rounded-lg bg-surface-container-low dark:bg-surface-container flex items-center justify-center text-primary dark:text-white material-symbols-outlined text-2xl"
           >
             {isMenuOpen ? 'close' : 'menu'}
           </button>
@@ -94,23 +96,23 @@ const TopNavBar = () => {
 
       {/* Mobile Menu Dropdown */}
       {isMenuOpen && (
-        <div className="lg:hidden absolute top-16 md:top-20 left-0 w-full bg-surface-container-lowest dark:bg-[#00030f] border-t border-gray-100 dark:border-gray-800 shadow-xl py-6 px-4 md:px-8 flex flex-col gap-6">
+        <div className="lg:hidden absolute top-20 left-0 w-full bg-surface-container-lowest/95 dark:bg-surface/95 backdrop-blur-2xl border-b border-outline-variant/10 shadow-2xl py-8 px-6 flex flex-col gap-4 animate-in fade-in slide-in-from-top-4 duration-300">
           {navLinks.map((link) => (
             <Link
               key={link.path}
               to={link.path}
               onClick={() => setIsMenuOpen(false)}
-              className={`${
+              className={`px-4 py-3 rounded-xl text-lg font-bold font-headline transition-colors ${
                 location.pathname === link.path
-                  ? 'text-secondary font-extrabold'
-                  : 'text-primary dark:text-white/70 dark:text-[#f7f9fc]/70 font-bold'
-              } text-xl tracking-tight block`}
+                  ? 'bg-primary text-on-primary'
+                  : 'text-on-surface dark:text-white/80 hover:bg-surface-container-low'
+              }`}
             >
               {link.name}
             </Link>
           ))}
-          <div className="h-px w-full bg-gray-100 dark:bg-gray-800 my-2"></div>
-          <button onClick={() => { setIsMenuOpen(false); navigate('/contact'); }} className="w-full bg-primary-container text-on-primary px-6 py-4 rounded-xl font-bold text-lg">
+          <div className="h-px w-full bg-outline-variant/20 my-2"></div>
+          <button onClick={() => { setIsMenuOpen(false); navigate('/contact'); }} className="w-full bg-secondary text-on-secondary px-6 py-4 rounded-xl font-bold text-center shadow-lg">
             {t('nav.getStarted')}
           </button>
         </div>
@@ -120,3 +122,4 @@ const TopNavBar = () => {
 };
 
 export default TopNavBar;
+
